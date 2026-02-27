@@ -1,1 +1,17 @@
+# Nmap Cheat Sheet
 
+## Basic scan
+
+nmap TARGET_IP
+
+## Service version detection
+
+nmap -sV TARGET_IP
+
+## Default scripts
+
+nmap -sC TARGET_IP
+
+## Full scan
+
+nmap -p- TARGET_IP
