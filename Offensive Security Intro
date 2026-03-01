@@ -1,0 +1,46 @@
+Room: Offensive Security Intro
+
+Platform: TryHackMe
+Difficulty: Easy
+Date: 2026
+
+Objective
+
+Gain unauthorized access to the bank transfer feature and modify account balances.
+
+Step 1: Enumeration
+Web directory enumeration
+
+Command used:
+
+gobuster -u http://fakebank.thm -w wordlist.txt dir
+
+Result:
+
+Found hidden pages including /bank-transfer
+
+Identified the admin bank transfer page via Gobuster brute-forcing.
+
+Step 2: Vulnerability Identification
+
+Found a hidden admin page that allows transfers between accounts (/bank-transfer) — this page was not properly protected, allowing unauthorized access without authentication.
+
+Step 3: Exploitation
+
+Navigated to the discovered admin transfer page in the FakeBank app and transferred funds from another account into my own.
+
+Step 4: Outcome
+
+Money was successfully transferred into my account — mission accomplished.
+
+Lessons Learned
+
+Web directory brute-forcing can help find hidden pages.
+
+Hidden admin pages can expose critical functionality if not secured.
+
+Gobuster is a useful tool for web enumeration in offensive security.
+
+Tools Used
+
+Gobuster
