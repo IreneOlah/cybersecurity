@@ -1,46 +1,44 @@
-Room: Offensive Security Intro
+TryHackMe: Offensive Security Intro — Portfolio Write-Up
 
 Platform: TryHackMe
+Room: Offensive Security Intro
 Difficulty: Easy
 Date: 2026
 
-Objective
+🎯 Objective
 
-Gain unauthorized access to the bank transfer feature and modify account balances.
+Demonstrate offensive security fundamentals by discovering hidden functionality on a web application and exploiting it to modify account balances.
 
-Step 1: Enumeration
-Web directory enumeration
+🛠 Step 1: Enumeration
+Web Directory Enumeration
 
-Command used:
+To identify hidden resources on the target web application (FakeBank), I used Gobuster to brute-force directory and page names:
 
 gobuster -u http://fakebank.thm -w wordlist.txt dir
 
 Result:
+Found several endpoints including a hidden admin bank transfer page (/bank-transfer).
 
-Found hidden pages including /bank-transfer
+🔍 Step 2: Vulnerability Identification
 
-Identified the admin bank transfer page via Gobuster brute-forcing.
+The /bank-transfer page was not protected behind any authentication, allowing access to functionality intended only for privileged users. This type of exposed admin endpoint can lead to unauthorized actions.
 
-Step 2: Vulnerability Identification
+💥 Step 3: Exploitation
 
-Found a hidden admin page that allows transfers between accounts (/bank-transfer) — this page was not properly protected, allowing unauthorized access without authentication.
+I navigated to the discovered hidden bank transfer page in the FakeBank application using a web browser. After accessing this page, I executed an unauthorized transfer of funds from another account into my own.
 
-Step 3: Exploitation
+🏁 Step 4: Outcome
 
-Navigated to the discovered admin transfer page in the FakeBank app and transferred funds from another account into my own.
+The transfer was successful, and the new account balance reflected the added funds — demonstrating how insecure endpoints can be abused when not properly secured.
 
-Step 4: Outcome
+📖 Lessons Learned
 
-Money was successfully transferred into my account — mission accomplished.
+Web directory brute-forcing is a powerful enumeration technique for finding hidden pages on a target domain.
 
-Lessons Learned
+Exposed admin pages can provide direct access to critical functionality if not secured correctly.
 
-Web directory brute-forcing can help find hidden pages.
+Gobuster is an effective tool for web enumeration commonly used in offensive security assessments.
 
-Hidden admin pages can expose critical functionality if not secured.
+🧰 Tools Used
 
-Gobuster is a useful tool for web enumeration in offensive security.
-
-Tools Used
-
-Gobuster
+Gobuster — for discovering hidden directories and pages.
