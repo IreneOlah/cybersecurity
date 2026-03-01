@@ -1,0 +1,54 @@
+TryHackMe: Defensive Security Intro — Portfolio Write-Up
+
+Platform: TryHackMe
+Room: Defensive Security Intro
+Difficulty: Easy
+Date: 2026
+
+🎯 Objective
+
+Apply defensive security skills to detect and block malicious activity using a simulated SIEM environment — just like a SOC analyst would.
+
+🛠 Step 1: SIEM Monitoring & Alert Review
+
+I began by monitoring the SIEM simulation dashboard provided in the room. Alerts are generated when suspicious activity is detected across network and endpoint logs.
+
+I reviewed recent alerts to identify any unusual or suspicious behavior.
+
+I spotted a source IP that was flagged as generating potentially malicious traffic.
+
+🔍 Step 2: Validate Suspicious Activity
+
+Once a suspicious IP was identified, I investigated it to confirm whether the activity was truly harmful.
+
+I checked the context of the alerts and confirmed the activity was high risk.
+
+Based on this investigation, I determined the IP must be blocked to protect the network.
+
+🛡 Step 3: Threat Containment
+
+With confirmation that the IP was malicious:
+
+I blocked the suspicious source IP at the firewall level to stop further connections.
+
+This containment action successfully halted the malicious activity and helped secure the environment.
+
+🏁 Conclusion & Outcome
+
+By detecting and validating the malicious activity using the SIEM simulation and then blocking the offending IP, I effectively applied defensive security principles:
+
+SIEM monitoring to detect threats.
+
+Alert investigation to validate malicious behavior.
+
+Threat containment by blocking the source.
+
+This activity demonstrates foundational SOC analyst skills in proactive defense and incident response.
+
+🔧 Tools & Skills Used
+
+SIEM (Security Information and Event Management) – to monitor and correlate events.
+
+Threat investigation & analysis – to verify malicious activity.
+
+Firewall rule creation – to block malicious IP connections.
