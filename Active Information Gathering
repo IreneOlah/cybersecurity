@@ -1,0 +1,48 @@
+RangeForce: Active Information Gathering — Portfolio Write-Up
+Platform: RangeForce
+Room: Active Information Gathering
+Difficulty: Intermediate
+Date: 2026
+Objective
+Perform active reconnaissance against a target system to identify open ports, running services, exposed applications, and potential vulnerabilities using industry-standard security tools.
+Step 1: Network Enumeration & Service Discovery
+I began by conducting an aggressive network scan using Nmap (nmap -A) against the target host.
+This scan enabled:
+Open port identification
+Service and version detection
+Operating system fingerprinting
+Default script enumeration
+The results provided a comprehensive overview of the target’s attack surface and identified accessible services requiring further investigation.
+Step 2: External Intelligence & Service Validation
+After identifying exposed services, I used Shodan to gather additional intelligence regarding publicly indexed services and banner information related to the target.
+This helped validate:
+Service exposure
+Potential known vulnerabilities
+Publicly available metadata
+This step expanded reconnaissance beyond direct scanning and added contextual awareness to the assessment.
+Step 3: Application & Service Enumeration
+With services identified, I performed deeper enumeration:
+I used DirBuster to discover hidden directories and files within the web application.
+I used FileZilla to test FTP connectivity and check for anonymous login access.
+I used OWASP ZAP to conduct automated web application vulnerability scanning.
+These tools allowed me to identify:
+Hidden web directories
+Misconfigured FTP permissions
+Potential web application security weaknesses
+Conclusion & Outcome
+By combining active network scanning with application-level enumeration, I built a comprehensive profile of the target system’s attack surface.
+This lab demonstrates core penetration testing skills:
+Active reconnaissance
+Service and version enumeration
+Web application discovery
+Vulnerability identification
+The exercise reinforced the importance of structured information gathering before attempting exploitation.
+Tools & Skills Used
+Nmap – Network scanning and service enumeration
+Shodan – External reconnaissance and exposure validation
+DirBuster – Web directory brute-forcing
+FileZilla – FTP service testing and enumeration
+OWASP ZAP – Web application vulnerability scanning
+Active information gathering & attack surface mapping
+Service enumeration and validation
+Web application security assessment
