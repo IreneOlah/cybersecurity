@@ -1,0 +1,31 @@
+RangeForce: Windows Active Directory Reconnaissance – Basic Tools — Portfolio Write-Up
+Platform: RangeForce
+Room: Windows Active Directory Reconnaissance – Basic Tools
+Difficulty: Intermediate
+Date: 2026
+Objective
+Learn how to perform reconnaissance within a Windows Active Directory environment to identify users, groups, computers, and domain information. The goal was to understand how attackers and defenders gather information from Active Directory to assess the security posture of a domain.
+Step 1: Domain Enumeration
+I began by exploring the Active Directory environment to identify basic domain information such as domain structure, users, groups, and computers.
+Using Active Directory Explorer, I navigated the directory structure to review objects and attributes stored within the domain. This provided visibility into how Active Directory organizes identity and access management resources.
+Step 2: Object and Attribute Analysis
+Next, I examined specific objects within Active Directory, including user accounts and security groups.
+By reviewing attributes associated with these objects, I was able to identify details such as:
+User account information
+Group memberships
+System descriptions
+Organizational unit structure
+Understanding these attributes helps security professionals identify potential misconfigurations or sensitive information stored within directory objects.
+Step 3: Directory Searching and Information Discovery
+I used search functionality within Active Directory Explorer to locate specific objects and attribute values.
+This allowed me to efficiently query the directory for relevant information and demonstrate how reconnaissance can uncover useful data within a domain environment. Such information can be used to understand privilege relationships and identify potential attack paths.
+Conclusion & Outcome
+Through this exercise, I gained practical experience performing reconnaissance within an Active Directory environment. Enumerating domain objects and reviewing attributes helps build a clearer understanding of how identities, permissions, and systems are structured within a network.
+These reconnaissance techniques are essential for both penetration testers and defenders, as they help identify potential security weaknesses and improve visibility across the domain.
+Tools & Skills Used
+Active Directory Explorer – Active Directory enumeration and analysis
+Active Directory reconnaissance
+Domain object enumeration
+Directory searching and analysis
+Identity and access structure review
+Security awareness of AD environments
