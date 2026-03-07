@@ -1,0 +1,30 @@
+RangeForce: Setting Up a Phishing Campaign
+Platform: RangeForce
+Room: Setting Up a Phishing Campaign
+Difficulty: Intermediate
+Date: 2026
+Objective
+Understand how phishing campaigns are created and executed in a controlled environment to better recognize and defend against real-world phishing attacks. The goal was to simulate a phishing campaign and analyze how user interactions can be tracked for security awareness and detection purposes.
+Step 1: Phishing Framework Setup
+I began by configuring a phishing simulation using Gophish, an open-source phishing framework used for security awareness testing.
+Within the platform, I created a phishing campaign by configuring the necessary components, including the sender profile, email template, and target user group. This setup allowed the campaign to simulate realistic phishing emails that could be sent to users in a controlled environment.
+Step 2: Email Template and Landing Page Configuration
+Next, I designed a phishing email template intended to mimic a legitimate message that might trick users into clicking a malicious link.
+I also configured a landing page within the campaign that would capture user interactions when the phishing link was clicked. This step helped simulate how attackers collect information or credentials from unsuspecting users.
+Step 3: Campaign Launch and Monitoring
+After configuring the campaign components, I launched the phishing simulation and monitored the results through the GoPhish dashboard.
+The platform tracked key metrics such as:
+Email delivery
+Link clicks
+User interactions with the landing page
+Monitoring these metrics demonstrated how phishing campaigns can measure user susceptibility and provide insights into potential security awareness gaps.
+Conclusion & Outcome
+By creating and running a phishing simulation, I gained hands-on experience with how attackers design and execute phishing campaigns. Understanding the techniques used in phishing helps security professionals better detect malicious emails and implement stronger user awareness programs.
+This exercise highlights the importance of user education and monitoring tools in defending against social engineering attacks.
+Tools & Skills Used
+Gophish – Phishing campaign creation and monitoring
+Phishing campaign simulation
+Social engineering awareness
+Email security testing
+User interaction monitoring
+Security awareness assessment
