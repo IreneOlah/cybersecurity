@@ -1,0 +1,21 @@
+RangeForce: Windows Active Directory Reconnaissance – Methods
+Platform: RangeForce
+Module: Windows Active Directory Reconnaissance – Methods
+Difficulty: Beginner / Intermediate
+Date: 2026
+Objective
+The goal of this module was to understand common reconnaissance methods used to gather information from a Windows domain environment running Microsoft Active Directory. The exercise focused on how attackers and analysts enumerate users, groups, and domain information to better understand the network structure.
+Tools Used
+PowerShell – Used to query domain information and enumerate Active Directory objects.
+Mimikatz – Used to demonstrate how credentials and authentication data can be accessed during reconnaissance or post-exploitation.
+Key Activities
+Used PowerShell commands to enumerate Active Directory users and groups.
+Gathered domain information to understand the structure of the environment.
+Observed how tools like Mimikatz can extract authentication information from memory.
+Identified how reconnaissance techniques can reveal privileged accounts and high-value targets.
+Key Takeaways
+Active Directory reconnaissance is often performed using native tools like PowerShell, making it difficult to detect.
+Tools such as Mimikatz highlight the risk of credential exposure within compromised systems.
+Monitoring PowerShell activity and credential access is critical for detecting reconnaissance and post-exploitation behavior.
+Outcome:
+Completed the module and gained hands-on experience with reconnaissance methods used in Active Directory environments and how defenders can detect suspicious enumeration and credential access activity.
