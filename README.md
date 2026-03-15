@@ -17,6 +17,7 @@ This repository documents my hands-on penetration testing practice through TryHa
 ## Platforms
 
 - TryHackMe
+- RangeForce
 - Personal labs
 
 ## Current Progress
