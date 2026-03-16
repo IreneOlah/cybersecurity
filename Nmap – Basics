@@ -1,0 +1,28 @@
+## RangeForce: Nmap – Basics
+
+Platform: RangeForce  
+Room: Nmap – Basics  
+Difficulty: Beginner / Intermediate  
+Date: 2026  
+
+Objective  
+Learn the fundamentals of network reconnaissance using Nmap. The goal was to understand how security professionals identify live hosts, open ports, and running services in order to assess the exposure of systems on a network.
+
+Step 1: Host Discovery  
+I began by performing host discovery to identify active systems within a network range. This process allowed me to determine which devices were online and responding to network probes. Identifying live hosts is the first step in network reconnaissance and helps narrow the scope for further analysis.
+
+Step 2: Port Scanning  
+Next, I conducted port scans to identify open ports on the discovered hosts. Open ports indicate which services are available and potentially accessible from the network. By analyzing these ports, I was able to determine what types of services might be running on the system.
+
+Step 3: Service Detection  
+After identifying open ports, I used Nmap’s service detection features to gather additional information about the services running on those ports. This provided details such as service names and versions, which are useful when identifying outdated or vulnerable software.
+
+Conclusion & Outcome  
+Through this exercise, I gained hands-on experience performing basic network reconnaissance with Nmap. Identifying active hosts, scanning ports, and detecting services are essential skills for both security professionals and penetration testers when assessing network security.
+
+Tools & Skills Used  
+Nmap – Network scanning and reconnaissance  
+Host discovery  
+Port scanning  
+Service enumeration  
+Network reconnaissance fundamentals
