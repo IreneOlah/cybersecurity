@@ -1,0 +1,51 @@
+RangeForce: Uncovering Open Permissions
+Platform: RangeForce
+Room: Uncovering Open Permissions
+Difficulty: Advanced
+Date: 2026
+Objective
+The objective of this lab was to identify and exploit misconfigured services and overly permissive access controls across a target environment. The focus was on discovering publicly accessible resources, weak configurations, and improperly secured services that could lead to unauthorized access and data exposure.
+Step 1: Service Enumeration with Nmap
+I began by performing network reconnaissance using Nmap to identify exposed services and potential entry points.
+During the scan, I discovered:
+Anonymous FTP login enabled
+SMB service with guest access allowed
+This highlighted common misconfigurations where services are exposed without proper authentication controls, significantly increasing the attack surface.
+Step 2: Directory and Resource Discovery with Gobuster
+Next, I used Gobuster to enumerate hidden directories and files on the target system.
+Through this process, I discovered sensitive information, including:
+MySQL credentials (root password) exposed in accessible directories
+This demonstrated how improperly secured web directories can leak critical credentials, allowing attackers to escalate access within the system.
+Step 3: Exploiting SMB Guest Access
+With SMB guest access enabled, I was able to connect to shared resources without authentication.
+This allowed:
+Browsing of shared directories
+Access to potentially sensitive internal files
+This misconfiguration illustrates the risks of allowing unauthenticated access to network shares, which can lead to data leakage and further compromise.
+Step 4: Public Cloud Storage Exposure
+During the assessment, I identified publicly accessible cloud storage buckets.
+Key findings included:
+Read access to all stored data
+Ability to enumerate bucket contents
+This demonstrated a critical security issue where cloud resources were exposed without proper access restrictions, leading to full data disclosure.
+Step 5: Impact Analysis
+Combining all findings, the environment was highly vulnerable due to multiple layers of misconfiguration:
+Weak service authentication (FTP, SMB)
+Exposed credentials (MySQL root password)
+Publicly accessible storage (cloud buckets)
+An attacker could leverage these issues to:
+Gain initial access via anonymous services
+Escalate privileges using discovered credentials
+Exfiltrate sensitive data from internal shares and cloud storage
+Conclusion & Outcome
+Through this lab, I gained hands-on experience identifying and exploiting open permissions across multiple services. This exercise reinforced how critical proper access control and secure configuration are in preventing unauthorized access.
+It also highlighted how attackers chain multiple low-severity misconfigurations into a full compromise of an environment.
+Tools & Skills Used
+Nmap – Network scanning and service enumeration
+Gobuster – Directory and file brute-forcing
+FTP Enumeration – Identifying anonymous access
+SMB Enumeration – Exploiting guest access
+Cloud Storage Analysis – Identifying publicly exposed buckets
+Misconfiguration discovery and exploitation
+Access control and permission analysis
+Data exposure and risk assessment
