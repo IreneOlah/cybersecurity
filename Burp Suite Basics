@@ -1,0 +1,79 @@
+RangeForce: Burp Suite Basics
+Platform: RangeForce
+Room: Burp Suite Basics & Advanced
+Difficulty: Advanced
+Date: 2026
+
+Objective
+
+The objective of this lab was to intercept, analyze, and manipulate web application traffic using Burp Suite. The focus was on understanding how requests can be captured, modified, and replayed to identify potential security weaknesses in web applications.
+
+Step 1: Setting Up Web Proxy
+
+I began by configuring Burp Suite as a web proxy and routing browser traffic through it.
+
+This allowed:
+Interception of HTTP/HTTPS requests
+Visibility into client-server communication
+
+This demonstrated how a proxy can be used to observe and control web traffic between the client and the server.
+
+Step 2: Intercepting Requests
+
+Next, I enabled interception to capture requests before they reached the server.
+
+Through this process, I was able to:
+View request methods and parameters
+Analyze headers and cookies
+
+This showed how user input is transmitted and where potential attack points exist within requests.
+
+Step 3: Modifying Requests
+
+While intercepting traffic, I modified request data before forwarding it.
+
+This included:
+Changing parameter values
+Altering headers and cookies
+
+This demonstrated how client-side controls can be bypassed by directly modifying requests sent to the server.
+
+Step 4: Replaying Requests with Repeater
+
+I then used Repeater to resend captured requests multiple times with modifications.
+
+This allowed:
+Testing different inputs
+Observing server responses to changes
+
+This highlighted how repeated testing can be used to identify inconsistencies or weaknesses in application behavior.
+
+Step 5: Impact Analysis
+
+Combining these techniques, the application was susceptible to multiple risks:
+
+Lack of input validation
+Exposure of request structure
+Potential session manipulation
+
+An attacker could leverage these issues to:
+
+Manipulate application behavior
+Bypass intended functionality
+Access or modify sensitive data
+
+Conclusion & Outcome
+
+Through this lab, I gained hands-on experience intercepting and manipulating web traffic using Burp Suite. This exercise reinforced the importance of proper server-side validation and secure handling of user input.
+
+It also highlighted how attackers can use simple request manipulation techniques to uncover and exploit web application vulnerabilities.
+
+Tools & Skills Used
+
+Burp Suite – Proxy setup, interception, and request replay
+HTTP/HTTPS Analysis – Understanding request and response structure
+Request Interception – Capturing and analyzing traffic
+Request Manipulation – Modifying parameters and headers
+Web application security testing
+Input validation analysis
+Session handling analysis
