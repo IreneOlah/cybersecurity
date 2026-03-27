@@ -1,0 +1,51 @@
+RangeForce: NTLM
+Platform: RangeForce
+Room: NTLM
+Difficulty: Intermediate
+Date: 2026
+Objective
+The objective of this lab was to understand and exploit NTLM authentication mechanisms within a Windows environment. The focus was on analyzing authentication flows, capturing and accessing password hashes, and leveraging tools to extract credentials from memory.
+Step 1: Understanding NTLM Authentication
+I began by reviewing how NTLM authentication works within a Windows environment, focusing on the challenge-response mechanism used for verifying user credentials.
+During this process, I observed:
+NTLM authentication relies on hashed credentials instead of plaintext passwords
+Authentication exchanges can be intercepted or analyzed
+This highlighted how NTLM can be targeted for credential access and exploitation.
+Step 2: Accessing Authentication Hashes
+Next, I worked on accessing NTLM hashes generated during authentication.
+Through this process, I was able to:
+Identify where hashes are stored or processed
+Capture or access authentication-related data
+This demonstrated how attackers can obtain hashed credentials without directly knowing the plaintext password.
+Step 3: Credential Extraction with Mimikatz
+With access to the system, I utilized Mimikatz to extract credentials from memory.
+This allowed:
+Retrieval of NTLM password hashes
+Access to credential material stored in memory
+This step showed how powerful post-exploitation tools can be used to extract sensitive authentication data from compromised systems.
+Step 4: Analyzing Retrieved Hashes
+After extracting the hashes, I analyzed them for potential use in further attacks.
+This included:
+Identifying valid user accounts
+Preparing hashes for potential reuse or cracking
+This demonstrated how attackers can leverage harvested hashes for lateral movement or privilege escalation.
+Step 5: Impact Analysis
+Combining all findings, the environment was vulnerable due to weaknesses in credential handling and exposure:
+NTLM authentication susceptible to hash access
+Credentials stored in memory
+Lack of protections against credential dumping
+An attacker could leverage these issues to:
+Extract and reuse authentication hashes
+Perform pass-the-hash attacks
+Escalate privileges within the environment
+Conclusion & Outcome
+Through this lab, I gained hands-on experience working with NTLM authentication and credential extraction techniques. This exercise reinforced the importance of securing authentication mechanisms and protecting credentials in memory.
+It also highlighted how attackers can leverage hashed credentials to move laterally and compromise additional systems without needing plaintext passwords.
+Tools & Skills Used
+Windows Authentication Analysis – Understanding NTLM
+Credential Access – Extracting authentication data
+Mimikatz – Credential dumping from memory
+Hash Analysis – Working with NTLM hashes
+Post-Exploitation Techniques
+Credential security and risk assessment
+Lateral movement concepts
