@@ -1,0 +1,52 @@
+RangeForce: Stealing NTLM Hashes With Responder
+Platform: RangeForce
+Room: Stealing NTLM Hashes With Responder
+Difficulty: Expert
+Date: 2026
+Objective
+The objective of this lab was to capture and exploit NTLM authentication hashes using network-based attacks. The focus was on leveraging Responder to intercept authentication attempts, understanding differences between NTLM and NTLMv2, and cracking captured hashes to gain unauthorized access.
+Step 1: Capturing NTLM Hashes with Responder
+I began by using Responder to listen for and intercept authentication requests on the network.
+During this process, I was able to:
+Capture NTLM/NTLMv2 authentication hashes
+Observe authentication attempts from target systems
+This demonstrated how attackers can exploit network protocols to capture credential material without directly interacting with the victim.
+Step 2: Understanding NTLM vs NTLMv2
+Next, I analyzed the differences between NTLM and NTLMv2 authentication mechanisms.
+Key observations included:
+NTLMv2 provides improved security over NTLM
+Both mechanisms still rely on hashed credentials that can be intercepted
+This highlighted that even improved authentication protocols can still be targeted if not properly secured.
+Step 3: Cracking the Captured Hashes
+With the hashes captured, I used John the Ripper to attempt password cracking.
+This allowed:
+Conversion of captured hashes into crackable format
+Successful recovery of plaintext credentials
+This step showed how weak passwords can be quickly compromised once hashes are obtained.
+Step 4: Gaining Access Using Cracked Credentials
+After recovering the plaintext password, I used the credentials to authenticate to the target system.
+This resulted in:
+Successful login to the system
+Validation of the compromised credentials
+This confirmed that captured and cracked hashes can directly lead to unauthorized access.
+Step 5: Impact Analysis
+Combining all findings, the environment was vulnerable due to multiple weaknesses:
+Susceptibility to LLMNR/NBT-NS poisoning attacks
+Exposure of NTLM/NTLMv2 hashes over the network
+Weak password policies allowing successful cracking
+An attacker could leverage these issues to:
+Capture authentication hashes passively
+Crack passwords offline
+Gain unauthorized access to systems
+Move laterally within the network
+Conclusion & Outcome
+Through this lab, I gained hands-on experience capturing and exploiting NTLM authentication using Responder. This exercise reinforced the importance of disabling insecure network protocols, enforcing strong password policies, and protecting authentication mechanisms.
+It also highlighted how network-based attacks combined with weak credentials can lead to full system compromise.
+Tools & Skills Used
+Responder – Capturing NTLM/NTLMv2 hashes
+Network Analysis – Intercepting authentication traffic
+John the Ripper – Password cracking
+Authentication Analysis – NTLM vs NTLMv2
+Credential exploitation techniques
+Post-exploitation access
+Network security and attack surface analysis
