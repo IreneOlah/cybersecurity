@@ -1,0 +1,51 @@
+RangeForce: Privilege Escalation: SUID Bit 1
+Platform: RangeForce
+Room: Privilege Escalation: SUID Bit 1
+Difficulty: Advanced
+Date: 2026
+Objective
+The objective of this lab was to identify and exploit misconfigured SUID binaries to achieve privilege escalation. The focus was on discovering vulnerable executables with the SUID bit set, leveraging them to gain elevated privileges, and applying remediation by removing insecure permissions.
+Step 1: Enumerating SUID Binaries
+I began by enumerating the system to identify executables with the SUID bit set.
+During this process, I discovered:
+Multiple binaries running with elevated privileges
+A potentially vulnerable executable with improper configuration
+This highlighted how SUID binaries can introduce security risks when not properly controlled.
+Step 2: Identifying a Vulnerable Executable
+Next, I analyzed the identified executable to determine if it could be exploited.
+Through this process, I was able to:
+Understand how the binary functioned
+Identify insecure behavior that could be abused
+This demonstrated how attackers can evaluate SUID binaries for privilege escalation opportunities.
+Step 3: Exploiting the SUID Binary
+Using the vulnerable executable, I successfully exploited it to gain elevated privileges.
+This allowed:
+Execution of commands with higher privileges
+Bypassing normal user restrictions
+This step showed how misconfigured SUID binaries can be leveraged for privilege escalation.
+Step 4: Remediation – Removing the SUID Bit
+After exploitation, I applied remediation by removing the SUID bit from the vulnerable executable.
+This involved:
+Modifying file permissions to remove elevated execution rights
+Preventing further abuse of the binary
+This demonstrated how proper permission management can mitigate privilege escalation risks.
+Step 5: Impact Analysis
+Combining all findings, the system was vulnerable due to insecure SUID configurations:
+Misconfigured SUID binary
+Elevated execution privileges without proper restrictions
+Lack of monitoring or control over privileged executables
+An attacker could leverage these issues to:
+Escalate privileges to root
+Execute unauthorized commands
+Gain full control over the system
+Conclusion & Outcome
+Through this lab, I gained hands-on experience identifying and exploiting SUID-based privilege escalation vulnerabilities. This exercise reinforced the importance of auditing SUID binaries and restricting unnecessary elevated permissions.
+It also highlighted how improper file permission settings can lead to critical system compromise.
+Tools & Skills Used
+Linux Enumeration – Identifying SUID binaries
+Privilege Escalation Techniques
+File Permission Analysis
+Exploitation of misconfigured binaries
+Remediation – Permission hardening
+Linux security best practices
+Post-exploitation techniques
