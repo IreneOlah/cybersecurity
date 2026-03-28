@@ -1,0 +1,51 @@
+RangeForce: Privilege Escalation: Linux Capabilities
+Platform: RangeForce
+Room: Privilege Escalation: Linux Capabilities
+Difficulty: Advanced
+Date: 2026
+Objective
+The objective of this lab was to identify and exploit misconfigured Linux capabilities to achieve privilege escalation. The focus was on discovering executables with elevated capabilities, leveraging them to access restricted files, and restoring user access by manipulating credentials.
+Step 1: Enumerating Linux Capabilities
+I began by enumerating the system to identify binaries with special Linux capabilities assigned.
+During this process, I discovered:
+Executables with elevated capabilities that allowed privileged actions
+Misconfigured permissions enabling unintended access
+This highlighted how improperly assigned capabilities can introduce privilege escalation vectors.
+Step 2: Identifying a Vulnerable Executable
+Next, I focused on a specific executable that had elevated privileges.
+Through analysis, I was able to:
+Identify how the binary could be abused
+Leverage its capabilities to perform unauthorized actions
+This demonstrated how attackers can exploit trusted binaries to bypass normal permission restrictions.
+Step 3: Accessing Restricted User Files
+Using the vulnerable executable, I was able to read sensitive files belonging to another user.
+This allowed:
+Access to protected user data
+Extraction of information needed for further exploitation
+This step showed how privilege escalation can lead to exposure of sensitive information.
+Step 4: Restoring User Access
+After gaining access to sensitive information, I used it to restore access to the user account.
+This involved:
+Resetting the user’s password
+Regaining access to the system as that user
+This demonstrated how attackers can manipulate credentials once sufficient privileges are obtained.
+Step 5: Impact Analysis
+Combining all findings, the system was vulnerable due to misconfigured Linux capabilities:
+Improperly assigned capabilities to executables
+Ability to access restricted files
+Weak control over privileged operations
+An attacker could leverage these issues to:
+Escalate privileges beyond intended access
+Read sensitive system and user data
+Modify credentials and gain persistent access
+Conclusion & Outcome
+Through this lab, I gained hands-on experience exploiting Linux capabilities for privilege escalation. This exercise reinforced the importance of properly configuring capabilities and restricting access to sensitive binaries.
+It also highlighted how small misconfigurations in privilege management can lead to full system compromise.
+Tools & Skills Used
+Linux Enumeration – Identifying capabilities
+Privilege Escalation Techniques
+File Access Exploitation – Reading restricted files
+Credential Manipulation – Password resetting
+Linux security configuration analysis
+Misconfiguration exploitation
+Post-exploitation techniques
