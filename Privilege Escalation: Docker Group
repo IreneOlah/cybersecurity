@@ -1,0 +1,51 @@
+RangeForce: Privilege Escalation: Docker Group
+Platform: RangeForce
+Room: Privilege Escalation: Docker Group
+Difficulty: Advanced
+Date: 2026
+Objective
+The objective of this lab was to identify and exploit improper group permissions within a Linux environment, specifically focusing on the Docker group. The goal was to understand how membership in privileged groups can lead to privilege escalation and full system compromise.
+Step 1: Enumerating User Groups
+I began by identifying the groups assigned to the current user.
+During this process, I discovered:
+The user was a member of the Docker group
+Elevated privileges associated with Docker group membership
+This highlighted a common misconfiguration where users are granted excessive permissions through group assignments.
+Step 2: Understanding Docker Group Privileges
+Next, I analyzed the implications of being part of the Docker group.
+Through this, I observed:
+Docker allows interaction with containers as root
+Users in the Docker group can effectively gain root-level access
+This demonstrated how Docker group membership can be abused to bypass normal privilege restrictions.
+Step 3: Exploiting Docker for Privilege Escalation
+Using Docker, I leveraged my group membership to escalate privileges.
+This allowed:
+Running a container with elevated permissions
+Accessing the host system with root privileges
+This step showed how attackers can use Docker to break out of restricted environments and gain full control of the system.
+Step 4: Gaining Elevated Access
+After exploiting Docker, I successfully escalated privileges.
+This resulted in:
+Root-level access on the system
+Full control over system resources
+This confirmed that Docker group misconfiguration can directly lead to complete system compromise.
+Step 5: Impact Analysis
+Combining all findings, the system was vulnerable due to improper group permissions:
+User membership in the Docker group
+Lack of restrictions on Docker usage
+Ability to execute privileged containers
+An attacker could leverage these issues to:
+Escalate privileges to root
+Access and modify system files
+Maintain persistent access
+Conclusion & Outcome
+Through this lab, I gained hands-on experience exploiting Docker group permissions for privilege escalation. This exercise reinforced the importance of restricting access to privileged groups and properly securing container environments.
+It also highlighted how seemingly minor permission issues can lead to full system compromise.
+Tools & Skills Used
+Linux Enumeration – Identifying user groups
+Privilege Escalation Techniques
+Docker – Exploiting group permissions
+Container security analysis
+Misconfiguration discovery and exploitation
+Post-exploitation techniques
+Access control and privilege management
