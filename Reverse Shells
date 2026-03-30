@@ -1,0 +1,63 @@
+RangeForce: Reverse Shells
+Platform: RangeForce
+Room: Reverse Shells
+Difficulty: Advanced
+Date: 2026
+Objective
+The objective of this lab was to understand and implement reverse shell techniques to gain remote command execution on a target system. The focus was on establishing connections using various methods, handling listeners, and improving shell stability.
+Step 1: Establishing a Listener
+I began by setting up a listener to receive incoming connections from the target system.
+During this process, I:
+Configured a Netcat listener on a specified port
+Prepared the environment to accept reverse connections
+This highlighted the importance of properly configuring listeners to successfully receive reverse shells.
+Step 2: Creating a Bash Reverse Shell
+Next, I generated a reverse shell using Bash.
+This allowed:
+The target system to initiate a connection back to my listener
+Execution of commands remotely through the established shell
+This demonstrated how simple scripting can be used to gain remote access.
+Step 3: Using Netcat for Reverse Shells
+I then utilized Netcat to establish and manage reverse shell connections.
+This involved:
+Sending payloads from the target to the listener
+Maintaining an interactive session
+This step showed how Netcat is a versatile tool for both listening and establishing connections.
+Step 4: Exploring Python Reverse Shells and Sockets
+I explored alternative methods using Python to create reverse shells.
+This allowed:
+Use of sockets for more flexible communication
+Creation of more stable and customizable reverse shell connections
+This demonstrated how scripting languages can enhance exploitation techniques.
+Step 5: Encoding and Advanced Techniques
+I applied additional techniques to improve reliability and bypass restrictions.
+This included:
+Using Base64 encoding to obfuscate payloads
+Leveraging mkfifo for alternative shell execution methods
+This step showed how attackers can adapt payloads to different environments and restrictions.
+Step 6: Upgrading the Shell
+After gaining initial access, I upgraded the shell to improve usability.
+This resulted in:
+A more stable and interactive shell session
+Enhanced control over the target system
+This confirmed the importance of post-exploitation steps to maintain effective access.
+Step 7: Impact Analysis
+Combining all findings, reverse shell techniques provide powerful access mechanisms:
+Ability to gain remote command execution
+Multiple methods for establishing connections
+Techniques to evade detection and improve stability
+An attacker could leverage these capabilities to:
+Maintain persistent access
+Execute commands remotely
+Move laterally within a network
+Conclusion & Outcome
+Through this lab, I gained hands-on experience creating and managing reverse shells using multiple techniques. This exercise reinforced the importance of securing systems against unauthorized outbound connections and monitoring network activity.
+It also highlighted how attackers can use simple tools and scripting techniques to gain and maintain control over compromised systems.
+Tools & Skills Used
+Netcat – Listener setup and reverse shell handling
+Bash Scripting – Reverse shell creation
+Python – Socket-based reverse shells
+Base64 Encoding – Payload obfuscation
+mkfifo – Alternative shell techniques
+Post-exploitation – Shell upgrading
+Network communication and exploitation techniques
