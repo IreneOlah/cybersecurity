@@ -1,0 +1,58 @@
+RangeForce: Lateral Movement with Metasploit
+Platform: RangeForce
+Room: Lateral Movement with Metasploit
+Difficulty: Advanced
+Date: 2026
+Objective
+The objective of this lab was to perform lateral movement within a compromised network using Metasploit. The focus was on gaining initial access via reverse shells, conducting enumeration, extracting credential data, and pivoting to additional systems.
+Step 1: Establishing Initial Access
+I began by gaining initial access to the target system using a reverse shell.
+During this process, I:
+Established a connection to the compromised host
+Confirmed remote command execution capabilities
+This highlighted how initial access serves as the foundation for further exploitation.
+Step 2: System Enumeration
+Next, I performed enumeration on the compromised system to gather information about the environment.
+This allowed:
+Identification of system details and network configuration
+Discovery of additional targets within the network
+This demonstrated the importance of enumeration in identifying opportunities for lateral movement.
+Step 3: Dumping Credential Hashes
+I then extracted credential data from the compromised system.
+This involved:
+Dumping password hashes from the system
+Identifying valid user accounts
+This step showed how credential access can enable further compromise across the network.
+Step 4: Pivoting to Other Systems
+Using the gathered information and credentials, I performed pivoting to access additional machines.
+This allowed:
+Routing traffic through the compromised host
+Expanding access to other systems within the network
+This demonstrated how attackers can move laterally after gaining an initial foothold.
+Step 5: Lateral Movement with Metasploit
+I utilized Metasploit modules to facilitate lateral movement across the network.
+This resulted in:
+Successful access to additional systems
+Expansion of control within the environment
+This confirmed how frameworks like Metasploit can streamline multi-stage attacks.
+Step 6: Impact Analysis
+Combining all findings, the environment was vulnerable due to several factors:
+Initial system compromise via reverse shell
+Insufficient monitoring of internal activity
+Exposure of credential hashes
+Lack of network segmentation
+An attacker could leverage these issues to:
+Move laterally across multiple systems
+Compromise additional hosts
+Escalate access within the network
+Conclusion & Outcome
+Through this lab, I gained hands-on experience performing lateral movement using Metasploit. This exercise reinforced the importance of strong credential protection, network segmentation, and monitoring of internal traffic.
+It also highlighted how attackers can chain multiple techniques—initial access, enumeration, credential dumping, and pivoting—to fully compromise a network.
+Tools & Skills Used
+Metasploit – Lateral movement and exploitation
+Reverse Shells – Initial access
+System Enumeration – Information gathering
+Credential Dumping – Extracting password hashes
+Pivoting Techniques – Expanding network access
+Post-exploitation strategies
+Network security analysis
