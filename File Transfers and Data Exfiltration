@@ -1,0 +1,38 @@
+RangeForce: File Transfers and Data Exfiltration
+
+Platform: RangeForce  
+Room: File Transfers and Data Exfiltration  
+Difficulty: Advanced  
+Date: 2026  
+
+Objective  
+The objective of this lab was to practice techniques for transferring files and exfiltrating data using multiple protocols while understanding their security implications. Methods included SSH, FTP, HTTP, and DNS exfiltration.
+
+Tools & Techniques Used  
+- SSH  
+- FTP  
+- HTTP  
+- DNS  
+
+Methodology  
+
+1. SSH  
+Used SSH (SCP) to securely transfer files between hosts. This demonstrated how encrypted channels can be abused for stealthy data movement.
+
+2. FTP  
+Used FTP to transfer files. Since FTP is unencrypted, this highlighted the risk of interception and exposure of sensitive information.
+
+3. HTTP  
+Transferred files over HTTP to simulate blending exfiltration with normal web traffic, showing how attackers can hide activity in standard protocols.
+
+4. DNS  
+Used DNS queries to covertly exfiltrate data by encoding information into requests. This demonstrated a method often used to bypass traditional security controls.
+
+Key Findings  
+- Encrypted protocols can be misused for stealthy exfiltration.  
+- Unencrypted protocols like FTP expose data to interception.  
+- HTTP exfiltration can blend with normal traffic and evade detection.  
+- DNS exfiltration is covert and requires advanced monitoring to detect.
+
+Conclusion  
+This lab reinforced the importance of monitoring outbound traffic, restricting unnecessary protocols, and deploying detection mechanisms to prevent data exfiltration.
