@@ -1,0 +1,36 @@
+RangeForce: Nikto
+
+Platform: RangeForce  
+Room: Nikto  
+Difficulty: Intermediate  
+Date: 2026  
+
+Objective  
+The objective of this lab was to use Nikto to scan a web server for vulnerabilities, identify misconfigurations, and understand how such scans can be detected using monitoring tools like Splunk.
+
+Tools & Techniques Used  
+- Nikto  
+- Splunk  
+
+Methodology  
+
+1. Installing Nikto  
+Installed and configured Nikto to prepare for web server vulnerability scanning.
+
+2. Scanning the Server  
+Used Nikto to scan the target web server, identifying potential vulnerabilities, outdated software, and misconfigurations.
+
+3. Exploiting the Application  
+Leveraged the discovered vulnerabilities to exploit the web application, demonstrating how misconfigurations can lead to compromise.
+
+4. Detecting Nikto in Splunk  
+Analyzed logs in Splunk to detect indicators of a Nikto scan, identifying patterns and signatures associated with automated scanning activity.
+
+Key Findings  
+- Nikto is effective at identifying common web server vulnerabilities and misconfigurations.  
+- Unpatched or misconfigured applications can be exploited after enumeration.  
+- Nikto scans leave identifiable patterns in logs.  
+- Splunk can be used to detect and investigate scanning activity.
+
+Conclusion  
+This lab demonstrated both offensive and defensive aspects of web application security by using Nikto to identify and exploit vulnerabilities while also detecting scanning activity through log analysis in Splunk.
