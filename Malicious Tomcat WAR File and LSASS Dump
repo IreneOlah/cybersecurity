@@ -1,0 +1,42 @@
+RangeForce: Malicious Tomcat WAR File and LSASS Dump
+
+Platform: RangeForce  
+Room: Malicious Tomcat WAR File and LSASS Dump  
+Difficulty: Advanced  
+Date: 2026  
+
+Objective  
+The objective of this lab was to exploit a vulnerable Tomcat server by deploying a malicious WAR file, gain remote access through a webshell, extract credential data from memory, and use the recovered credentials to access the system.
+
+Tools & Techniques Used  
+- Malicious WAR file deployment  
+- Webshells  
+- LSASS dumping  
+- John the Ripper  
+- xfreerdp  
+
+Methodology  
+
+1. Deploying Malicious WAR File  
+Uploaded and deployed a malicious WAR file to the Tomcat server to gain initial access to the target environment.
+
+2. Webshell Access  
+Used the deployed WAR file to establish a webshell, allowing remote command execution on the compromised system.
+
+3. Extracting Hashes (LSASS Dump)  
+Dumped LSASS memory to extract credential hashes from the system, enabling further credential-based attacks.
+
+4. Cracking Credentials  
+Used John the Ripper to crack the extracted hashes and recover plaintext credentials.
+
+5. Remote Access  
+Logged into the system using the recovered credentials via xfreerdp, achieving full remote desktop access.
+
+Key Findings  
+- Misconfigured or exposed Tomcat servers can allow malicious WAR file deployment.  
+- Webshells provide persistent remote access and command execution.  
+- LSASS dumps expose sensitive credential material from memory.  
+- Weak passwords can be cracked and reused for lateral movement.  
+
+Conclusion  
+This lab demonstrated a full attack chain from initial access through Tomcat exploitation to credential dumping and privilege escalation, highlighting the importance of securing application servers and protecting credential storage in memory.
