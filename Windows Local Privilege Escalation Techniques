@@ -1,0 +1,33 @@
+RangeForce: Windows Local Privilege Escalation Techniques
+
+Platform: RangeForce  
+Room: Windows Local Privilege Escalation Techniques  
+Difficulty: Advanced  
+Date: 2026  
+
+Objective  
+The objective of this lab was to identify and exploit common Windows local privilege escalation techniques to gain elevated access on a compromised system.
+
+Tools & Techniques Used  
+- Plaintext credential discovery  
+- AlwaysInstallElevated misconfiguration  
+- Unquoted service path exploitation  
+
+Methodology  
+
+1. Plaintext Credentials  
+Identified plaintext credentials stored on the system and used them to escalate privileges.
+
+2. AlwaysInstallElevated  
+Exploited the AlwaysInstallElevated policy misconfiguration to execute a malicious MSI file with elevated privileges.
+
+3. Unquoted Service Path  
+Identified a vulnerable unquoted service path and placed a malicious executable in the path to achieve privilege escalation when the service was executed.
+
+Key Findings  
+- Storing credentials in plaintext introduces significant security risk.  
+- Misconfigured policies like AlwaysInstallElevated can be easily abused for privilege escalation.  
+- Unquoted service paths provide a reliable method for escalating privileges.  
+
+Conclusion  
+This lab demonstrated multiple Windows privilege escalation techniques, highlighting the importance of secure configurations, proper credential management, and system hardening to prevent unauthorized elevation of privileges.
