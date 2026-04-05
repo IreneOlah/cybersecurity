@@ -1,0 +1,33 @@
+RangeForce: Windows Active Directory Escalation: Kerberoasting
+
+Platform: RangeForce  
+Room: Windows Active Directory Escalation: Kerberoasting  
+Difficulty: Advanced  
+Date: 2026  
+
+Objective  
+The objective of this lab was to perform Kerberoasting in an Active Directory environment by identifying service accounts, requesting service tickets, and cracking them to obtain credentials for privilege escalation.
+
+Tools & Techniques Used  
+- SPN enumeration  
+- Kerberoasting (TGS ticket requests)  
+- Password cracking  
+
+Methodology  
+
+1. SPN Enumeration  
+Enumerated Service Principal Names (SPNs) within the domain to identify accounts associated with services that could be targeted.
+
+2. Requesting Service Tickets  
+Requested Kerberos service tickets (TGS) for the identified SPNs, capturing encrypted ticket data for offline analysis.
+
+3. Cracking Tickets  
+Used password cracking techniques to crack the extracted ticket hashes and recover plaintext credentials for the service accounts.
+
+Key Findings  
+- Service accounts with weak passwords are vulnerable to Kerberoasting attacks.  
+- Kerberos tickets can be requested by authenticated users and cracked offline.  
+- SPN enumeration is a critical step in identifying viable targets for escalation.  
+
+Conclusion  
+This lab demonstrated how Kerberoasting can be used to escalate privileges in an Active Directory environment, emphasizing the importance of strong service account passwords and proper domain security configurations.
