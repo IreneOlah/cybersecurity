@@ -1,0 +1,56 @@
+TryHackMe: AI/ML Security Threats
+Platform: TryHackMe
+Room: AI/ML Security Threats
+Difficulty: Easy
+Date: 2026
+Objective
+Understand the security risks associated with Artificial Intelligence and Machine Learning systems, including how attackers can manipulate models, data, and outputs to compromise integrity and reliability.
+Step 1: Introduction to AI/ML in Security
+The room introduced how AI and ML are increasingly used in cybersecurity for tasks such as threat detection, anomaly detection, and automation. However, these systems also introduce new attack surfaces that adversaries can exploit.
+Key concepts covered:
+Machine Learning models rely heavily on training data
+Model decisions can be influenced or manipulated
+AI systems can become targets of adversarial attacks
+Step 2: Data Poisoning Attacks
+One of the primary threats discussed was data poisoning, where attackers manipulate the training dataset to influence the model’s behavior.
+Examples:
+Injecting malicious or misleading data into training sets
+Causing the model to misclassify inputs
+Reducing overall model accuracy
+This can lead to security tools failing to detect real threats.
+Step 3: Adversarial Attacks
+The room explored adversarial examples, where inputs are intentionally modified in subtle ways to deceive ML models.
+Key points:
+Small, often invisible changes can alter model predictions
+Common in image recognition and detection systems
+Can be used to bypass AI-based security controls
+Step 4: Model Evasion & Abuse
+Attackers may exploit deployed models without altering them directly.
+Techniques include:
+Crafting inputs to evade detection systems
+Reverse engineering model behavior through repeated queries
+Exploiting prediction patterns to bypass defenses
+This is particularly relevant in AI-powered security tools.
+Step 5: Model Theft & Information Leakage
+The room also covered risks related to model confidentiality:
+Model theft: Attackers replicate a model by querying it repeatedly
+Information leakage: Sensitive training data may be inferred from model outputs
+Membership inference attacks: Determining whether specific data was used in training
+These threats impact both privacy and intellectual property.
+Step 6: Mitigation Strategies
+Basic defenses against AI/ML threats include:
+Validating and sanitizing training data
+Using robust training techniques
+Limiting model exposure (rate limiting, access control)
+Monitoring model behavior for anomalies
+Applying adversarial training to improve resilience
+Step 7: Outcome
+By completing this room, I gained a foundational understanding of how AI/ML systems can be targeted by attackers and the importance of securing data, models, and outputs against manipulation and abuse.
+Lessons Learned
+AI/ML systems introduce unique security risks beyond traditional systems.
+Data poisoning and adversarial attacks can significantly impact model reliability.
+Models themselves can be targeted for theft or information leakage.
+Proper validation, monitoring, and access control are essential for securing AI systems.
+Tools Used
+Conceptual ML models — for understanding how AI systems operate
+Security frameworks (conceptual) — for mitigating AI/ML-related threats
