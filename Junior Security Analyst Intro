@@ -1,0 +1,49 @@
+TryHackMe: Junior Security Analyst Intro
+Platform: TryHackMe
+Room: Junior Security Analyst Intro
+Difficulty: Easy
+Date: 2026
+Objective
+Understand the role of a Junior Security Analyst by exploring core blue team responsibilities, including monitoring alerts, analyzing suspicious activity, and responding to potential security incidents.
+Step 1: Understanding the Role
+The room introduced the responsibilities of a Junior Security Analyst, which primarily focus on defensive security operations. This includes monitoring systems, reviewing alerts, and identifying potential threats within an organization’s network.
+Key responsibilities covered:
+Monitoring security alerts from tools like SIEM systems
+Investigating suspicious activity
+Identifying indicators of compromise (IOCs)
+Escalating incidents when necessary
+Step 2: Security Operations Center (SOC)
+The lab explained how a Security Operations Center (SOC) functions as the central hub for monitoring and responding to security events.
+Analysts in a SOC environment:
+Continuously monitor network traffic and logs
+Triage alerts based on severity
+Investigate anomalies and potential threats
+Coordinate responses to incidents
+Step 3: Log Analysis & Threat Detection
+A major focus of the room was understanding how logs are used to detect malicious behavior.
+Types of logs analyzed:
+Authentication logs (login attempts, failures)
+Network logs (traffic patterns, unusual connections)
+System logs (process execution, changes)
+By reviewing logs, analysts can identify:
+Brute-force attempts
+Unauthorized access
+Suspicious IP activity
+Step 4: Incident Response Basics
+The room introduced the basic workflow of incident response:
+Detection — Identifying a potential security event
+Analysis — Determining whether it is a real threat
+Containment — Limiting the impact
+Eradication — Removing the threat
+Recovery — Restoring systems to normal operation
+This process ensures structured and efficient handling of security incidents.
+Step 5: Outcome
+By completing the room, I gained a foundational understanding of the Junior Security Analyst role, including how to monitor systems, analyze alerts, and respond to potential threats within a SOC environment.
+Lessons Learned
+A Junior Security Analyst plays a critical role in defending systems through continuous monitoring and analysis.
+Log analysis is essential for detecting suspicious or malicious activity.
+Understanding the incident response lifecycle helps ensure effective handling of security events.
+SOC environments rely heavily on tools like SIEM to aggregate and analyze security data.
+Tools Used
+SIEM platforms (conceptual) — for monitoring, log aggregation, and alert analysis.
+Log analysis tools — for investigating system and network activity.
