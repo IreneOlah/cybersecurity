@@ -1,0 +1,48 @@
+TryHackMe: Humans as Attack Vectors
+Platform: TryHackMe
+Room: Humans as Attack Vectors
+Difficulty: Easy
+Date: 2026
+Objective
+Understand how humans can act as security vulnerabilities and how attackers exploit human behavior through social engineering techniques to gain unauthorized access to systems and sensitive information.
+Step 1: Understanding Human Vulnerabilities
+The room introduced the concept that humans are often the weakest link in cybersecurity. Unlike technical systems, people can be manipulated through trust, urgency, fear, or curiosity.
+Common factors exploited:
+Lack of security awareness
+Trust in authority or familiar entities
+Emotional triggers (fear, urgency, reward)
+Step 2: Social Engineering Techniques
+The lab covered several common social engineering attacks used by adversaries:
+Phishing: Fraudulent emails or messages designed to trick users into revealing sensitive information
+Spear Phishing: Targeted phishing attacks aimed at specific individuals or organizations
+Pretexting: Creating a fabricated scenario to obtain information
+Baiting: Luring victims with incentives (e.g., free downloads or USB devices)
+Tailgating: Gaining physical access by following authorized personnel
+These techniques rely on manipulating human behavior rather than exploiting technical vulnerabilities.
+Step 3: Real-World Impact
+The room emphasized how successful social engineering attacks can lead to:
+Credential theft
+Unauthorized system access
+Data breaches
+Financial loss
+Even highly secure systems can be compromised if attackers successfully deceive users.
+Step 4: Prevention & Mitigation
+To reduce risks associated with human attack vectors, organizations should implement:
+Security awareness training
+Phishing simulations
+Strong authentication (e.g., multi-factor authentication)
+Clear security policies and reporting procedures
+Users should be trained to:
+Verify suspicious requests
+Avoid clicking unknown links or attachments
+Report potential phishing attempts
+Step 5: Outcome
+By completing this room, I gained a clear understanding of how attackers exploit human behavior and the importance of user awareness in preventing security incidents.
+Lessons Learned
+Humans are a critical attack surface in cybersecurity.
+Social engineering attacks rely on psychological manipulation rather than technical exploits.
+Awareness and training are essential to reducing human-related risks.
+Preventative measures like MFA and user education significantly improve security posture.
+Tools Used
+Social engineering techniques (conceptual) — for understanding attack methods
+Security awareness practices — for mitigating human-based threats
