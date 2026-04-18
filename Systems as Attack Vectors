@@ -1,0 +1,54 @@
+TryHackMe: Systems as Attack Vectors
+Platform: TryHackMe
+Room: Systems as Attack Vectors
+Difficulty: Easy
+Date: 2026
+Objective
+Understand how systems can act as attack vectors by identifying vulnerabilities in software, networks, and configurations that attackers can exploit to gain unauthorized access or disrupt operations.
+Step 1: Understanding System Vulnerabilities
+The room introduced how technical systems—such as servers, applications, and networks—can contain weaknesses that attackers exploit.
+Common vulnerability sources:
+Outdated software and unpatched systems
+Misconfigurations (open ports, weak permissions)
+Insecure default settings
+Poor input validation in applications
+These weaknesses create entry points for attackers.
+Step 2: Common Attack Vectors
+Several system-based attack methods were covered:
+Unpatched vulnerabilities: Exploiting known CVEs in outdated software
+Misconfigured services: Exposed databases, open admin panels, or unnecessary services
+Weak authentication mechanisms: Default or weak passwords
+Injection attacks: Exploiting improper input handling (e.g., SQL injection)
+These attacks target technical flaws rather than human behavior.
+Step 3: Exploitation Process
+The room highlighted the typical attacker workflow:
+Reconnaissance — Identifying target systems and exposed services
+Scanning — Detecting vulnerabilities (e.g., open ports, outdated versions)
+Exploitation — Leveraging vulnerabilities to gain access
+Persistence — Maintaining access within the system
+This structured approach helps attackers systematically compromise systems.
+Step 4: Impact of System Exploitation
+If vulnerabilities are successfully exploited, attackers may achieve:
+Unauthorized access to systems
+Data exfiltration
+Service disruption (DoS)
+Privilege escalation
+The impact depends on the severity of the vulnerability and system importance.
+Step 5: Prevention & Mitigation
+To reduce system-based attack vectors, organizations should implement:
+Regular patching and updates
+Secure configuration management
+Network segmentation and access control
+Vulnerability scanning and penetration testing
+Input validation and secure coding practices
+Proactive security measures significantly reduce risk.
+Step 6: Outcome
+By completing this room, I gained a foundational understanding of how systems can be exploited as attack vectors and the importance of securing infrastructure against technical vulnerabilities.
+Lessons Learned
+Systems are a primary target for attackers due to exploitable technical weaknesses.
+Misconfigurations and outdated software are common entry points.
+A structured attack process is used to identify and exploit vulnerabilities.
+Regular maintenance and security best practices are critical for defense.
+Tools Used
+Vulnerability scanning tools (conceptual) — for identifying system weaknesses
+Security configurations (conceptual) — for hardening systems against attacks
