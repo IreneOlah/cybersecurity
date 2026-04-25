@@ -1,0 +1,63 @@
+TryHackMe: Walking an Application
+Platform: TryHackMe
+Room: Walking an Application
+Difficulty: Easy
+Date: 2026
+Objective
+Learn how to manually explore a web application to identify functionality, map attack surfaces, and discover potential security weaknesses without relying on automated tools.
+Step 1: Understanding Application Mapping
+The room introduces “walking an application” as the process of manually browsing a web app to understand how it works.
+Key goals:
+Identify pages, endpoints, and inputs
+Understand user roles and functionality
+Map navigation flow
+Discover hidden or less obvious features
+This helps build a full picture of the application before testing for vulnerabilities.
+Step 2: Identifying Entry Points
+While walking through the application, analysts look for input areas that could be abused.
+Common entry points include:
+Login forms
+Search bars
+URL parameters
+File upload fields
+Comment or feedback sections
+Each input is a potential attack surface for injection or manipulation.
+Step 3: Inspecting the Structure
+The room emphasizes examining how the application is built and how data flows.
+Things to observe:
+URL structure (e.g., /profile?id=1)
+Cookies and session handling
+Client-side vs server-side processing
+Hidden directories or pages
+Source code comments or exposed scripts
+This helps reveal weak points in the application design.
+Step 4: Discovering Hidden Content
+Applications often contain content not directly visible through navigation.
+Techniques used:
+Manually changing URL parameters
+Checking for hidden admin pages
+Reviewing robots.txt
+Inspecting page source code
+Testing directory paths
+These methods help uncover functionality that may not be properly secured.
+Step 5: Security Perspective
+Walking an application is a foundational skill in web security because it helps identify:
+Broken access control
+Information disclosure
+Weak authentication flows
+Unprotected endpoints
+Misconfigured services
+Understanding structure is essential before attempting exploitation.
+Step 6: Outcome
+By completing this room, I learned how to manually explore and map a web application to identify its structure, inputs, and potential attack surfaces.
+Lessons Learned
+Manual application exploration is critical before automated scanning
+Every input field can be a potential vulnerability
+Hidden content often reveals security flaws
+Understanding application flow improves vulnerability detection
+Attack surface mapping is the first step in web security testing
+Tools Used
+Browser inspection tools
+URL manipulation
+View source / developer tools
+Manual navigation techniques
