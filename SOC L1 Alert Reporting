@@ -1,0 +1,64 @@
+TryHackMe: SOC L1 Alert Reporting
+Platform: TryHackMe
+Room: SOC L1 Alert Reporting
+Difficulty: Medium
+Date: 2026
+Objective
+Understand how to analyze and triage SOC Level 1 security alerts, identify suspicious activity patterns, and determine whether behavior indicates a potential compromise or requires escalation.
+Step 1: Alert Context Understanding
+The alert indicated a spike in Active Directory reconnaissance commands executed on a Windows Server host. These commands are typically used by attackers after initial compromise to map the domain environment and identify privileged accounts.
+Key indicators included:
+Execution of AD enumeration commands (net group, nltest, whoami /priv)
+Suspicious process lineage involving IIS (w3wp.exe)
+Reverse shell execution from a public user directory
+SYSTEM-level execution context
+Step 2: Command Analysis
+Observed commands:
+dir
+hostname
+whoami /priv
+net group "Domain Admins" /domain
+nltest /dclist:tryhackme.thm
+These commands are commonly used for:
+Privilege enumeration
+Domain structure discovery
+Identifying domain controllers and admin groups
+This behavior strongly aligns with post-exploitation reconnaissance.
+Step 3: Process Tree Investigation
+The execution chain revealed a clear compromise pattern:
+Grandparent Process: C:\Windows\System32\inetsrv\w3wp.exe (IIS worker process)
+Parent Process: C:\Users\Public\revshell.exe (reverse shell)
+Source Process: C:\Windows\System32\cmd.exe
+This indicates likely web application exploitation leading to remote code execution and shell access.
+Step 4: Risk Evaluation
+This activity is highly suspicious due to:
+Unauthorized command execution under SYSTEM privileges
+Presence of reverse shell payload
+AD enumeration behavior typical of lateral movement preparation
+Execution originating from a web server process (common attack vector)
+Potential impact:
+Full domain compromise risk
+Credential harvesting
+Lateral movement across network
+Persistence establishment
+Step 5: Response & Mitigation
+Recommended SOC actions:
+Immediately isolate affected host (DMZ-MSEXCHANGE-2013)
+Investigate IIS logs for initial exploitation vector
+Analyze revshell.exe for C2 communication and persistence
+Perform credential resets for potentially exposed accounts
+Review domain controller logs for lateral movement activity
+Conduct full incident scope assessment
+Step 6: Outcome
+This alert demonstrates how attackers leverage web server vulnerabilities to gain initial access and then perform Active Directory reconnaissance to escalate and move laterally within a network.
+Lessons Learned
+Web-facing servers are common entry points for attackers
+AD enumeration commands are strong indicators of post-exploitation activity
+Process tree analysis is critical in identifying attack chains
+SYSTEM-level execution from unexpected sources is a major red flag
+Early detection of reconnaissance can prevent full domain compromise
+Tools & Techniques Used
+Windows command-line enumeration analysis
+Process tree investigation
+Active Directory reconnaissance detection patterns
+SOC alert triage methodology
