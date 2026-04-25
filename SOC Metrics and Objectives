@@ -1,0 +1,60 @@
+TryHackMe: SOC Metrics and Objectives
+Platform: TryHackMe
+Room: SOC Metrics and Objectives
+Difficulty: Easy
+Date: 2026
+Objective
+Understand the key metrics and objectives used in a Security Operations Center (SOC) to measure performance, improve incident response, and ensure effective security monitoring across an organization.
+Step 1: Understanding SOC Objectives
+The room introduced the main goals of a SOC, which focus on detecting, analyzing, and responding to security incidents as quickly and effectively as possible.
+Core SOC objectives:
+Continuous security monitoring
+Early threat detection
+Rapid incident response
+Risk reduction
+Protection of critical assets
+Compliance and reporting support
+These objectives help organizations maintain strong security posture and minimize business impact from attacks.
+Step 2: Key SOC Metrics
+SOC performance is measured using specific operational metrics that help track efficiency and effectiveness.
+Common SOC metrics include:
+MTTD (Mean Time to Detect)
+Measures how quickly analysts detect a security incident after it occurs.
+MTTR (Mean Time to Respond)
+Measures how quickly the SOC responds to and contains an incident after detection.
+False Positive Rate
+Tracks how many alerts are incorrectly flagged as malicious.
+Alert Volume
+Measures the total number of alerts generated within a period.
+Escalation Rate
+Tracks how often L1 analysts escalate alerts to higher-tier teams.
+These metrics help identify gaps and improve response workflows.
+Step 3: Why Metrics Matter
+The room emphasized that metrics allow SOC teams to:
+Measure analyst performance
+Identify bottlenecks in detection and response
+Improve automation opportunities
+Reduce alert fatigue
+Justify staffing and technology investments
+Support executive reporting
+Without metrics, SOC improvement becomes difficult to track.
+Step 4: Service Level Agreements (SLAs)
+SLAs define expected response times for different alert severities.
+Examples:
+Critical alerts → Immediate response
+High severity alerts → Within 1 hour
+Medium severity alerts → Within 4 hours
+Low severity alerts → Within 24 hours
+These help ensure consistent incident handling and prioritization.
+Step 5: Outcome
+By completing this room, I gained a clear understanding of how SOC teams use metrics and objectives to measure security performance and improve incident response operations.
+Lessons Learned
+SOC objectives focus on fast detection and response
+Metrics like MTTD and MTTR are critical performance indicators
+False positives and alert volume directly impact analyst efficiency
+SLAs help prioritize alerts based on severity
+Continuous measurement drives long-term SOC improvement
+Tools Used
+SOC performance metrics (conceptual) — for measuring efficiency
+Incident response workflows — for operational improvement
+SLA frameworks — for prioritization and accountability
