@@ -1,0 +1,68 @@
+TryHackMe: Red Team Engagements
+Platform: TryHackMe
+Room: Red Team Engagements
+Difficulty: Advanced
+Date: 2026
+Objective
+The objective of this room was to understand the structure, planning, and execution phases of Red Team engagements. The focus was on how organizations simulate real-world adversarial attacks to test security controls, improve detection capabilities, and evaluate incident response readiness.
+Step 1: Understanding Red Team Operations
+I began by studying the purpose of Red Teaming and how it differs from traditional penetration testing.
+This covered:
+Goal-based adversary simulation
+Long-term stealth operations
+Testing people, processes, and technology
+This demonstrated that Red Team engagements go beyond vulnerability discovery and focus on measuring an organization’s full defensive capability.
+Step 2: Rules of Engagement (ROE)
+Next, I reviewed the importance of defining Rules of Engagement before any operation begins.
+This included:
+Scope and target definition
+Authorized attack boundaries
+Communication procedures
+Emergency stop conditions
+Legal and compliance considerations
+This showed how clear ROE prevents unintended disruption and ensures safe, controlled testing.
+Step 3: Reconnaissance and Planning
+I then explored the reconnaissance phase used to gather intelligence on the target environment.
+This involved:
+Open Source Intelligence (OSINT) collection
+Identifying attack surfaces
+Mapping infrastructure and users
+Developing attack paths and objectives
+This highlighted how preparation and intelligence gathering are critical for realistic and effective operations.
+Step 4: Initial Access Techniques
+After planning, I reviewed common methods used to gain initial access.
+This included:
+Phishing campaigns
+Credential attacks
+Expliting exposed services
+Social engineering opportunities
+This demonstrated how attackers often rely on human behavior and misconfigurations rather than only technical exploits.
+Step 5: Post-Exploitation & Persistence
+Once access is achieved, the focus shifts to maintaining access and achieving objectives.
+This covered:
+Privilege escalation
+Lateral movement
+Persistence mechanisms
+Data access and exfiltration simulation
+Avoiding detection by security teams
+This showed how realistic adversary simulation tests blue team monitoring and response capabilities.
+Step 6: Reporting and Lessons Learned
+Finally, I reviewed how Red Team findings are documented and presented.
+This included:
+Attack path documentation
+Security control effectiveness analysis
+Detection and response gaps
+Recommendations for remediation and improvement
+This emphasized that the goal of Red Teaming is improvement, not simply exploitation.
+Conclusion & Outcome
+Through this room, I gained a stronger understanding of how Red Team engagements are structured from planning to reporting. This exercise reinforced the importance of controlled adversary simulation in evaluating organizational security maturity.
+It also highlighted how security testing must consider not only technical vulnerabilities, but also operational readiness, employee awareness, and incident response effectiveness.
+Tools & Skills Used
+Red Team Methodology – Understanding adversary simulation workflows
+Rules of Engagement (ROE) – Scope and operational control
+OSINT – Reconnaissance and intelligence gathering
+Threat Emulation – Simulating attacker behavior
+Privilege Escalation & Lateral Movement Concepts
+Reporting & Risk Communication
+Defensive Gap Analysis
+Security Operations Awareness
