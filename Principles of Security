@@ -1,0 +1,68 @@
+TryHackMe: Principles of Security
+Platform: TryHackMe
+Room: Principles of Security
+Difficulty: Beginner
+Date: 2026
+Objective
+The objective of this room was to understand the foundational principles of cybersecurity and how security controls are applied to protect systems, networks, and data. The focus was on learning core security concepts such as confidentiality, integrity, availability, risk management, and defense strategies used across modern organizations.
+Step 1: Understanding the CIA Triad
+I began by learning the CIA Triad, which forms the foundation of information security.
+This included:
+Confidentiality – protecting sensitive information from unauthorized access
+Integrity – ensuring data remains accurate and unaltered
+Availability – ensuring systems and data remain accessible when needed
+This demonstrated how balancing these three principles is essential for maintaining strong security posture.
+Step 2: Access Controls and Authentication
+Next, I explored how organizations control access to systems and resources.
+This covered:
+User authentication methods
+Authorization and permission levels
+Principle of Least Privilege (PoLP)
+Multi-Factor Authentication (MFA)
+This showed how limiting access reduces the attack surface and helps prevent unauthorized activity.
+Step 3: Defense in Depth
+I then studied the concept of layered security controls.
+This involved:
+Firewalls
+Antivirus and endpoint protection
+Intrusion Detection/Prevention Systems (IDS/IPS)
+Network segmentation
+Security monitoring and logging
+This highlighted how multiple security layers reduce the likelihood of a single point of failure.
+Step 4: Risk Management
+After understanding controls, I reviewed how organizations identify and manage risk.
+This included:
+Threats and vulnerabilities
+Risk assessments
+Likelihood vs impact analysis
+Risk mitigation strategies
+This demonstrated how security decisions are often based on business risk rather than technology alone.
+Step 5: Policies, Procedures, and Compliance
+Security also depends on governance and standards.
+This covered:
+Security policies
+Acceptable use policies
+Incident response procedures
+Compliance requirements and regulatory standards
+This showed how people and processes are just as important as technical controls.
+Step 6: Security Models and Best Practices
+Finally, I reviewed common security models and operational practices.
+This included:
+Zero Trust principles
+Defense against social engineering
+Security awareness training
+Patch management
+Backup and disaster recovery planning
+This emphasized that proactive security practices are critical for long-term resilience.
+Conclusion & Outcome
+Through this room, I gained a strong understanding of the core principles that form the foundation of cybersecurity. This exercise reinforced the importance of protecting confidentiality, integrity, and availability while managing organizational risk effectively.
+It also highlighted how strong security depends on a combination of technology, policy, and human awareness—not just technical tools alone.
+Tools & Skills Used
+CIA Triad Fundamentals
+Access Control & Authentication Concepts
+Principle of Least Privilege (PoLP)
+Defense in Depth Strategy
+Risk Assessment & Risk Management
+Security Policies and Governance
+Compliance Awareness
+Security Best Practices and Operational Security
