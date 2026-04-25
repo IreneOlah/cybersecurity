@@ -1,0 +1,54 @@
+TryHackMe: SOC Workbooks and Lookups
+Platform: TryHackMe
+Room: SOC Workbooks and Lookups
+Difficulty: Easy
+Date: 2026
+Objective
+Learn how Security Operations Center (SOC) analysts use workbooks and lookup tools to investigate alerts, enrich security events, and improve incident response efficiency through structured data analysis.
+Step 1: Understanding SOC Workbooks
+The room introduced workbooks as structured dashboards used to visualize and investigate security events. Workbooks help analysts organize alert data, correlate events, and quickly identify suspicious behavior.
+Common workbook uses:
+Alert investigation
+Incident tracking
+Threat hunting
+Security trend monitoring
+Executive reporting
+Workbooks improve visibility by combining multiple data sources into one place.
+Step 2: Lookup Tables in SOC Operations
+Lookup tables are used to enrich security events with additional context. They allow analysts to quickly match data such as IP addresses, usernames, hashes, or domains against known internal or external information.
+Common lookups include:
+Known malicious IP addresses
+Approved internal assets
+Employee usernames and departments
+Known safe applications
+Threat intelligence indicators
+This helps reduce false positives and speeds up triage.
+Step 3: Investigation Workflow
+The room demonstrated how analysts use workbooks and lookups together during investigations.
+Typical workflow:
+Receive alert
+Open workbook for event details
+Use lookup tables to enrich suspicious indicators
+Validate whether activity is malicious or legitimate
+Escalate or close the alert based on findings
+This structured process improves consistency and response speed.
+Step 4: Real-World Benefits
+Using workbooks and lookups helps SOC teams:
+Reduce investigation time
+Improve analyst efficiency
+Standardize alert handling
+Increase detection accuracy
+Support faster incident response
+Without enrichment, analysts may miss important context or spend too much time manually researching events.
+Step 5: Outcome
+By completing this room, I learned how workbooks provide centralized investigation views and how lookup tables help enrich alerts for better decision-making during SOC operations.
+Lessons Learned
+Workbooks help organize and visualize security investigations
+Lookup tables provide valuable enrichment for faster triage
+Structured workflows improve SOC consistency and efficiency
+Context is critical when determining whether an alert is malicious
+Automation and enrichment reduce analyst workload significantly
+Tools Used
+SOC Workbooks — for centralized alert investigation
+Lookup Tables — for event enrichment and validation
+Threat intelligence concepts — for identifying suspicious indicators
