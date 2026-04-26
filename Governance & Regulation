@@ -1,0 +1,61 @@
+TryHackMe: Governance & Regulation
+Platform: TryHackMe
+Room: Governance & Regulation
+Difficulty: Easy
+Date: 2026
+Objective
+Understand how governance frameworks, policies, and regulations shape cybersecurity practices, and how organizations ensure compliance with legal, industry, and internal security requirements.
+Step 1: Understanding Governance in Cybersecurity
+The room introduces governance as the structure that defines how an organization manages and controls its cybersecurity program.
+Key components include:
+Policies and procedures
+Roles and responsibilities
+Risk management frameworks
+Compliance requirements
+Security oversight and accountability
+Governance ensures security is aligned with business goals and legal obligations.
+Step 2: Key Regulations and Standards
+Organizations must follow various laws and industry standards depending on their region and sector.
+Common examples:
+GDPR (General Data Protection Regulation)
+HIPAA (Health Insurance Portability and Accountability Act)
+PCI-DSS (Payment Card Industry Data Security Standard)
+ISO/IEC 27001 (Information Security Management System)
+These frameworks define how data should be protected and managed.
+Step 3: Risk Management
+A major part of governance is identifying and managing risk.
+Key steps include:
+Identifying assets and threats
+Assessing vulnerabilities
+Evaluating risk impact and likelihood
+Applying controls to reduce risk
+Risk management helps organizations prioritize security efforts effectively.
+Step 4: Compliance and Auditing
+Compliance ensures that organizations follow required regulations and internal policies.
+This involves:
+Regular security audits
+Documentation of controls
+Evidence collection for regulators
+Continuous monitoring of security posture
+Failure to comply can result in fines, legal action, or reputational damage.
+Step 5: Security Policies
+Policies define how users and systems should behave within an organization.
+Examples:
+Password policies
+Acceptable use policies
+Incident response policies
+Data handling and retention rules
+Clear policies help reduce human error and enforce consistent security practices.
+Step 6: Outcome
+By completing this room, I learned how governance and regulatory frameworks guide cybersecurity practices and ensure organizations remain secure, compliant, and accountable.
+Lessons Learned
+Governance aligns cybersecurity with business and legal requirements
+Regulations like GDPR and PCI-DSS enforce data protection standards
+Risk management is central to security decision-making
+Compliance requires ongoing monitoring and documentation
+Security policies help standardize safe behavior across organizations
+Tools & Concepts Used
+Governance frameworks (ISO 27001, GDPR, PCI-DSS)
+Risk assessment models
+Compliance auditing processes
+Security policy structures
