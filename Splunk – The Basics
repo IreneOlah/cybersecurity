@@ -1,0 +1,122 @@
+TryHackMe: Splunk – The Basics
+
+Platform: TryHackMe
+Room: Splunk: The Basics
+Difficulty: Easy
+Date: 2026
+
+Objective
+
+Learn the fundamentals of using Splunk, including how to search, analyze, and visualize log data to support security monitoring and incident investigation in a SOC environment.
+
+Step 1: Introduction to Splunk
+
+The room introduced Splunk as a powerful platform used for searching, monitoring, and analyzing machine-generated data.
+
+Key use cases:
+
+Log analysis
+Security monitoring (SIEM)
+Incident investigation
+Operational intelligence
+
+Splunk allows analysts to quickly turn raw log data into actionable insights.
+
+Step 2: Understanding Splunk Interface
+
+The Splunk interface provides several key areas for analysts:
+
+Main components:
+
+Search & Reporting app – used to query and analyze data
+Search bar – where queries are written using SPL
+Time range selector – filters events by time
+Fields panel – shows extracted fields from events
+Events viewer – displays raw log entries
+
+Understanding the interface is essential for efficient investigation.
+
+Step 3: Basic Searches (SPL)
+
+Splunk uses Search Processing Language (SPL) to query data.
+
+Basic search examples:
+
+Search all data in an index
+
+index=main
+
+Filter by keyword
+
+index=main error
+
+Filter by specific field
+
+index=main status=404
+
+These searches help analysts quickly locate relevant events.
+
+Step 4: Working with Fields
+
+Fields are key-value pairs extracted from log data.
+
+Common fields:
+
+host – source machine
+source – origin of the log
+sourcetype – type of data
+status, user, ip – event-specific details
+
+Example:
+
+index=main user=admin
+
+Fields make it easier to filter and analyze large datasets.
+
+Step 5: Using Search Commands
+
+Splunk provides commands to refine and analyze results.
+
+Common commands:
+
+stats – perform calculations
+
+index=main | stats count by host
+
+sort – order results
+
+index=main | sort -count
+
+table – display selected fields
+
+index=main | table host, status, user
+
+These commands help transform raw data into meaningful insights.
+
+Step 6: Visualization
+
+Splunk allows analysts to visualize data for better understanding.
+
+Visualization types:
+
+Bar charts
+Line graphs
+Pie charts
+Tables
+
+Visualizations help identify trends, anomalies, and patterns quickly.
+
+Step 7: Outcome
+
+By completing this room, I gained hands-on experience using Splunk to search, filter, and analyze log data, which is essential for SOC analysts performing threat detection and investigation.
+
+Lessons Learned
+Splunk is a powerful SIEM tool for log analysis
+SPL enables flexible and efficient searching
+Fields are critical for filtering and structuring data
+Commands like stats and table simplify analysis
+Visualization helps identify trends and anomalies
+Tools Used
+Splunk — for log analysis and querying
+SPL (Search Processing Language) — for data exploration
+Log data analysis — for security monitoring
