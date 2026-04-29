@@ -1,0 +1,109 @@
+TryHackMe: Introduction to EDR
+
+Platform: TryHackMe
+Room: Introduction to EDR
+Difficulty: Easy
+Date: 2026
+
+Objective
+
+Understand the fundamentals of Endpoint Detection and Response (EDR), including how endpoint monitoring works, how threats are detected on devices, and how SOC analysts use EDR tools to investigate and respond to security incidents.
+
+Step 1: What is EDR
+
+The room introduced EDR (Endpoint Detection and Response) as a security solution designed to monitor and protect endpoints such as laptops, servers, and workstations.
+
+Core capabilities of EDR:
+
+Continuous endpoint monitoring
+Detection of suspicious behavior
+Threat hunting and investigation
+Incident response and containment
+Forensic data collection
+
+Unlike traditional antivirus, EDR focuses on behavior-based detection rather than just known signatures.
+
+Step 2: How EDR Works
+
+EDR tools collect and analyze data from endpoints in real time.
+
+Key components:
+
+Agents installed on endpoints to collect telemetry
+Centralized platform for analysis and alerting
+Behavioral analytics to detect anomalies
+Alerting system for suspicious activity
+
+Typical data collected:
+
+Process execution
+File activity
+Network connections
+User behavior
+
+This visibility allows analysts to trace attacks step-by-step.
+
+Step 3: Detection & Investigation
+
+EDR enables analysts to detect threats based on behaviors rather than static signatures.
+
+Common detection methods:
+
+Suspicious process activity
+Unusual parent-child process relationships
+Privilege escalation attempts
+Lateral movement indicators
+Known attacker techniques (mapped to frameworks like MITRE ATT&CK)
+
+Investigation features include:
+
+Process trees
+Timeline analysis
+File hashes and reputation checks
+Endpoint activity logs
+
+These tools help analysts quickly understand the scope and impact of an incident.
+
+Step 4: Response Capabilities
+
+EDR platforms provide built-in response actions to contain threats.
+
+Common response actions:
+
+Isolating compromised endpoints
+Killing malicious processes
+Quarantining files
+Blocking indicators (IOCs)
+Remote remediation
+
+These capabilities allow SOC teams to respond rapidly and minimize damage.
+
+Step 5: Why EDR Matters in a SOC
+
+The room emphasized that EDR is a critical tool in modern Security Operations Centers.
+
+Benefits:
+
+Improves threat visibility across endpoints
+Enables faster detection and response
+Supports threat hunting activities
+Reduces dwell time of attackers
+Enhances incident investigation capabilities
+
+EDR is often integrated with tools like SIEM and SOAR to strengthen overall security operations.
+
+Step 6: Outcome
+
+By completing this room, I gained a solid understanding of how EDR solutions monitor endpoint activity, detect threats using behavioral analysis, and support incident response within a SOC environment.
+
+Lessons Learned
+EDR provides deep visibility into endpoint activity
+Behavior-based detection is more effective than signature-only approaches
+Process trees and timelines are essential for investigations
+Rapid response actions help contain threats quickly
+EDR is a core tool for SOC analysts
+Tools Used
+EDR concepts and workflows — for endpoint monitoring and response
+Behavioral analysis — for threat detection
+Incident response actions — for containment and remediation
+MITRE ATT&CK — for mapping attacker techniques
