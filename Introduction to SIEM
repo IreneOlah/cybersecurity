@@ -1,0 +1,238 @@
+TryHackMe: Introduction to SIEM
+Platform: TryHackMe
+Room: Introduction to SIEM
+Difficulty: Easy
+Date: 2026
+Objective
+Learn the fundamentals of Security Information and Event Management (SIEM), including how SIEM platforms collect, analyze, and correlate logs to support threat detection, incident response, and security monitoring in a SOC environment.
+
+Step 1: Understanding SIEM
+The room introduced SIEM as a centralized security solution used to collect and analyze logs from multiple systems and devices.
+Main SIEM functions:
+
+
+Log collection
+
+
+Event correlation
+
+
+Threat detection
+
+
+Security monitoring
+
+
+Incident investigation
+
+
+Alert generation
+
+
+SIEM platforms help security teams detect suspicious activity across enterprise environments in real time.
+
+Step 2: Why SIEM Is Important
+Organizations generate massive amounts of log data from:
+
+
+Firewalls
+
+
+Servers
+
+
+Endpoints
+
+
+Applications
+
+
+Authentication systems
+
+
+Network devices
+
+
+Without SIEM, analyzing this data manually would be extremely difficult.
+Benefits of SIEM:
+
+
+Centralized visibility
+
+
+Faster threat detection
+
+
+Improved incident response
+
+
+Compliance monitoring
+
+
+Automated alerting
+
+
+SIEM solutions are a core component of modern SOC operations.
+
+Step 3: Log Sources and Data Collection
+The room explained how SIEM systems ingest logs from different sources.
+Common log sources:
+
+
+Windows Event Logs
+
+
+Linux system logs
+
+
+Firewall logs
+
+
+IDS/IPS alerts
+
+
+Web server logs
+
+
+Antivirus and EDR alerts
+
+
+SIEM platforms normalize and organize this data so analysts can investigate events more efficiently.
+
+Step 4: Correlation and Detection
+One of the main features of SIEM is event correlation.
+Correlation allows SIEM platforms to:
+
+
+Link related events together
+
+
+Detect suspicious patterns
+
+
+Identify potential attacks
+
+
+Reduce false positives
+
+
+Example detections:
+
+
+Multiple failed login attempts
+
+
+Privilege escalation activity
+
+
+Malware alerts
+
+
+Unusual network traffic
+
+
+Brute-force attacks
+
+
+Correlation rules help analysts identify threats that may not be visible from a single log source.
+
+Step 5: SIEM Components
+The room introduced common SIEM architecture components.
+Core components:
+Log Collection
+Agents or collectors gather logs from endpoints and devices.
+Data Normalization
+Logs are converted into a standardized format.
+Correlation Engine
+The SIEM analyzes events and applies detection rules.
+Dashboards and Visualization
+Security analysts use dashboards to monitor activity and investigate alerts.
+Alerting System
+Suspicious activity generates alerts for SOC analysts.
+
+Step 6: SIEM Use Cases
+The room covered several real-world SIEM applications.
+Common use cases:
+
+
+Threat detection
+
+
+User activity monitoring
+
+
+Compliance auditing
+
+
+Insider threat detection
+
+
+Incident response
+
+
+Network monitoring
+
+
+SIEM platforms provide analysts with visibility across the entire infrastructure.
+
+Step 7: Popular SIEM Platforms
+The room briefly introduced widely used SIEM solutions.
+Examples:
+
+
+Splunk
+
+
+IBM QRadar
+
+
+Microsoft Sentinel
+
+
+Elastic Stack (ELK)
+
+
+ArcSight
+
+
+Each platform provides tools for log analysis, detection engineering, and incident investigation.
+
+Step 8: Outcome
+By completing this room, I gained foundational knowledge of SIEM concepts, including how logs are collected, correlated, and analyzed to detect security threats within enterprise environments.
+
+Lessons Learned
+
+
+SIEM platforms centralize security monitoring
+
+
+Log collection and normalization are essential for analysis
+
+
+Event correlation helps detect sophisticated attacks
+
+
+Dashboards and alerts improve SOC efficiency
+
+
+SIEM tools are critical for incident response and threat detection
+
+
+
+Tools Used
+
+
+SIEM concepts and architecture
+
+
+Log analysis fundamentals
+
+
+Event correlation techniques
+
+
+Security monitoring workflows
+
+
+SOC investigation principles
+
