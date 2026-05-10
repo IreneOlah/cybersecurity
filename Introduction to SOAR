@@ -1,0 +1,176 @@
+TryHackMe: Introduction to SOAR
+
+Platform: TryHackMe
+Room: Introduction to SOAR
+Difficulty: Easy
+Date: 2026
+
+Objective
+
+Learn the fundamentals of Security Orchestration, Automation, and Response (SOAR), including how SOAR platforms automate security workflows, improve incident response efficiency, and support SOC operations through orchestration and automated playbooks.
+
+Step 1: Understanding SOAR
+
+The room introduced SOAR as a security solution designed to help security teams automate repetitive tasks and streamline incident response processes.
+
+SOAR stands for:
+
+Security
+Orchestration
+Automation
+Response
+
+SOAR platforms integrate multiple security tools and allow analysts to automate workflows that would otherwise require manual effort.
+
+Main SOAR functions:
+
+Security automation
+Incident response orchestration
+Workflow management
+Alert handling
+Threat intelligence integration
+Case management
+
+SOAR solutions help SOC teams reduce response times and improve operational efficiency.
+
+Step 2: Why SOAR Is Important
+
+The room explained that modern SOC environments generate massive numbers of alerts every day.
+
+Challenges faced by analysts:
+
+Alert fatigue
+Manual investigations
+Repetitive tasks
+Slow incident response
+Large volumes of security events
+
+SOAR helps address these issues through automation.
+
+Benefits of SOAR:
+
+Faster response times
+Reduced manual workload
+Improved consistency
+Better collaboration
+Automated investigations
+Increased SOC efficiency
+
+SOAR platforms allow analysts to focus on higher-priority threats instead of repetitive operational tasks.
+
+Step 3: Orchestration
+
+The room introduced orchestration as the process of connecting and coordinating multiple security tools and systems.
+
+Examples of integrated tools:
+
+SIEM platforms
+Firewalls
+EDR solutions
+Threat intelligence platforms
+Ticketing systems
+Email security tools
+
+Orchestration allows SOAR platforms to:
+
+Share information between tools
+Trigger automated actions
+Centralize investigations
+Improve incident workflows
+
+This integration improves visibility and enables faster threat containment.
+
+Step 4: Automation
+
+One of the core features of SOAR is automation.
+
+Automation helps eliminate repetitive security tasks.
+
+Examples of automated actions:
+
+Blocking malicious IP addresses
+Isolating compromised endpoints
+Sending alerts to analysts
+Enriching threat intelligence data
+Creating incident tickets
+Gathering forensic information
+
+Automation reduces human error and speeds up security operations.
+
+The room demonstrated how workflows can automatically trigger actions based on predefined conditions.
+
+Step 5: Incident Response Playbooks
+
+The room explained how SOAR platforms use playbooks to automate incident response procedures.
+
+Playbooks are predefined workflows that guide automated responses to security events.
+
+Common playbook actions:
+
+Collect evidence
+Query threat intelligence feeds
+Analyze indicators of compromise (IOCs)
+Notify analysts
+Escalate incidents
+Contain threats
+
+Examples of playbooks:
+
+Phishing response
+Malware detection
+Brute-force attack handling
+Suspicious login investigation
+
+Playbooks ensure consistent and repeatable incident response processes.
+
+Step 6: Threat Intelligence Integration
+
+The room covered how SOAR platforms integrate with threat intelligence sources.
+
+Threat intelligence integration allows analysts to:
+
+Enrich alerts with contextual data
+Check IP reputation
+Investigate domains and hashes
+Identify known malicious indicators
+
+SOAR platforms can automatically pull intelligence from external sources and attach it to incidents for faster investigations.
+
+This helps analysts make more informed decisions during incident response.
+
+Step 7: SOAR Use Cases
+
+The room introduced common real-world SOAR applications.
+
+Examples of SOAR use cases:
+
+Phishing email triage
+Malware response automation
+Alert enrichment
+User account investigations
+Threat hunting support
+Ticket automation
+Security alert prioritization
+
+SOAR platforms improve scalability within SOC environments by automating repetitive security operations.
+
+Step 8: Outcome
+
+By completing this room, I gained foundational knowledge of SOAR concepts, including orchestration, automation, incident response playbooks, and how SOAR platforms improve SOC efficiency and security operations.
+
+Lessons Learned
+SOAR platforms automate repetitive SOC tasks
+Orchestration connects multiple security tools together
+Automation improves incident response speed and consistency
+Playbooks standardize security workflows
+Threat intelligence integration enriches investigations
+SOAR helps reduce analyst workload and alert fatigue
+Tools Used
+SOAR concepts and workflows
+Incident response automation
+Security orchestration principles
+Threat intelligence integration
+Playbook automation
+SOC operational workflows
+Alert handling processes
+Security investigation fundamentals
