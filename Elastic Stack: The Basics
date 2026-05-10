@@ -1,0 +1,328 @@
+TryHackMe: Elastic Stack: The Basics
+Platform: TryHackMe
+Room: Elastic Stack: The Basics
+Difficulty: Easy
+Date: 2026
+Objective
+Learn the fundamentals of the Elastic Stack (ELK Stack), including how Elasticsearch, Logstash, Kibana, and Beats work together to collect, process, analyze, and visualize log data for security monitoring and SOC operations.
+
+Step 1: Understanding the Elastic Stack
+The room introduced the Elastic Stack as a powerful open-source platform used for log management, security analytics, and data visualization.
+The Elastic Stack consists of four major components:
+
+
+Elasticsearch
+
+
+Logstash
+
+
+Kibana
+
+
+Beats
+
+
+Together, these tools help organizations collect and analyze large volumes of log and event data in real time.
+The Elastic Stack is commonly used for:
+
+
+Centralized logging
+
+
+SIEM operations
+
+
+Security monitoring
+
+
+Threat hunting
+
+
+Data visualization
+
+
+Incident investigation
+
+
+
+Step 2: Elasticsearch
+The room explained that Elasticsearch is the core search and analytics engine of the Elastic Stack.
+Main Elasticsearch capabilities:
+
+
+Fast search functionality
+
+
+Data indexing
+
+
+Real-time analytics
+
+
+Large-scale log storage
+
+
+Distributed architecture
+
+
+Elasticsearch stores logs and events in indexed documents, allowing analysts to quickly search and analyze security data.
+Common use cases:
+
+
+Searching logs
+
+
+Detecting suspicious activity
+
+
+Threat investigation
+
+
+Security analytics
+
+
+Elasticsearch enables fast access to large datasets, making it highly valuable in SOC environments.
+
+Step 3: Logstash
+The room introduced Logstash as the data processing pipeline of the Elastic Stack.
+Logstash functions:
+
+
+Collecting logs from multiple sources
+
+
+Parsing and filtering data
+
+
+Transforming log formats
+
+
+Forwarding events to Elasticsearch
+
+
+Logstash supports a wide variety of input sources, including:
+
+
+System logs
+
+
+Firewall logs
+
+
+Application logs
+
+
+Network devices
+
+
+Security tools
+
+
+Logstash helps normalize and structure data before it is indexed for analysis.
+
+Step 4: Kibana
+The room explained how Kibana provides visualization and dashboard capabilities for the Elastic Stack.
+Kibana features:
+
+
+Interactive dashboards
+
+
+Log searching
+
+
+Data visualization
+
+
+Alert monitoring
+
+
+Security analytics
+
+
+Threat investigation tools
+
+
+Security analysts use Kibana to:
+
+
+Investigate alerts
+
+
+Search events
+
+
+Visualize trends
+
+
+Monitor security activity
+
+
+Kibana simplifies large-scale log analysis by presenting data in a visual and user-friendly format.
+
+Step 5: Beats
+The room introduced Beats as lightweight data shippers used to send logs and metrics into the Elastic Stack.
+Examples of Beats:
+
+
+Filebeat
+
+
+Winlogbeat
+
+
+Packetbeat
+
+
+Metricbeat
+
+
+Auditbeat
+
+
+Each Beat is designed for a specific type of data collection.
+Examples:
+
+
+Filebeat → log files
+
+
+Winlogbeat → Windows Event Logs
+
+
+Packetbeat → network traffic
+
+
+Metricbeat → system metrics
+
+
+Beats efficiently collect data from endpoints and forward it to Logstash or Elasticsearch.
+
+Step 6: Data Flow in the Elastic Stack
+The room demonstrated how data moves through the Elastic Stack.
+Typical workflow:
+
+
+Beats collect logs and events
+
+
+Logstash processes and parses the data
+
+
+Elasticsearch indexes and stores the information
+
+
+Kibana visualizes and analyzes the data
+
+
+This workflow allows analysts to centralize security monitoring and perform efficient investigations.
+Benefits of the Elastic Stack:
+
+
+Centralized visibility
+
+
+Fast searching and analytics
+
+
+Scalable architecture
+
+
+Real-time monitoring
+
+
+Flexible integrations
+
+
+
+Step 7: Security Monitoring and SIEM Features
+The room covered how the Elastic Stack can function as a SIEM platform.
+Security-related capabilities:
+
+
+Threat detection
+
+
+Log correlation
+
+
+Security dashboards
+
+
+Alerting
+
+
+Incident investigation
+
+
+User activity monitoring
+
+
+Elastic Security provides analysts with tools for:
+
+
+Detecting suspicious behavior
+
+
+Investigating alerts
+
+
+Hunting threats
+
+
+Monitoring endpoints and networks
+
+
+The Elastic Stack is widely used in enterprise SOC environments for defensive security operations.
+
+Step 8: Outcome
+By completing this room, I gained foundational knowledge of the Elastic Stack architecture and learned how Elasticsearch, Logstash, Kibana, and Beats work together to support log management, threat detection, and security monitoring.
+Lessons Learned
+
+
+The Elastic Stack centralizes log collection and analysis
+
+
+Elasticsearch provides fast indexing and searching capabilities
+
+
+Logstash processes and normalizes incoming data
+
+
+Kibana visualizes security events and dashboards
+
+
+Beats efficiently collect logs from endpoints and systems
+
+
+The Elastic Stack can function as a SIEM platform for SOC operations
+
+
+
+Tools Used
+
+
+Elasticsearch
+
+
+Logstash
+
+
+Kibana
+
+
+Beats
+
+
+Log analysis fundamentals
+
+
+Security monitoring workflows
+
+
+SIEM concepts and architecture
+
+
+Threat investigation principles
+
