@@ -1,0 +1,328 @@
+TryHackMe: Pyramid of Pain
+Platform: TryHackMe
+Room: Pyramid of Pain
+Difficulty: Easy
+Date: 2026
+Objective
+Learn how defenders use indicators of compromise (IOCs) to detect and respond to cyber threats, and understand why some indicators are more valuable than others through the Pyramid of Pain model.
+
+Step 1: Understanding the Pyramid of Pain
+The Pyramid of Pain is a cybersecurity model created by David J. Bianco that explains how difficult it is for attackers to change different types of indicators once defenders detect them.
+The higher defenders can force attackers up the pyramid, the more disruption and “pain” attackers experience.
+The pyramid levels are:
+
+
+Hash Values
+
+
+IP Addresses
+
+
+Domain Names
+
+
+Network/Host Artifacts
+
+
+Tools
+
+
+TTPs (Tactics, Techniques, and Procedures)
+
+
+Lower-level indicators are easy for attackers to change, while higher-level indicators are much more difficult.
+
+Step 2: Hash Values
+Hash values are unique strings generated from files using hashing algorithms such as:
+
+
+MD5
+
+
+SHA1
+
+
+SHA256
+
+
+Security teams use hashes to identify known malicious files.
+Example:
+44d88612fea8a8f36de82e1278abb02f
+Advantages:
+
+
+Fast identification of malware
+
+
+Easy to automate
+
+
+Disadvantages:
+
+
+Attackers can slightly modify files to generate new hashes
+
+
+Least painful indicator for attackers to replace
+
+
+Key takeaway:
+Hash-based detection is useful but should not be relied on alone.
+
+Step 3: IP Addresses
+Attackers often use IP addresses to host malware, command-and-control servers, or phishing infrastructure.
+Defenders can:
+
+
+Block malicious IPs
+
+
+Monitor suspicious traffic
+
+
+Create firewall rules
+
+
+However, attackers can:
+
+
+Change servers quickly
+
+
+Use VPNs or cloud infrastructure
+
+
+Rotate IP addresses frequently
+
+
+Key takeaway:
+IP addresses are more useful than hashes but are still relatively easy for attackers to replace.
+
+Step 4: Domain Names
+Threat actors frequently register domains for:
+
+
+Phishing pages
+
+
+Malware delivery
+
+
+Command-and-control communication
+
+
+Examples:
+
+
+Fake login portals
+
+
+Spoofed company websites
+
+
+Defenders may:
+
+
+Block malicious domains
+
+
+Use DNS filtering
+
+
+Monitor suspicious DNS activity
+
+
+Attackers experience more difficulty here because:
+
+
+Domains require registration
+
+
+Infrastructure setup takes time
+
+
+Reputation systems may flag new domains
+
+
+Key takeaway:
+Domain-based detection creates more operational cost for attackers.
+
+Step 5: Network and Host Artifacts
+Artifacts are traces left behind during malicious activity.
+Examples include:
+
+
+Suspicious registry keys
+
+
+Unusual HTTP headers
+
+
+File paths
+
+
+Scheduled tasks
+
+
+Specific PowerShell commands
+
+
+Security analysts use:
+
+
+SIEM platforms
+
+
+Endpoint Detection and Response (EDR)
+
+
+Log analysis tools
+
+
+Artifacts are harder for attackers to modify because they are often tied to behavior.
+Key takeaway:
+Behavioral indicators are significantly stronger than simple IOC matching.
+
+Step 6: Tools
+Attackers rely on tools such as:
+
+
+Mimikatz
+
+
+Metasploit
+
+
+Cobalt Strike
+
+
+PowerShell frameworks
+
+
+Defenders can:
+
+
+Detect tool signatures
+
+
+Identify execution patterns
+
+
+Monitor abnormal process behavior
+
+
+Once a tool becomes detectable:
+
+
+Attackers may need custom malware
+
+
+Development costs increase
+
+
+Operations become slower
+
+
+Key takeaway:
+Detecting attacker tools creates substantial disruption for adversaries.
+
+Step 7: TTPs (Tactics, Techniques, and Procedures)
+TTPs represent attacker behavior patterns and methodologies.
+Examples:
+
+
+Phishing for credential theft
+
+
+Privilege escalation
+
+
+Lateral movement
+
+
+Persistence mechanisms
+
+
+Frameworks like MITRE ATT&CK help defenders categorize TTPs.
+Detecting TTPs is extremely powerful because:
+
+
+Attackers cannot easily change operational behavior
+
+
+Techniques often require retraining or redesign
+
+
+Defensive detection becomes more resilient
+
+
+Examples of TTP-focused defense:
+
+
+Behavioral analytics
+
+
+Threat hunting
+
+
+User behavior monitoring
+
+
+Key takeaway:
+TTP detection causes the highest level of “pain” for attackers and provides the strongest long-term defense.
+
+Step 8: Why the Pyramid Matters
+The Pyramid of Pain helps security teams prioritize detection strategies.
+Main lesson:
+
+
+Simple indicators are useful for quick blocking
+
+
+Behavioral detection provides stronger long-term protection
+
+
+Modern SOC environments focus heavily on:
+
+
+Threat hunting
+
+
+Behavioral analytics
+
+
+Detection engineering
+
+
+TTP-based detection
+
+
+This approach improves resilience against advanced persistent threats (APTs).
+
+Skills Learned
+
+
+Understanding Indicators of Compromise (IOCs)
+
+
+Recognizing attacker infrastructure
+
+
+Understanding behavioral detection
+
+
+Learning the value of TTP-based defense
+
+
+Introduction to threat intelligence concepts
+
+
+Familiarity with defensive cybersecurity strategies
+
+
+
+Conclusion
+The Pyramid of Pain demonstrates that not all indicators are equally valuable in cybersecurity defense.
+Lower-level indicators such as hashes and IP addresses are easy for attackers to replace, while higher-level indicators such as tools and TTPs are much harder to modify.
+The room emphasized the importance of focusing on behavioral detection and long-term defensive strategies rather than relying only on simple IOC blocking.
+Understanding the Pyramid of Pain is essential for SOC analysts, threat hunters, and cybersecurity professionals because it helps organizations build stronger and more effective detection capabilities.
