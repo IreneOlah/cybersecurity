@@ -1,0 +1,222 @@
+AZ-104: Manage Identities and Governance in Azure
+
+Platform: Microsoft
+Course: AZ-104: Manage Identities and Governance in Azure
+Level: Beginner
+Role Path: Azure Administrator
+Date: 2026
+
+Objective
+
+Learn how to manage identities, access control, subscriptions, and governance tools within Microsoft Azure. This learning path focuses on securing Azure environments using identity management, Role-Based Access Control (RBAC), resource governance, and monitoring tools commonly used by Azure administrators.
+
+Step 1: Introduction to Identity and Governance
+
+The learning path introduced the importance of identity management and governance in cloud environments.
+
+Main objectives of Azure governance:
+
+Secure access to resources
+Control permissions
+Maintain compliance
+Organize cloud resources
+Monitor usage and costs
+Enforce organizational policies
+
+The course emphasized that identity and governance are foundational components of cloud security.
+
+Key takeaway:
+Proper governance ensures Azure resources remain secure, organized, and compliant with organizational policies.
+
+Step 2: Managing Microsoft Entra ID Objects
+
+The module introduced Microsoft Entra ID and explained how Azure administrators manage identities.
+
+Topics covered:
+
+Users
+Groups
+Administrative units
+Devices
+User authentication methods
+
+Tasks learned:
+
+Creating and managing users
+Assigning users to groups
+Resetting passwords
+Managing group memberships
+Configuring user settings
+
+The course also explained synchronization between on-premises Active Directory and Microsoft Entra ID.
+
+Key takeaway:
+Microsoft Entra ID centralizes authentication and identity management for Azure environments.
+
+Step 3: Authentication and Access Management
+
+The course covered authentication and access security features.
+
+Concepts learned:
+
+Authentication vs authorization
+Single Sign-On (SSO)
+Multi-Factor Authentication (MFA)
+Conditional Access
+Self-Service Password Reset (SSPR)
+
+Conditional Access policies help organizations enforce security requirements based on:
+
+User location
+Device compliance
+Risk level
+Application access
+
+Key takeaway:
+Strong authentication policies improve cloud security and reduce the risk of unauthorized access.
+
+Step 4: Role-Based Access Control (RBAC)
+
+The learning path introduced Azure Role-based access control.
+
+RBAC allows administrators to control resource access using predefined or custom roles.
+
+Important concepts:
+
+Principle of least privilege
+Scope inheritance
+Built-in roles
+Custom roles
+
+Common built-in roles:
+
+Owner
+Contributor
+Reader
+User Access Administrator
+
+The course demonstrated how permissions can be assigned at different scopes:
+
+Management group
+Subscription
+Resource group
+Individual resource
+
+Key takeaway:
+RBAC helps organizations securely manage permissions while minimizing unnecessary access.
+
+Step 5: Managing Azure Subscriptions and Resource Organization
+
+The module explained how Azure organizes resources across subscriptions and management groups.
+
+Topics covered:
+
+Azure subscriptions
+Management groups
+Resource groups
+Resource organization strategies
+
+The course highlighted the importance of separating environments such as:
+
+Production
+Development
+Testing
+
+Benefits of structured organization:
+
+Easier administration
+Better cost tracking
+Improved security management
+Simplified governance
+
+Key takeaway:
+Logical resource organization improves operational efficiency and governance.
+
+Step 6: Azure Resource Manager (ARM)
+
+The learning path introduced Azure Resource Manager.
+
+ARM is the deployment and management framework for Azure resources.
+
+Capabilities include:
+
+Resource deployment
+Infrastructure as Code (IaC)
+Template-based deployments
+Dependency management
+Consistent resource provisioning
+
+The module explained ARM templates and how they automate infrastructure deployment.
+
+Key takeaway:
+Azure Resource Manager enables scalable and repeatable cloud deployments.
+
+Step 7: Governance with Azure Policy and Resource Locks
+
+The course explored governance tools used to enforce organizational standards.
+
+Topics covered:
+
+Azure Policy
+Resource Locks
+Tags
+
+Azure Policy examples:
+
+Restricting allowed regions
+Enforcing naming conventions
+Requiring resource tags
+Controlling VM sizes
+
+Resource Locks help prevent:
+
+Accidental deletion
+Unauthorized modifications
+
+Types of locks:
+
+Delete lock
+Read-only lock
+
+Key takeaway:
+Governance tools help maintain compliance and reduce operational risks.
+
+Step 8: Cost Management and Monitoring
+
+The learning path introduced Azure cost management and monitoring features.
+
+Tools covered:
+
+Azure Cost Management
+Budgets and alerts
+Azure Monitor
+Activity Logs
+
+Administrators can:
+
+Track resource spending
+Analyze usage trends
+Configure cost alerts
+Monitor system activity
+
+The course emphasized proactive monitoring to maintain efficient cloud operations.
+
+Key takeaway:
+Cost monitoring and activity tracking are essential parts of Azure administration.
+
+Skills Learned
+Managing users and groups in Microsoft Entra ID
+Configuring authentication and MFA
+Implementing Role-Based Access Control (RBAC)
+Organizing Azure subscriptions and resource groups
+Using Azure Resource Manager (ARM)
+Applying Azure Policy and resource locks
+Monitoring Azure activity and costs
+Understanding cloud governance principles
+Conclusion
+
+The AZ-104: Manage Identities and Governance in Azure learning path provided foundational knowledge for securing and governing Azure environments.
+
+The course focused heavily on identity management, access control, governance policies, and subscription organization using Microsoft Entra ID and Azure management tools.
+
+These concepts are critical for Azure administrators and cybersecurity professionals because identity and governance form the foundation of cloud security and operational control within enterprise Azure environments.
