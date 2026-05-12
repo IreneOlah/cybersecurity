@@ -1,0 +1,200 @@
+AZ-104: Prerequisites for Azure Administrators
+
+Platform: Microsoft
+Course: AZ-104: Prerequisites for Azure Administrators
+Level: Beginner
+Role Path: Azure Administrator
+Date: 2026
+
+Objective
+
+Learn the foundational cloud and Azure concepts required for the Microsoft AZ-104 Azure Administrator certification path. This learning path introduces core Azure services, identity concepts, networking basics, compute resources, storage, and governance tools used by Azure administrators in real-world cloud environments.
+
+Step 1: Introduction to Azure Administration
+
+The learning path introduced the responsibilities of an Azure Administrator and the core services used to manage cloud infrastructure within Microsoft Azure.
+
+Main responsibilities of an Azure Administrator include:
+
+Managing cloud resources
+Configuring virtual networks
+Deploying virtual machines
+Managing storage solutions
+Monitoring cloud infrastructure
+Implementing identity and access management
+Maintaining security and governance
+
+The course also explained how Azure administrators support organizations by maintaining scalable and reliable cloud environments.
+
+Key takeaway:
+Azure administrators are responsible for deploying, managing, and monitoring cloud infrastructure services in Azure.
+
+Step 2: Understanding Cloud Computing Concepts
+
+The module reviewed essential cloud computing principles.
+
+Cloud service models:
+
+Infrastructure as a Service (IaaS)
+Platform as a Service (PaaS)
+Software as a Service (SaaS)
+
+Cloud deployment models:
+
+Public cloud
+Private cloud
+Hybrid cloud
+
+Benefits of cloud computing:
+
+Scalability
+High availability
+Elasticity
+Cost efficiency
+Disaster recovery
+Global accessibility
+
+Key takeaway:
+Understanding cloud concepts is critical before managing Azure infrastructure.
+
+Step 3: Azure Architecture and Core Services
+
+The course introduced Azure’s global infrastructure and resource organization hierarchy.
+
+Core Azure components:
+
+Regions
+Availability Zones
+Resource Groups
+Subscriptions
+Management Groups
+
+Important services covered:
+
+Azure Virtual Machines
+Azure Virtual Network
+Azure Storage Accounts
+Azure Container Registry
+Azure Container Instances
+Microsoft Entra ID
+
+The module explained how resources are logically grouped and managed within Azure environments.
+
+Key takeaway:
+Azure resources are organized using subscriptions and resource groups to simplify administration and governance.
+
+Step 4: Microsoft Entra ID and Identity Management
+
+The learning path introduced identity and access management using Microsoft Entra ID.
+
+Topics covered:
+
+Authentication vs authorization
+Users and groups
+Role-Based Access Control (RBAC)
+Multi-Factor Authentication (MFA)
+Identity security principles
+
+RBAC allows administrators to assign permissions based on job responsibilities while following the principle of least privilege.
+
+Key takeaway:
+Identity and access management is a core responsibility of Azure administrators.
+
+Step 5: Azure Compute Resources
+
+The course explored compute services available in Azure.
+
+Compute resources covered:
+
+Azure Virtual Machines
+Virtual Machine Scale Sets
+Containers
+Azure Container Instances
+
+Concepts learned:
+
+VM sizing
+Operating system images
+Resource allocation
+Scalability
+Availability
+
+The module also introduced basic container concepts and cloud-based application deployment.
+
+Key takeaway:
+Azure provides flexible compute solutions for both traditional workloads and containerized applications.
+
+Step 6: Azure Networking Basics
+
+The networking section introduced the foundational components used to connect Azure resources securely.
+
+Topics covered:
+
+Azure Virtual Networks (VNets)
+Subnets
+IP addressing
+Network Security Groups (NSGs)
+Public and private endpoints
+
+The course explained how Azure networking isolates resources while enabling secure communication between systems.
+
+Key takeaway:
+Networking is essential for secure and reliable cloud infrastructure management.
+
+Step 7: Azure Storage Services
+
+The learning path covered Azure storage solutions used to store cloud data.
+
+Storage services introduced:
+
+Blob Storage
+File Storage
+Queue Storage
+Table Storage
+
+Important concepts:
+
+Redundancy options
+Storage tiers
+Secure access
+Data availability
+
+The course emphasized the importance of selecting appropriate storage solutions based on workload requirements.
+
+Key takeaway:
+Azure offers multiple scalable storage services for different business and application needs.
+
+Step 8: Azure Governance and Management Tools
+
+The module introduced governance and monitoring tools available in Azure.
+
+Tools and concepts covered:
+
+Azure Policy
+Resource Locks
+Tags
+Azure Monitor
+Cost Management
+Azure CLI
+
+The course also introduced automation and command-line management using Azure CLI.
+
+Key takeaway:
+Governance tools help organizations maintain compliance, security, and cost control across cloud environments.
+
+Skills Learned
+Understanding cloud computing models
+Azure architecture fundamentals
+Identity and access management basics
+Azure networking fundamentals
+Virtual machine deployment concepts
+Storage management basics
+Governance and monitoring principles
+Introduction to Azure administration tools
+Conclusion
+
+The AZ-104 Prerequisites for Azure Administrators learning path provided a strong foundation in cloud computing and Microsoft Azure services.
+
+The course introduced the essential concepts needed before progressing deeper into Azure administration topics such as identity management, networking, compute resources, storage, and monitoring.
+
+Completing this learning path builds the foundational knowledge required for the AZ-104 certification and prepares learners for real-world Azure administration responsibilities in cloud and cybersecurity environments.
