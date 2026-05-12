@@ -1,0 +1,189 @@
+AZ-104 Lab 01: Manage Microsoft Entra ID Identities
+
+Platform: Microsoft
+Lab: Manage Microsoft Entra ID Identities
+Module: Administer Identity
+Level: Intermediate (300)
+Estimated Time: 30 Minutes
+Date: 2026
+
+Source Lab File:
+
+Objective
+
+This lab focused on managing identities and access within Microsoft Entra ID. The exercises introduced the creation and configuration of users, guest accounts, and security groups in Azure.
+
+The lab also demonstrated how organizations manage identity solutions for both internal employees and external collaborators while reducing administrative overhead through group management strategies.
+
+Lab Scenario
+
+The scenario involved configuring a new pre-production lab environment where engineers required access to manage Azure virtual machines and services.
+
+The objectives included:
+
+Provisioning internal users
+Inviting external guest users
+Creating security groups
+Assigning group owners and members
+Understanding static and dynamic group memberships
+
+The environment was managed using the Azure portal and Microsoft Entra ID.
+
+Skills Practiced
+Creating Microsoft Entra ID user accounts
+Configuring user properties
+Inviting external guest users
+Creating security groups
+Assigning owners and members
+Understanding static vs dynamic membership
+Exploring Azure identity governance concepts
+
+Task 1: Create and Configure User Accounts
+
+The first task focused on identity management within Microsoft Entra ID.
+
+The lab began by accessing the Azure portal and navigating to Microsoft Entra ID, Azure’s cloud-based identity and access management service.
+
+Creating a New User
+
+A new internal user account was created with the following settings:
+
+Setting	Value
+User Principal Name	az104-user1
+Display Name	az104-user1
+Job Title	IT Lab Administrator
+Department	IT
+Usage Location	United States
+
+The lab demonstrated how user accounts store organizational identity information such as department, job title, and authentication settings.
+
+Key Concepts Learned
+Microsoft Entra ID stores organizational identity objects
+User accounts support authentication and authorization
+User properties assist with administration and automation
+Azure administrators manage access through identity objects
+Inviting an External Guest User
+
+The next step involved inviting an external user into the Azure tenant.
+
+The invitation process included:
+
+Sending an invitation email
+Assigning organizational properties
+Configuring guest account access
+
+This demonstrated Business-to-Business (B2B) collaboration capabilities within Microsoft Entra ID.
+
+Key Concepts Learned
+Guest accounts allow external collaboration
+Organizations can securely manage outside users
+External users can be assigned permissions and group memberships
+Invitations simplify cross-organization collaboration
+Task 2: Create Groups and Add Members
+
+The second task focused on group-based access management.
+
+Groups help administrators organize users and assign permissions efficiently.
+
+Understanding Group Membership Types
+
+The lab explained two group membership methods:
+
+Assigned Membership
+
+Administrators manually add or remove members.
+
+Dynamic Membership
+
+Membership automatically updates based on user properties such as:
+
+Department
+Job title
+Location
+
+Dynamic membership helps reduce administrative overhead in large environments.
+
+Creating a Security Group
+
+A security group named:
+
+IT Lab Administrators
+
+was created with assigned membership.
+
+The group configuration included:
+
+Setting	Value
+Group Type	Security
+Membership Type	Assigned
+Description	Administrators that manage the IT lab
+
+The lab also demonstrated assigning:
+
+Group owners
+Internal users
+Guest users
+
+to the security group.
+
+Key Governance Features Explored
+
+The lab introduced additional group governance settings:
+
+Group expiration policies
+Naming policies
+Blocked words
+Prefix and suffix enforcement
+
+These governance features help organizations standardize identity management and improve security practices.
+
+Important Azure Identity Concepts Learned
+Microsoft Entra ID
+
+Microsoft Entra ID provides:
+
+Identity management
+Authentication services
+Access control
+User and group administration
+Secure collaboration
+Security Groups
+
+Security groups simplify permission management by assigning access to groups instead of individual users.
+
+Benefits include:
+
+Easier administration
+Centralized permission management
+Scalability
+Improved security management
+Guest Users
+
+Guest accounts allow external users to securely collaborate inside an Azure environment without requiring full internal accounts.
+
+Dynamic Group Membership
+
+Dynamic membership automatically updates group membership based on rules and user attributes.
+
+Example conditions:
+
+Job title equals IT Administrator
+Department equals IT
+
+This automation is valuable in enterprise environments with large numbers of users.
+
+Skills Learned
+Managing Microsoft Entra ID identities
+Creating internal and guest users
+Configuring user properties
+Managing Azure security groups
+Assigning group owners and members
+Understanding identity governance concepts
+Exploring Azure identity administration workflows
+Conclusion
+
+This lab provided hands-on experience with identity and access management using Microsoft Entra ID in Azure.
+
+The exercises demonstrated how Azure administrators create users, invite external collaborators, organize users into security groups, and apply governance practices within cloud environments.
+
+These identity management skills are foundational for Azure administration, cloud security, and enterprise access control because identities and permissions form the core of secure cloud operations.
