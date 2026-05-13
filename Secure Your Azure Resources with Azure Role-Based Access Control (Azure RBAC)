@@ -1,0 +1,199 @@
+Secure Your Azure Resources with Azure Role-Based Access Control (Azure RBAC)
+
+Platform: Microsoft
+Module: Secure Your Azure Resources with Azure Role-Based Access Control (Azure RBAC)
+Product: Azure Role-based access control
+Level: Beginner
+XP Earned: 100 XP
+Date: 2026
+
+Objective
+
+Learn how to secure Azure resources using Azure Role-Based Access Control (Azure RBAC). This module focused on managing authorization within Azure environments by controlling who can access resources, what actions they can perform, and the scope of their permissions.
+
+The training introduced RBAC concepts commonly used by Azure administrators and cloud security professionals to implement least-privilege access across Azure environments.
+
+Introduction to Azure RBAC
+
+The module introduced Azure RBAC as Azure’s authorization system for managing access to cloud resources.
+
+Azure RBAC allows organizations to control:
+
+Who can access resources
+What actions users can perform
+Which resources users can manage
+
+The module emphasized the importance of balancing:
+
+Security
+Administrative control
+Operational flexibility
+
+in enterprise cloud environments.
+
+Key takeaway:
+Azure RBAC helps organizations securely manage access to Azure resources while minimizing unnecessary permissions.
+
+Real-World Scenario
+
+The module used a business scenario involving an engineering company named:
+
+First Up Consultants
+
+The company migrated workloads and assets to Azure to improve collaboration across offices and partner organizations.
+
+The IT department needed a solution to:
+
+Protect company resources
+Control user permissions
+Allow secure collaboration
+Manage access efficiently
+
+Azure RBAC was introduced as the primary access control solution.
+
+Key takeaway:
+RBAC is critical for organizations managing large numbers of users and cloud resources.
+
+Core Azure RBAC Concepts
+Authorization vs Authentication
+
+The module explained the difference between:
+
+Authentication
+
+Verifying a user’s identity.
+
+Example:
+
+Signing in with Microsoft Entra ID credentials
+Authorization
+
+Determining what authenticated users are allowed to do.
+
+Azure RBAC handles authorization after authentication is completed.
+
+Key takeaway:
+Authentication confirms identity, while RBAC controls permissions.
+
+Role Assignments
+
+Azure RBAC works by assigning roles to users, groups, or applications.
+
+Role assignments contain three components:
+
+Component	Description
+Security Principal	User, group, or application
+Role Definition	Permissions granted
+Scope	Resources where permissions apply
+
+Key takeaway:
+RBAC combines permissions and scope to control access precisely.
+
+Built-In Azure Roles
+
+The module introduced common built-in Azure roles.
+
+Owner
+Full access to resources
+Can assign permissions to others
+Contributor
+Can manage resources
+Cannot assign roles
+Reader
+View-only access
+User Access Administrator
+Manages user access and permissions
+
+The principle of least privilege was emphasized throughout the module.
+
+Key takeaway:
+Users should only receive the minimum permissions necessary to perform their tasks.
+
+Scope in Azure RBAC
+
+Permissions can be assigned at different levels within Azure.
+
+Scopes include:
+
+Management Groups
+Subscriptions
+Resource Groups
+Individual Resources
+
+Permissions inherited from higher scopes apply to lower scopes automatically.
+
+Example:
+
+Subscription → Resource Group → Virtual Machine
+
+Key takeaway:
+Scope inheritance simplifies permission management across Azure environments.
+
+Verifying Access to Resources
+
+The module demonstrated how administrators can verify user access to resources.
+
+Tasks included:
+
+Reviewing assigned roles
+Checking inherited permissions
+Validating access levels
+
+Administrators can ensure users only have appropriate access based on their job responsibilities.
+
+Key takeaway:
+Regular permission reviews improve cloud security and reduce excessive privileges.
+
+Granting Access to Resources
+
+The module explained how administrators assign RBAC roles.
+
+Typical workflow:
+
+Select Azure resource
+Open Access Control (IAM)
+Add role assignment
+Select role
+Assign user or group
+
+This process allows organizations to centrally manage permissions.
+
+Key takeaway:
+RBAC simplifies secure access management across Azure infrastructure.
+
+Monitoring RBAC Changes
+
+The training also introduced Activity Logs for tracking RBAC changes.
+
+Administrators can monitor:
+
+Role assignments
+Permission changes
+Access modifications
+Administrative actions
+
+Activity logs improve:
+
+Auditing
+Compliance
+Security investigations
+
+Key takeaway:
+Monitoring access changes helps organizations maintain accountability and detect suspicious activity.
+
+Skills Learned
+Understanding Azure RBAC concepts
+Managing Azure authorization
+Assigning Azure roles
+Understanding scope inheritance
+Implementing least privilege access
+Verifying user permissions
+Monitoring RBAC activity logs
+Securing Azure resources through access control
+Conclusion
+
+This module provided foundational knowledge of Azure Role-Based Access Control (RBAC) and demonstrated how organizations manage secure access to Azure resources.
+
+The training focused on role assignments, scope management, access verification, and activity monitoring to help administrators maintain secure and organized cloud environments.
+
+Azure RBAC is one of the most important security features in Azure because it enables organizations to enforce least-privilege access and maintain control over cloud infrastructure and sensitive resources.
