@@ -1,0 +1,377 @@
+TryHackMe: Cyber Kill Chain
+Platform: TryHackMe
+Room: Cyber Kill Chain
+Difficulty: Easy
+Date: 2026
+Objective
+Learn the stages of the Cyber Kill Chain framework and understand how attackers conduct cyberattacks from initial reconnaissance to achieving their objectives. The room also demonstrates how defenders can detect and disrupt attacks at different phases of the intrusion lifecycle.
+
+Step 1: Introduction to the Cyber Kill Chain
+The Cyber Kill Chain is a cybersecurity framework developed by Lockheed Martin to model the stages of a cyberattack.
+The framework helps security teams:
+
+
+Understand attacker behavior
+
+
+Detect threats earlier
+
+
+Improve defensive strategies
+
+
+Interrupt attacks before compromise occurs
+
+
+The Cyber Kill Chain consists of seven stages:
+
+
+Reconnaissance
+
+
+Weaponization
+
+
+Delivery
+
+
+Exploitation
+
+
+Installation
+
+
+Command and Control (C2)
+
+
+Actions on Objectives
+
+
+Key takeaway:
+Understanding attacker methodology helps defenders identify and stop threats before major damage occurs.
+
+Step 2: Reconnaissance
+Reconnaissance is the information-gathering phase where attackers collect intelligence about a target.
+Common reconnaissance techniques:
+
+
+Open-source intelligence (OSINT)
+
+
+Social media research
+
+
+DNS enumeration
+
+
+Email harvesting
+
+
+Network scanning
+
+
+Tools attackers may use:
+
+
+Nmap
+
+
+WHOIS
+
+
+Shodan
+
+
+Maltego
+
+
+The goal is to identify vulnerabilities, employees, exposed services, and attack opportunities.
+Key takeaway:
+Reconnaissance often leaves traces that defenders can monitor and detect.
+
+Step 3: Weaponization
+During weaponization, attackers prepare malicious payloads to exploit vulnerabilities.
+Examples include:
+
+
+Malware creation
+
+
+Malicious Office documents
+
+
+Ransomware payloads
+
+
+Exploit kits
+
+
+Trojanized software
+
+
+Attackers combine:
+
+
+Exploits
+
+
+Payloads
+
+
+Delivery mechanisms
+
+
+into a weaponized attack package.
+Key takeaway:
+Weaponization usually occurs outside the target environment, making detection more difficult.
+
+Step 4: Delivery
+Delivery is the stage where attackers transmit malicious payloads to victims.
+Common delivery methods:
+
+
+Phishing emails
+
+
+Malicious attachments
+
+
+Drive-by downloads
+
+
+USB devices
+
+
+Malicious websites
+
+
+Phishing remains one of the most common attack vectors in modern cyberattacks.
+Defensive measures include:
+
+
+Email filtering
+
+
+Web filtering
+
+
+User awareness training
+
+
+Attachment sandboxing
+
+
+Key takeaway:
+Many attacks can be stopped during delivery through strong security awareness and filtering controls.
+
+Step 5: Exploitation
+Exploitation occurs when malicious code executes on the victim system.
+Examples:
+
+
+Exploiting software vulnerabilities
+
+
+Macro execution
+
+
+Privilege escalation
+
+
+Browser exploits
+
+
+Attackers often target:
+
+
+Unpatched systems
+
+
+Weak configurations
+
+
+Outdated applications
+
+
+Defenders reduce risk by:
+
+
+Applying security patches
+
+
+Disabling unnecessary services
+
+
+Using Endpoint Detection and Response (EDR)
+
+
+Key takeaway:
+Patch management and endpoint protection are critical defensive controls.
+
+Step 6: Installation
+In this stage, attackers establish persistence on compromised systems.
+Common persistence methods:
+
+
+Registry modifications
+
+
+Scheduled tasks
+
+
+Startup folder persistence
+
+
+Backdoors
+
+
+Malware installation
+
+
+The attacker ensures they can maintain access even after system reboots.
+Defenders may detect installation activity through:
+
+
+File integrity monitoring
+
+
+Antivirus alerts
+
+
+Behavioral monitoring
+
+
+Endpoint telemetry
+
+
+Key takeaway:
+Persistence mechanisms are strong indicators of compromise within an environment.
+
+Step 7: Command and Control (C2)
+Command and Control allows attackers to remotely communicate with infected systems.
+Common C2 techniques:
+
+
+HTTP/HTTPS traffic
+
+
+DNS tunneling
+
+
+Encrypted channels
+
+
+Remote access trojans (RATs)
+
+
+Attackers use C2 servers to:
+
+
+Send commands
+
+
+Exfiltrate data
+
+
+Deploy additional malware
+
+
+Move laterally
+
+
+Security teams monitor:
+
+
+Abnormal outbound traffic
+
+
+Beaconing patterns
+
+
+Suspicious domains
+
+
+Network anomalies
+
+
+Key takeaway:
+Network monitoring plays a major role in detecting command-and-control activity.
+
+Step 8: Actions on Objectives
+This is the final phase where attackers accomplish their goals.
+Potential objectives include:
+
+
+Data theft
+
+
+Ransomware deployment
+
+
+Credential harvesting
+
+
+Destruction of systems
+
+
+Financial fraud
+
+
+Espionage
+
+
+At this point, attackers may already have significant access to the environment.
+Incident response teams work to:
+
+
+Contain the attack
+
+
+Eradicate malware
+
+
+Recover systems
+
+
+Investigate impact
+
+
+Key takeaway:
+The earlier defenders interrupt the kill chain, the less damage attackers can cause.
+
+Defensive Security Perspective
+One of the most important lessons from the room is that defenders do not need to stop attackers at every stage.
+Interrupting the attack at any point in the kill chain can successfully prevent compromise.
+Examples:
+Kill Chain StageDefensive ActionReconnaissanceDetect scanning activityDeliveryBlock phishing emailsExploitationPatch vulnerabilitiesInstallationDetect persistenceCommand & ControlBlock malicious traffic
+This layered security approach improves organizational resilience.
+
+Skills Learned
+
+
+Understanding the Cyber Kill Chain framework
+
+
+Recognizing stages of cyberattacks
+
+
+Understanding attacker methodologies
+
+
+Identifying defensive security controls
+
+
+Learning incident detection concepts
+
+
+Understanding persistence and C2 techniques
+
+
+Introduction to threat hunting concepts
+
+
+
+Conclusion
+The Cyber Kill Chain framework provides a structured model for understanding how cyberattacks develop from initial reconnaissance to final objectives.
+The room demonstrated how attackers move through each phase of an intrusion and how defenders can implement controls to detect and disrupt malicious activity before serious damage occurs.
+Understanding the Cyber Kill Chain is essential for SOC analysts, threat hunters, incident responders, and cybersecurity professionals because it helps organizations build proactive and layered defensive strategies against modern threats.
