@@ -1,0 +1,122 @@
+AZ-104 Lab 02a: Manage Subscriptions and RBAC
+Overview
+
+In this lab, I learned how to manage Azure subscriptions and implement Role-Based Access Control (RBAC) within Microsoft Azure. The lab focused on organizing subscriptions using Management Groups, assigning built-in Azure roles, creating custom RBAC roles, and monitoring permission changes using Activity Logs.
+
+The objective was to securely manage access to Azure resources while following the principle of least privilege.
+
+Task 1: Implement Management Groups
+
+The first task involved creating and configuring Azure Management Groups.
+
+Management Groups are used to organize Azure subscriptions into logical containers. This allows administrators to apply RBAC permissions and Azure Policies across multiple subscriptions at once.
+
+I created a management group named:
+
+az104-mg1
+
+During this task, I learned that:
+
+Management Groups simplify administration in enterprise environments
+Permissions and policies inherit through the hierarchy
+The Root Management Group contains all subscriptions within the Azure tenant
+Management Groups improve centralized governance
+
+This feature is especially useful for organizations managing multiple subscriptions across departments or regions.
+
+Task 2: Review and Assign a Built-In Azure Role
+
+Next, I explored Azure built-in RBAC roles through the Access Control (IAM) section.
+
+Azure includes many predefined roles such as:
+
+Owner
+Contributor
+Reader
+Virtual Machine Contributor
+
+I assigned the:
+
+Virtual Machine Contributor
+
+role to the Help Desk group.
+
+This role allows users to:
+
+Create and manage virtual machines
+
+but restricts them from:
+
+Accessing the operating system
+Managing storage accounts
+Managing virtual networking resources
+
+This task demonstrated how Azure RBAC helps administrators securely delegate responsibilities without granting excessive permissions.
+
+Key Concepts Learned
+Azure RBAC controls authorization within Azure
+Built-in roles simplify access management
+Permissions should follow least privilege principles
+Group-based assignments are easier to manage than individual permissions
+Task 3: Create a Custom RBAC Role
+
+In this task, I created a custom RBAC role to provide more granular permissions.
+
+I cloned the:
+
+Support Request Contributor
+
+role and modified its permissions.
+
+The custom role created was:
+
+Custom Support Request
+
+I removed unnecessary permissions related to:
+
+Microsoft.Support
+
+provider registration by adding them to the NotActions section.
+
+This demonstrated how custom roles use JSON configurations to define:
+
+Actions
+NotActions
+AssignableScopes
+Key Concepts Learned
+Custom roles provide precise permission control
+Built-in roles may grant too many permissions
+Least privilege is critical for cloud security
+Azure RBAC roles are configured using JSON
+Task 4: Monitor Role Assignments with Activity Logs
+
+The final task focused on monitoring RBAC activity using Azure Activity Logs.
+
+The Activity Log allows administrators to:
+
+Monitor role assignments
+Track permission changes
+Audit administrative actions
+Investigate suspicious behavior
+
+I reviewed RBAC-related events associated with the management group and explored filtering options within the logs.
+
+Key Concepts Learned
+Activity Logs improve visibility into Azure administration
+RBAC changes should be audited regularly
+Monitoring improves security and compliance
+Skills Learned
+Managing Azure subscriptions
+Configuring Management Groups
+Assigning built-in Azure RBAC roles
+Creating custom RBAC roles
+Applying least privilege access
+Monitoring Azure Activity Logs
+Understanding Azure governance and access control
+Conclusion
+
+This lab provided practical experience with Azure governance and Role-Based Access Control (RBAC).
+
+I learned how to organize subscriptions using Management Groups, securely assign permissions using built-in and custom roles, and monitor administrative changes through Activity Logs.
+
+These skills are essential for Azure administrators and cloud security professionals because identity and access management are foundational components of securing Azure environments.
