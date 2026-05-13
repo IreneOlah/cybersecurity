@@ -1,0 +1,329 @@
+TryHackMe: Unified Kill Chain
+
+Platform: TryHackMe
+Room: Unified Kill Chain
+Difficulty: Easy
+Date: 2026
+
+Objective
+
+Learn the Unified Kill Chain framework and understand how modern cyberattacks combine traditional intrusion phases with post-compromise attacker activity. The room explains how attackers progress through an environment and how defenders can detect and disrupt adversaries across the entire attack lifecycle.
+
+Step 1: Introduction to the Unified Kill Chain
+
+The Unified Kill Chain is a cybersecurity framework designed to improve upon the traditional Cyber Kill Chain by combining:
+
+The Lockheed Martin Cyber Kill Chain
+MITRE ATT&CK techniques
+Modern intrusion methodologies
+
+The framework focuses on the complete attack lifecycle, especially post-compromise activities that occur after initial access.
+
+Main goals:
+
+Understand attacker behavior
+Improve threat detection
+Strengthen defensive visibility
+Disrupt adversaries earlier
+
+The Unified Kill Chain contains 18 phases grouped into three major categories:
+
+Initial Foothold
+Network Propagation
+Actions on Objectives
+
+Key takeaway:
+Modern attacks extend far beyond initial compromise, making visibility into post-exploitation activity extremely important.
+
+Phase Group 1: Initial Foothold
+Step 2: Reconnaissance
+
+Attackers gather intelligence about targets before launching attacks.
+
+Common activities:
+
+OSINT collection
+Email harvesting
+Domain enumeration
+Social engineering research
+Vulnerability scanning
+
+Attackers attempt to identify:
+
+Employees
+Exposed infrastructure
+Technologies in use
+Weaknesses
+
+Key takeaway:
+Reconnaissance helps attackers prepare highly targeted attacks.
+
+Step 3: Weaponization
+
+Attackers create malicious payloads designed to exploit systems or users.
+
+Examples:
+
+Malware
+Malicious documents
+Exploit kits
+Trojanized applications
+
+Payloads are customized to improve success rates and evade detection.
+
+Key takeaway:
+Weaponization often happens outside the victim environment, limiting defensive visibility.
+
+Step 4: Delivery
+
+The malicious payload is transmitted to the target.
+
+Common methods:
+
+Phishing emails
+Malicious links
+USB devices
+Drive-by downloads
+Supply chain compromise
+
+Organizations defend against delivery using:
+
+Email security
+Web filtering
+Security awareness training
+
+Key takeaway:
+Human error is frequently targeted during delivery stages.
+
+Step 5: Exploitation
+
+Attackers exploit vulnerabilities or execute malicious code on the victim system.
+
+Examples:
+
+Software vulnerabilities
+Macro execution
+Credential abuse
+Browser exploits
+
+Defenders reduce risk through:
+
+Patch management
+Endpoint security
+Least privilege access
+
+Key takeaway:
+Exploitation allows attackers to gain initial access into the environment.
+
+Step 6: Persistence
+
+Attackers establish mechanisms to maintain long-term access.
+
+Persistence methods include:
+
+Registry Run keys
+Scheduled tasks
+Startup folders
+Web shells
+Backdoors
+
+Persistence ensures attackers remain inside systems even after reboots or disruptions.
+
+Key takeaway:
+Persistence activity often generates strong forensic evidence.
+
+Step 7: Defense Evasion
+
+Attackers attempt to avoid detection by security controls.
+
+Techniques include:
+
+Obfuscation
+Disabling antivirus
+Log deletion
+Encrypted payloads
+Masquerading processes
+
+Modern adversaries prioritize stealth to maintain access longer.
+
+Key takeaway:
+Defense evasion significantly complicates detection and investigation.
+
+Step 8: Command and Control (C2)
+
+Attackers establish communication channels with compromised systems.
+
+Common C2 methods:
+
+HTTP/HTTPS traffic
+DNS tunneling
+Remote access trojans
+Cloud services abuse
+
+C2 allows attackers to:
+
+Send commands
+Deploy malware
+Exfiltrate data
+Coordinate attacks
+
+Key takeaway:
+Monitoring abnormal outbound traffic is critical for detecting compromised systems.
+
+Phase Group 2: Network Propagation
+Step 9: Discovery
+
+Attackers map the internal environment after compromise.
+
+Discovery techniques include:
+
+Network scanning
+Account enumeration
+Process enumeration
+System information gathering
+
+Attackers search for:
+
+Sensitive systems
+Privileged accounts
+Security tools
+Valuable data
+
+Key takeaway:
+Discovery activity helps attackers identify paths for lateral movement.
+
+Step 10: Credential Access
+
+Attackers attempt to steal authentication credentials.
+
+Methods include:
+
+Keylogging
+Password dumping
+Credential harvesting
+LSASS memory dumping
+
+Tools often associated:
+
+Mimikatz
+PowerShell scripts
+
+Key takeaway:
+Compromised credentials allow attackers to escalate privileges and move laterally.
+
+Step 11: Lateral Movement
+
+Attackers spread through the network to additional systems.
+
+Common methods:
+
+Remote Desktop Protocol (RDP)
+SMB
+PsExec
+Pass-the-Hash attacks
+
+The goal is to increase access and reach valuable assets.
+
+Key takeaway:
+Lateral movement often generates suspicious authentication and network activity.
+
+Step 12: Privilege Escalation
+
+Attackers attempt to gain elevated permissions.
+
+Methods include:
+
+Exploiting vulnerabilities
+Misconfigured permissions
+Credential abuse
+Token manipulation
+
+Administrative privileges provide broader control over systems and networks.
+
+Key takeaway:
+Privilege escalation dramatically increases attacker capabilities.
+
+Phase Group 3: Actions on Objectives
+Step 13: Collection
+
+Attackers gather valuable information before exfiltration.
+
+Examples:
+
+Sensitive documents
+Databases
+Credentials
+Intellectual property
+
+Attackers may compress or encrypt data before transfer.
+
+Key takeaway:
+Collection often occurs quietly to avoid detection.
+
+Step 14: Exfiltration
+
+Attackers transfer stolen data outside the organization.
+
+Methods include:
+
+HTTPS uploads
+Cloud storage services
+FTP transfers
+DNS tunneling
+
+Defenders monitor:
+
+Unusual outbound traffic
+Large data transfers
+Suspicious destinations
+
+Key takeaway:
+Data exfiltration is a major indicator of compromise and business impact.
+
+Step 15: Impact
+
+The final phase involves achieving the attacker’s objectives.
+
+Potential impacts:
+
+Ransomware deployment
+Data destruction
+Service disruption
+Financial theft
+Espionage
+
+Incident response teams work to:
+
+Contain systems
+Eradicate threats
+Recover operations
+
+Key takeaway:
+Early detection throughout the kill chain minimizes organizational damage.
+
+Unified Kill Chain vs Traditional Kill Chain
+
+The Unified Kill Chain expands visibility into:
+
+Post-exploitation activity
+Internal attacker movement
+Credential abuse
+Long-term persistence
+
+This framework provides defenders with a more realistic view of modern attacks.
+
+Skills Learned
+Understanding the Unified Kill Chain framework
+Identifying stages of modern cyberattacks
+Understanding attacker persistence techniques
+Recognizing lateral movement activity
+Learning credential attack concepts
+Understanding post-compromise behavior
+Introduction to threat hunting and detection engineering
+Conclusion
+
+The Unified Kill Chain provides a comprehensive framework for understanding modern cyber intrusions from initial reconnaissance through post-compromise activity and final attacker objectives.
+
+The room demonstrated how attackers establish persistence, move laterally, escalate privileges, and exfiltrate data within enterprise environments.
+
+Understanding the Unified Kill Chain is valuable for SOC analysts, incident responders, threat hunters, and cybersecurity professionals because it enables stronger detection strategies and improved defensive visibility across the full attack lifecycle.
