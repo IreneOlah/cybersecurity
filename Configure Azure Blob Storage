@@ -1,0 +1,171 @@
+Microsoft Learn: Configure Azure Blob Storage
+
+Platform: Microsoft Learn
+Module: Configure Azure Blob Storage
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how to configure and manage Azure Blob Storage for scalable, high-performance storage of unstructured data in cloud environments.
+
+This module focused on configuring Azure Blob Storage accounts, managing containers and blobs, optimizing storage costs through access tiers, and implementing lifecycle management and replication strategies for business continuity.
+
+Step 1: Understanding Azure Blob Storage
+
+The module introduced Azure Blob Storage as Microsoft’s object storage solution for unstructured data.
+
+Types of unstructured data:
+Video files
+Images
+Backups
+Documents
+Logs
+Binary application data
+
+The learning scenario focused on a media company storing thousands of video clips accessed daily by customers and internal systems.
+
+Key Blob Storage benefits:
+Massive scalability
+High durability
+Global availability
+Cost optimization through storage tiers
+Integration with AI and analytics workloads
+
+Azure Blob Storage is designed for cloud-native applications that require large-scale object storage.
+
+Step 2: Creating and Configuring Blob Storage
+
+The module covered creating Azure Storage Accounts configured for Blob Storage workloads.
+
+Key configuration areas:
+Configuration	Purpose
+Storage account type	Defines supported features
+Performance tier	Standard or Premium
+Replication strategy	Data redundancy
+Access tier	Cost optimization
+Security settings	Access protection
+Blob Storage hierarchy:
+Storage Account
+Containers
+Blobs (files/objects)
+Blob types introduced:
+Blob Type	Use Case
+Block blobs	Documents, videos, images
+Append blobs	Logging workloads
+Page blobs	Virtual machine disks
+
+The module emphasized selecting the correct blob type depending on workload requirements.
+
+Step 3: Managing Containers and Blobs
+
+The training demonstrated how containers organize blob data inside storage accounts.
+
+Skills practiced:
+Creating containers
+Uploading blobs
+Managing blob properties
+Configuring access permissions
+Setting public or private access levels
+Access control concepts:
+Private container access
+Blob-level public access
+Shared Access Signatures (SAS)
+Azure RBAC integration
+
+Secure data management is critical for enterprise cloud environments.
+
+Step 4: Access Tiers and Cost Optimization
+
+A major focus of the module was reducing storage costs through access tiers.
+
+Azure Blob access tiers:
+Tier	Best For
+Hot	Frequently accessed data
+Cool	Infrequently accessed data
+Archive	Rarely accessed long-term storage
+Important lessons learned:
+Hot tier offers highest performance and lowest access latency
+Cool tier lowers storage cost but increases access cost
+Archive tier provides lowest storage cost with slower retrieval times
+
+The media company scenario used lifecycle management to automatically move older videos into lower-cost tiers.
+
+This demonstrated how Azure Administrators balance performance and operational costs.
+
+Step 5: Lifecycle Management Policies
+
+The module introduced lifecycle management automation for blob storage.
+
+Lifecycle management capabilities:
+Automatically move blobs between tiers
+Delete expired data
+Reduce long-term storage costs
+Apply rule-based retention policies
+Example automation strategies:
+Move videos to Cool tier after 30 days
+Archive older content after 180 days
+Delete outdated files after retention periods expire
+
+Lifecycle policies help organizations manage large-scale storage efficiently.
+
+Step 6: Performance and Scalability
+
+The training covered methods to optimize Blob Storage performance.
+
+Optimization concepts:
+Partitioning
+Naming conventions
+Replication strategies
+Data locality
+Throughput scaling
+Replication options studied:
+Replication Type	Purpose
+LRS	Local redundancy
+ZRS	Zone redundancy
+GRS	Geographic redundancy
+RA-GRS	Read-access geographic redundancy
+
+The module also introduced object replication to support disaster recovery and failover planning.
+
+Step 7: Blob Pricing and Planning
+
+The module explained how Azure Blob Storage pricing depends on:
+
+Storage tier
+Replication type
+Data access frequency
+Data transfer operations
+Geographic region
+Key takeaway:
+
+Efficient pricing strategies require balancing:
+
+Performance requirements
+Storage costs
+Availability requirements
+Data retention policies
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Azure Blob Storage architecture
+Creating and configuring Blob Storage accounts
+Managing containers and blob objects
+Implementing secure blob access
+Using storage access tiers for cost optimization
+Configuring lifecycle management policies
+Understanding replication and failover strategies
+Planning scalable object storage solutions
+Tools & Services Used
+Microsoft Azure Blob Storage
+Azure Storage Accounts
+Azure Lifecycle Management
+Shared Access Signatures (SAS)
+Azure RBAC
+Azure CLI
+Azure Portal
+Key Takeaway
+
+Azure Blob Storage provides scalable and cost-efficient object storage for modern cloud applications. By using access tiers, lifecycle management, and replication strategies, Azure Administrators can optimize performance, reduce costs, and improve data resilience for enterprise workloads.
