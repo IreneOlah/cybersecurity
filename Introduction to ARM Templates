@@ -1,0 +1,136 @@
+Microsoft Learn: Introduction to ARM Templates
+
+Platform: Microsoft Learn
+Module: Introduction to ARM Templates
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how to use Azure Resource Manager (ARM) templates to deploy and manage Azure infrastructure through Infrastructure as Code (IaC).
+
+This module introduced the fundamentals of ARM templates, including template structure, resource declarations, parameters, and outputs. The training emphasized creating reusable and consistent Azure deployments across multiple environments.
+
+Step 1: Understanding Infrastructure as Code (IaC)
+
+The module introduced the concept of Infrastructure as Code, where infrastructure is defined through configuration files instead of manual deployment through the Azure portal.
+
+Key benefits of IaC:
+Consistent deployments
+Version-controlled infrastructure
+Repeatable environments
+Easier collaboration between teams
+Reduced configuration drift
+Faster deployment automation
+
+The scenario focused on deploying inventory systems for multiple partner companies, each with different Azure storage configurations and policies.
+
+ARM templates help standardize deployments while still allowing customization for each environment.
+
+Step 2: Introduction to ARM Templates
+
+ARM templates are JSON-based files used to define Azure infrastructure declaratively.
+
+Important ARM template components:
+Component	Purpose
+Parameters	Accept custom deployment values
+Variables	Store reusable values
+Resources	Define Azure resources
+Outputs	Return deployment information
+Key concepts learned:
+ARM templates describe the desired infrastructure state
+Azure Resource Manager handles deployment orchestration
+Templates can deploy multiple resources together
+Infrastructure definitions can be stored in source control systems like GitHub
+
+This approach improves deployment reliability and team collaboration.
+
+Step 3: Creating ARM Templates in Visual Studio Code
+
+The module demonstrated creating ARM templates using Visual Studio Code.
+
+Skills practiced:
+Creating JSON ARM template files
+Defining template schema versions
+Structuring template sections correctly
+Using IntelliSense and extensions for validation
+Editing and testing deployment configurations
+Example resources deployed:
+Azure Storage Accounts
+Resource groups
+Configurable deployment settings
+
+Visual Studio Code improves the authoring experience by helping validate ARM template syntax and structure.
+
+Step 4: Using Parameters and Outputs
+
+A major focus of the module was adding flexibility to deployments through parameters and outputs.
+
+Parameters allow:
+Different resource names
+Different regions
+Different SKU selections
+Environment-specific configurations
+Outputs provide:
+Resource IDs
+Storage account names
+Endpoint URLs
+Deployment information for later use
+Key lessons learned:
+Parameters make templates reusable across environments
+Outputs simplify integration with automation workflows
+Flexible templates reduce duplication and manual changes
+
+This practice supports scalable enterprise deployments.
+
+Step 5: Deploying ARM Templates
+
+The module covered deploying ARM templates through command-line tools.
+
+Deployment tools introduced:
+Azure CLI
+Azure PowerShell
+Azure Portal deployment options
+Important deployment concepts:
+Resource group deployments
+Validation before deployment
+Incremental deployment behavior
+Infrastructure version management
+
+Using deployment automation improves consistency and reduces human error.
+
+Step 6: ARM Templates vs Bicep
+
+The module also introduced Bicep as a modern alternative to raw JSON ARM templates.
+
+Key differences:
+ARM Templates	Bicep
+JSON syntax	Simpler syntax
+Verbose structure	Cleaner and more readable
+Native Azure support	Native Azure support
+More complex authoring	Easier development experience
+
+Microsoft recommends Bicep for new Infrastructure as Code projects because of its improved readability and developer experience.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Infrastructure as Code principles
+Creating JSON ARM templates
+Deploying Azure resources declaratively
+Using parameters and outputs
+Managing reusable infrastructure configurations
+Working with Azure deployment automation tools
+Using Visual Studio Code for ARM template development
+Tools & Technologies Used
+Microsoft Azure Resource Manager
+ARM Templates (JSON)
+Visual Studio Code
+Azure CLI
+Azure PowerShell
+Bicep
+Key Takeaway
+
+ARM templates provide a powerful Infrastructure as Code solution for deploying Azure resources consistently and efficiently. By using declarative JSON templates with parameters and outputs, Azure Administrators can automate deployments, maintain version control, and support scalable cloud infrastructure management across multiple environments.
