@@ -1,0 +1,125 @@
+Microsoft Learn: Configure Azure Storage Accounts
+
+Platform: Microsoft Learn
+Module: Configure Azure Storage Accounts
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how to configure and manage Azure Storage Accounts, including selecting storage types, implementing replication strategies, and securing storage access for enterprise cloud environments.
+
+This module focused on the core storage services used in Microsoft Azure and how Azure Administrators deploy scalable, reliable, and secure storage solutions for modern applications.
+
+Step 1: Understanding Azure Storage Accounts
+
+The module introduced Azure Storage Accounts as the foundation of Azure cloud storage services.
+
+Azure Storage Accounts provide scalable cloud storage for:
+
+Blobs (object storage)
+Files (managed file shares)
+Queues (message storage)
+Tables (NoSQL structured data)
+
+Key benefits:
+
+High availability
+Scalability
+Durability
+Secure access management
+Integration with Azure services
+
+A storage account acts as a container that groups Azure storage services together under one management configuration.
+
+Step 2: Storage Account Types
+
+The module covered different Azure Storage Account types and their use cases.
+
+Main storage account types:
+Storage Type	Purpose
+General-purpose v2 (GPv2)	Recommended default account type supporting all services
+Blob Storage	Optimized for blob/object storage
+FileStorage	Premium file shares
+BlockBlobStorage	Premium performance for block blobs
+Key concepts learned:
+GPv2 accounts provide the widest compatibility and features
+Premium storage is optimized for high-performance workloads
+Standard storage is cost-effective for general usage
+Choosing the correct storage type impacts performance and pricing
+Step 3: Azure Storage Replication Strategies
+
+A major focus of the module was redundancy and replication.
+
+Azure automatically replicates data to protect against hardware failures and outages.
+
+Replication options studied:
+Replication Type	Description
+LRS	Locally Redundant Storage
+ZRS	Zone-Redundant Storage
+GRS	Geo-Redundant Storage
+RA-GRS	Read-Access Geo-Redundant Storage
+GZRS	Geo-Zone-Redundant Storage
+Important takeaways:
+LRS stores multiple copies within one datacenter
+ZRS replicates across availability zones
+GRS replicates data to a secondary geographic region
+RA-GRS allows read access to replicated secondary data
+Replication strategy selection depends on cost, availability, and disaster recovery requirements
+
+The module emphasized balancing business continuity requirements with operational costs.
+
+Step 4: Configuring Secure Access
+
+The training also covered security configurations for storage accounts.
+
+Security features explored:
+Storage account firewalls
+Virtual network restrictions
+Private endpoints
+Shared Access Signatures (SAS)
+Access keys
+Azure role-based access control (RBAC)
+Key lessons:
+Public access should be restricted whenever possible
+RBAC is preferred over sharing account keys
+Private endpoints increase security by removing public internet exposure
+SAS tokens provide temporary delegated access to storage resources
+
+Security is a critical responsibility for Azure Administrators managing enterprise environments.
+
+Step 5: Real-World Scenario
+
+The module used an example of a large e-commerce company storing product images in Azure Storage.
+
+Key administrative goals included:
+
+Supporting high traffic loads
+Ensuring high availability
+Protecting data against outages
+Enabling rapid disaster recovery
+Maintaining secure access controls
+
+This demonstrated how Azure Storage Accounts support scalable enterprise cloud architectures.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Identifying Azure Storage Account features
+Selecting appropriate Azure storage solutions
+Understanding replication and redundancy models
+Configuring secure storage access
+Managing storage account networking options
+Applying Azure storage best practices
+Tools & Services Used
+Microsoft Azure Portal
+Microsoft Azure Storage Accounts
+Azure Blob Storage
+Azure RBAC
+Private Endpoints
+Shared Access Signatures (SAS)
+Key Takeaway
+
+Azure Storage Accounts are a core component of cloud infrastructure in Microsoft Azure. Understanding how to configure storage types, replication strategies, and secure access is essential for building resilient and secure cloud environments as an Azure Administrator.
