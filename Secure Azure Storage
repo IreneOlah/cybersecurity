@@ -1,0 +1,150 @@
+Microsoft Learn: Secure Azure Storage
+
+Platform: Microsoft Learn
+Module: Secure Azure Storage
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how to secure Azure Storage resources by implementing encryption, Shared Access Signatures (SAS), and customer-managed encryption keys.
+
+This module focused on protecting sensitive enterprise data stored in Azure Storage and configuring secure access methods for both internal users and external application developers.
+
+Step 1: Understanding Azure Storage Security
+
+The module introduced Azure Storage security capabilities designed to protect sensitive cloud data.
+
+Types of protected data:
+Personal information
+Application files
+Business records
+Internal company data
+External developer resources
+Core security goals:
+Protect data confidentiality
+Restrict unauthorized access
+Encrypt stored data
+Secure external sharing
+Maintain compliance requirements
+
+Azure Storage provides layered security controls that help organizations secure cloud workloads.
+
+Step 2: Shared Access Signatures (SAS)
+
+A major focus of the module was configuring Shared Access Signatures (SAS).
+
+What SAS provides:
+
+A SAS token grants temporary, limited access to Azure Storage resources without exposing account keys.
+
+SAS capabilities include:
+Time-limited access
+Permission-based access
+Resource-specific access
+Secure URI generation
+Types of permissions:
+Permission	Description
+Read	View storage data
+Write	Modify storage data
+Delete	Remove resources
+List	View resource listings
+Key concepts learned:
+SAS tokens improve security by avoiding full account key sharing
+SAS access can expire automatically
+Permissions should follow the principle of least privilege
+SAS URIs combine the resource endpoint with access parameters
+
+This approach is commonly used when securely sharing resources with external applications or users.
+
+Step 3: Azure Storage Encryption
+
+The module covered Azure Storage encryption methods used to protect data at rest.
+
+Encryption features studied:
+Automatic encryption by default
+Encryption for blobs, files, queues, and tables
+Microsoft-managed keys
+Customer-managed keys
+Key lessons:
+Azure automatically encrypts stored data
+Encryption protects against unauthorized physical access
+Encryption occurs transparently without impacting application functionality
+
+Azure Storage encryption is a core security requirement for enterprise cloud environments.
+
+Step 4: Customer-Managed Keys (CMK)
+
+The training introduced customer-managed encryption keys for organizations requiring greater control over encryption.
+
+Benefits of customer-managed keys:
+Greater compliance control
+Key rotation management
+Full ownership of encryption keys
+Centralized security management
+Services involved:
+Microsoft Azure Key Vault
+Azure Storage Accounts
+Key concepts learned:
+Azure Key Vault securely stores encryption keys
+Organizations can rotate or revoke keys
+CMKs support regulatory and compliance requirements
+Access to encryption keys should be tightly controlled
+
+Customer-managed keys provide stronger governance for highly sensitive data.
+
+Step 5: Improving Azure Storage Security
+
+The module emphasized best practices for strengthening storage security.
+
+Security recommendations included:
+Best Practice	Purpose
+Use SAS instead of account keys	Reduce exposure risk
+Enable encryption	Protect stored data
+Use RBAC	Granular access control
+Restrict network access	Limit public exposure
+Rotate keys regularly	Improve security hygiene
+Use private endpoints	Secure network communication
+Additional concepts:
+Principle of least privilege
+Monitoring storage access
+Limiting anonymous access
+Secure developer integration
+
+Security configuration plays a major role in protecting cloud-hosted business data.
+
+Step 6: Real-World Scenario
+
+The learning scenario involved securing sensitive company data stored in Azure Storage for both internal employees and external application developers.
+
+Administrative goals included:
+Protecting personal information
+Securing developer access
+Preventing unauthorized exposure
+Maintaining encrypted storage
+Managing secure sharing mechanisms
+
+This demonstrated how Azure Administrators implement practical enterprise cloud security controls.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Configuring Shared Access Signatures (SAS)
+Understanding SAS URI parameters
+Implementing Azure Storage encryption
+Using customer-managed keys (CMK)
+Working with Azure Key Vault integration
+Applying storage security best practices
+Improving access control for cloud storage resources
+Tools & Services Used
+Microsoft Azure Storage
+Azure Blob Storage
+Shared Access Signatures (SAS)
+Microsoft Azure Key Vault
+Azure RBAC
+Azure Portal
+Key Takeaway
+
+Azure Storage includes multiple built-in security capabilities that help protect sensitive enterprise data. By combining encryption, SAS tokens, RBAC, and customer-managed keys, Azure Administrators can build secure and compliant cloud storage environments while safely enabling internal and external access.
