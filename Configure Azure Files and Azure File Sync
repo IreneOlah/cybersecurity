@@ -1,0 +1,159 @@
+Microsoft Learn: Configure Azure Files and Azure File Sync
+
+Platform: Microsoft Learn
+Module: Configure Azure Files and Azure File Sync
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how to configure and manage Azure Files and Azure File Sync to provide centralized, cloud-based file storage accessible across multiple geographic locations.
+
+This module focused on implementing Azure file shares, comparing file shares with blob storage, configuring data protection features, and using Azure File Sync to improve access to organizational documents across distributed offices.
+
+Step 1: Understanding Azure Files
+
+The module introduced Azure Files as a fully managed cloud file-sharing service.
+
+Azure Files allows organizations to create shared file storage accessible through industry-standard protocols such as SMB (Server Message Block).
+
+Common Azure Files use cases:
+Shared organizational documents
+Lift-and-shift file server migrations
+Centralized department storage
+Hybrid cloud file sharing
+Cross-region collaboration
+
+The learning scenario involved a company with offices in multiple geographic regions needing access to the most up-to-date versions of organizational documents.
+
+Step 2: Azure Files vs Blob Storage
+
+The module compared Azure Files with Azure Blob Storage.
+
+Key differences:
+Azure Files	Azure Blob Storage
+File share storage	Object storage
+SMB protocol support	HTTP/HTTPS access
+Traditional file system structure	Flat object storage
+Ideal for shared file access	Ideal for unstructured data
+Important lessons learned:
+Azure Files works similarly to traditional network file shares
+Blob Storage is optimized for scalable object storage
+Azure Files is better for shared user documents and legacy applications
+Blob Storage is preferred for media, backups, and large-scale application data
+
+Choosing the correct storage solution depends on workload requirements and access patterns.
+
+Step 3: Configuring Azure File Shares
+
+The training demonstrated how to create and manage Azure file shares inside Azure Storage Accounts.
+
+Skills practiced:
+Creating Azure file shares
+Configuring storage quotas
+Managing access permissions
+Uploading and organizing files
+Connecting file shares to systems
+File share hierarchy:
+Storage Account
+File Shares
+Directories
+Files
+
+The module emphasized centralized cloud file storage for distributed organizations.
+
+Step 4: Azure File Sync
+
+A major focus of the module was Azure File Sync.
+
+What Azure File Sync provides:
+
+Azure File Sync allows organizations to cache Azure file shares locally on:
+
+On-premises Windows Servers
+Cloud virtual machines
+Benefits of Azure File Sync:
+Faster local access to files
+Centralized cloud management
+Reduced on-premises storage usage
+Multi-office synchronization
+Cloud tiering support
+Key concepts learned:
+Frequently accessed files stay cached locally
+Less frequently used files can remain in Azure
+Users across offices access current file versions
+Hybrid storage environments improve flexibility
+
+Azure File Sync bridges traditional on-premises infrastructure with cloud storage.
+
+Step 5: Snapshots and Soft Delete
+
+The module covered data protection capabilities for Azure Files.
+
+File share snapshots:
+
+Snapshots create point-in-time backups of file shares.
+
+Benefits:
+Recover deleted files
+Restore previous file versions
+Protect against accidental changes
+Soft delete:
+
+Soft delete temporarily retains deleted file shares for recovery.
+
+Key lessons:
+Snapshots improve disaster recovery capabilities
+Soft delete protects against accidental deletion
+Data protection features are critical for organizational file systems
+Step 6: Azure Storage Explorer
+
+The module introduced Azure Storage Explorer as a management tool for Azure storage services.
+
+Capabilities practiced:
+Connecting to Azure Storage Accounts
+Browsing file shares
+Uploading and downloading files
+Managing storage resources
+Viewing blob and file data
+
+Azure Storage Explorer simplifies administration and file management outside the Azure Portal.
+
+Step 7: Real-World Scenario
+
+The learning scenario involved a company with multiple office locations requiring centralized document access.
+
+Administrative goals included:
+Ensuring employees access the latest document versions
+Providing centralized cloud storage
+Supporting geographically distributed offices
+Implementing reliable backup and recovery
+Improving hybrid cloud file management
+
+This demonstrated practical enterprise use cases for Azure Files and Azure File Sync.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Azure Files architecture
+Comparing Azure Files and Blob Storage
+Creating and managing Azure file shares
+Configuring snapshots and soft delete
+Understanding Azure File Sync functionality
+Managing hybrid cloud file storage
+Using Azure Storage Explorer
+Implementing centralized file-sharing solutions
+Tools & Services Used
+Microsoft Azure Files
+Azure File Sync
+Azure Storage Accounts
+SMB Protocol
+File Share Snapshots
+Soft Delete
+Azure Storage Explorer
+Azure Portal
+Key Takeaway
+
+Azure Files and Azure File Sync provide scalable and centralized cloud-based file sharing solutions for modern hybrid environments. By combining cloud storage with local caching, organizations can improve collaboration, ensure file availability across regions, and simplify enterprise file management.
