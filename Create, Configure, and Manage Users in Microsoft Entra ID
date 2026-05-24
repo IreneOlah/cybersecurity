@@ -1,0 +1,158 @@
+Microsoft Learn: Create, Configure, and Manage Users in Microsoft Entra ID
+
+Platform: Microsoft Learn
+Module: Create, Configure, and Manage Users
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how to create, configure, and manage user accounts in Microsoft Entra ID to control authentication and access to Azure resources.
+
+This module focused on understanding different user identity types, managing users through the Microsoft Entra Admin Center, and learning how authentication and authorization work within Azure environments.
+
+Step 1: Understanding User Accounts in Microsoft Entra ID
+
+The module introduced Microsoft Entra ID user accounts as the foundation of identity and access management in Azure.
+
+Every user who requires access to Azure resources must have a user account. During sign-in, Microsoft Entra ID authenticates the user and generates an access token that determines:
+
+Which resources the user can access
+What actions the user can perform
+What permissions are assigned
+
+This authentication and authorization process helps secure Azure environments and enforce access controls.
+
+Step 2: Managing Users in the Microsoft Entra Admin Center
+
+The training demonstrated how administrators manage users through the Microsoft Entra Admin Center.
+
+Skills practiced:
+Viewing user accounts
+Managing user properties
+Identifying user types
+Navigating Azure directories
+Switching between directories and subscriptions
+Administrative features:
+Feature	Purpose
+All Users	View and manage user accounts
+Directory Switching	Change between Microsoft Entra directories
+User Management	Create, modify, and remove users
+User Type Identification	Distinguish members and guest accounts
+
+The module emphasized that administrators can only manage one directory at a time and must switch directories when working across multiple tenants.
+
+Step 3: Cloud Identities
+
+The module introduced cloud-only identities.
+
+Characteristics:
+Exist only within Microsoft Entra ID
+Managed directly in Azure
+Not synchronized from on-premises environments
+Examples:
+Azure administrators
+Cloud-only employees
+Service-specific administrative accounts
+Key concepts learned:
+Source is Microsoft Entra ID
+Can be created and managed directly in the cloud
+Removed permanently when deleted from the directory
+
+Cloud identities are commonly used in cloud-native organizations without traditional on-premises Active Directory infrastructure.
+
+Step 4: Directory-Synchronized Identities
+
+The training covered hybrid identity management using synchronized accounts.
+
+Characteristics:
+Created in on-premises Active Directory
+Synchronized into Microsoft Entra ID
+Allow users to maintain a single identity across environments
+Synchronization tools:
+Tool	Purpose
+Microsoft Entra Cloud Sync	Recommended for most organizations
+Microsoft Entra Connect Sync	Used for complex synchronization scenarios
+Key lessons learned:
+Source is Windows Server Active Directory
+Supports hybrid cloud deployments
+Enables centralized identity management
+Maintains consistency between on-premises and cloud environments
+
+Organizations with existing Active Directory infrastructure commonly use synchronized identities.
+
+Step 5: Guest Users
+
+The module introduced guest users for external collaboration.
+
+Examples:
+Contractors
+Vendors
+Business partners
+External consultants
+Characteristics:
+Exist outside the organization
+Invited into the tenant
+Granted limited access to specific resources
+Benefits:
+Secure external collaboration
+Controlled resource access
+Temporary permissions
+Easy account removal when access is no longer required
+
+Guest accounts help organizations work securely with external users without creating internal employee accounts.
+
+Step 6: Authentication and Authorization
+
+A major focus of the module was understanding how Microsoft Entra ID manages access.
+
+Authentication
+
+Authentication verifies a user's identity.
+
+Example:
+
+Username
+Password
+Multifactor Authentication (MFA)
+Authorization
+
+Authorization determines what a user can do after authentication succeeds.
+
+Examples:
+
+Access Azure resources
+Read storage accounts
+Manage virtual machines
+Modify subscriptions
+Process Flow
+User signs in.
+Microsoft Entra ID validates credentials.
+An access token is generated.
+Permissions are evaluated.
+Access is granted or denied.
+
+This process ensures secure access management throughout Azure environments.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Managing users in Microsoft Entra ID
+Understanding cloud identities
+Managing synchronized identities
+Configuring guest user access
+Understanding authentication workflows
+Understanding authorization processes
+Navigating the Microsoft Entra Admin Center
+Managing Azure directory resources
+Tools & Services Used
+Microsoft Entra ID
+Microsoft Entra Admin Center
+Microsoft Entra Cloud Sync
+Microsoft Entra Connect Sync
+Windows Server Active Directory
+Key Takeaway
+
+Microsoft Entra ID provides centralized identity management for cloud, hybrid, and external users. By understanding cloud identities, synchronized identities, and guest accounts, Azure Administrators can securely manage authentication, authorization, and resource access across enterprise environments. This is a foundational skill area for the AZ-104 Microsoft Azure Administrator certification.
