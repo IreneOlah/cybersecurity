@@ -1,0 +1,218 @@
+Microsoft Learn: Manage Identities and Governance in Microsoft Entra ID
+
+Platform: Microsoft Learn
+Module: Manage Identities and Governance in Microsoft Entra ID
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how to create, configure, and manage identities in Microsoft Entra ID to secure access to cloud resources and implement centralized identity governance.
+
+This module focused on user and group management, license administration, device registration, security attributes, and automatic provisioning to support secure access control in Azure environments.
+
+Step 1: Understanding Microsoft Entra ID
+
+The module introduced Microsoft Entra ID as Microsoft's cloud-based identity and access management service.
+
+Microsoft Entra ID provides centralized identity management for:
+
+Employees
+Administrators
+Contractors
+Vendors
+Applications
+Devices
+
+Key benefits:
+
+Single Sign-On (SSO)
+Multifactor Authentication (MFA)
+Centralized identity management
+Secure resource access
+Identity governance
+Integration with Azure services
+
+The module emphasized that identity management is a critical component of cloud security and Zero Trust architecture.
+
+Step 2: Creating, Configuring, and Managing Users
+
+The training covered how user accounts are managed within Microsoft Entra ID.
+
+User types studied:
+
+User Type	Description
+Cloud Identities	Users managed directly in Microsoft Entra ID
+Directory-Synchronized Identities	Users synchronized from on-premises Active Directory
+Guest Users	External users invited into the organization
+
+Skills practiced:
+
+Creating user accounts
+Updating user properties
+Resetting passwords
+Managing user access
+Assigning administrative roles
+Removing users
+
+Key concepts learned:
+
+Authentication verifies user identity
+Authorization determines resource permissions
+Guest users provide secure external collaboration
+Directory synchronization supports hybrid environments
+
+The module emphasized controlling access through proper identity management practices.
+
+Step 3: Creating, Configuring, and Managing Groups
+
+The module introduced groups as a way to simplify permission management.
+
+Group types explored:
+
+Group Type	Purpose
+Security Groups	Control access to resources
+Microsoft 365 Groups	Support collaboration and productivity services
+
+Benefits of groups:
+
+Simplified permission assignment
+Centralized access management
+Reduced administrative overhead
+Improved scalability
+
+Key lessons learned:
+
+Permissions should be assigned to groups rather than individual users whenever possible
+Groups support role-based access management
+Group membership can simplify large-scale administration
+
+The module highlighted groups as a best practice for managing organizational access.
+
+Step 4: Managing Licenses
+
+The training covered license assignment and administration within Microsoft Entra ID.
+
+Administrative tasks included:
+
+Assigning licenses to users
+Removing licenses
+Monitoring license consumption
+Managing subscription availability
+
+Key concepts learned:
+
+Licenses control access to Microsoft services
+Group-based licensing can automate license assignments
+License management improves operational efficiency
+
+The module demonstrated how licensing affects user access to cloud services.
+
+Step 5: Configuring and Managing Device Registration
+
+The module introduced device registration and identity-based device management.
+
+Device types studied:
+
+Device Type	Description
+Microsoft Entra Registered	Personal devices registered to Entra ID
+Microsoft Entra Joined	Cloud-managed organizational devices
+Hybrid Microsoft Entra Joined	Devices connected to both Active Directory and Entra ID
+
+Benefits:
+
+Device-based access control
+Improved security posture
+Support for Conditional Access
+Simplified device administration
+
+Key lessons learned:
+
+Registered devices support BYOD scenarios
+Joined devices support cloud-native management
+Hybrid devices support organizations with on-premises infrastructure
+Step 6: Custom Security Attributes
+
+The module introduced custom security attributes for identity governance.
+
+Purpose:
+
+Custom security attributes allow organizations to assign additional business-specific information to identities and resources.
+
+Examples:
+
+Department classifications
+Project assignments
+Security clearances
+Organizational roles
+
+Benefits:
+
+More granular access control
+Improved governance capabilities
+Enhanced authorization decisions
+
+The module demonstrated how custom attributes support advanced identity management scenarios.
+
+Step 7: Automatic Provisioning
+
+A major focus of the module was automating identity lifecycle management.
+
+Automatic provisioning capabilities:
+
+User account creation
+User account updates
+Identity synchronization
+Automated account removal
+
+Benefits:
+
+Reduced manual administration
+Faster onboarding
+Secure offboarding
+Consistent identity management
+
+Key concepts learned:
+
+Provisioning automates user lifecycle processes
+Synchronization maintains identity consistency across systems
+Automation reduces administrative errors
+Step 8: Real-World Scenario
+
+The learning scenario focused on organizations transitioning workloads to the cloud while maintaining secure access control.
+
+Administrative goals included:
+
+Establishing trusted user identities
+Controlling resource access
+Supporting employees and external vendors
+Managing identity lifecycle processes
+Implementing identity governance controls
+
+This demonstrated how Microsoft Entra ID supports secure enterprise cloud environments.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Managing Microsoft Entra ID users
+Creating and managing groups
+Assigning and managing licenses
+Configuring device registration
+Understanding authentication and authorization
+Working with custom security attributes
+Understanding automatic provisioning
+Applying identity governance principles
+Tools & Services Used
+Microsoft Entra ID
+Microsoft Entra Admin Center
+Microsoft Entra Groups
+Microsoft Entra Device Registration
+Microsoft Entra Licensing
+Multifactor Authentication (MFA)
+Single Sign-On (SSO)
+Automatic Provisioning Services
+Key Takeaway
+
+Microsoft Entra ID provides centralized identity and access management for modern cloud environments. By effectively managing users, groups, licenses, devices, and governance controls, organizations can strengthen security, simplify administration, and ensure users have the appropriate level of access needed to perform their responsibilities.
