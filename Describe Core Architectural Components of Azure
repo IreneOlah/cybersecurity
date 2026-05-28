@@ -1,0 +1,273 @@
+Microsoft Learn: Describe Core Architectural Components of Azure
+
+Platform: Microsoft Learn
+Module: Describe Core Architectural Components of Azure
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Beginner to Intermediate
+Date: 2026
+
+Objective
+
+Learn the foundational architectural components of Microsoft Azure, including Azure’s physical infrastructure, geographic organization, and management hierarchy.
+
+This module focused on understanding how Azure organizes cloud infrastructure through datacenters, regions, availability zones, resource groups, subscriptions, and management groups to provide scalable, highly available, and manageable cloud environments.
+
+Step 1: Understanding Azure Datacenters
+
+The module introduced Azure datacenters as the physical foundation of Microsoft’s global cloud infrastructure.
+
+Azure datacenters are secure physical facilities that contain:
+
+Servers
+Networking equipment
+Storage systems
+Cooling systems
+Power infrastructure
+
+Key characteristics:
+
+High physical security
+Redundant power systems
+Advanced cooling infrastructure
+High-speed networking
+Disaster recovery protections
+
+The module emphasized that Azure services run inside these globally distributed datacenters.
+
+Step 2: Understanding Azure Regions
+
+The training covered Azure regions and their role in global cloud deployment.
+
+An Azure region is a geographic area containing one or more datacenters connected through low-latency networking.
+
+Examples:
+
+East US
+West Europe
+Canada Central
+Southeast Asia
+
+Key benefits of regions:
+
+Reduced latency for nearby users
+Compliance with data residency laws
+Disaster recovery support
+Geographic scalability
+
+Key concepts learned:
+
+Applications should be deployed near users whenever possible
+Different regions may provide different service availability
+Region selection affects performance and compliance
+
+The module demonstrated how Azure regions support global cloud architectures.
+
+Step 3: Region Pairs and Sovereign Regions
+
+A major focus of the module was Azure region pairing.
+
+Region Pairs
+
+Azure pairs regions within the same geography to support disaster recovery and business continuity.
+
+Examples:
+
+Primary Region	Paired Region
+East US	West US
+North Europe	West Europe
+
+Benefits of region pairs:
+
+Automatic replication support
+Improved disaster recovery
+Sequential Azure updates
+Priority recovery during outages
+Sovereign Regions
+
+The module also introduced sovereign regions designed for government and regulatory requirements.
+
+Examples:
+
+Azure Government
+Azure China
+Azure Germany
+
+Key concepts learned:
+
+Sovereign regions operate independently from the global Azure cloud
+Designed for compliance, legal, and regulatory requirements
+Often used by government agencies and regulated industries
+Step 4: Understanding Availability Zones
+
+The module introduced Availability Zones as a high-availability feature inside Azure regions.
+
+Availability Zones are physically separate datacenters within the same region.
+
+Characteristics:
+
+Independent power
+Independent cooling
+Independent networking
+
+Benefits:
+
+Protection against datacenter failure
+Higher application availability
+Improved resiliency
+
+Key concepts learned:
+
+Availability Zones improve fault tolerance
+Applications can be distributed across zones
+Zone-redundant services remain operational during failures
+
+The module emphasized Availability Zones as a critical component of highly available cloud architectures.
+
+Step 5: Understanding Azure Resources
+
+The training introduced Azure resources as the building blocks of Azure services.
+
+Examples of Azure resources:
+
+Virtual Machines
+Storage Accounts
+Virtual Networks
+Databases
+Load Balancers
+
+Key concepts learned:
+
+Every Azure service is deployed as a resource
+Resources are managed through Azure Resource Manager
+Resources can be grouped and managed together
+
+Azure resources form the core infrastructure deployed by Azure Administrators.
+
+Step 6: Resource Groups
+
+The module covered Resource Groups as logical containers for Azure resources.
+
+Resource Groups help organize related resources together.
+
+Example:
+
+RG-WebApp
+├── Virtual Machine
+├── Storage Account
+├── Virtual Network
+└── Database
+
+Benefits:
+
+Simplified management
+Easier permission assignment
+Centralized monitoring
+Group-based lifecycle management
+
+Key lessons learned:
+
+Resources in a Resource Group often share the same lifecycle
+Deleting a Resource Group deletes all contained resources
+Resource Groups simplify administration
+Step 7: Understanding Subscriptions
+
+The module introduced Azure subscriptions as management and billing boundaries.
+
+Subscriptions provide:
+
+Billing separation
+Access control boundaries
+Resource quotas
+Policy application scope
+
+Examples:
+
+Production Subscription
+Development Subscription
+Testing Subscription
+
+Key concepts learned:
+
+Organizations commonly use multiple subscriptions
+Permissions can be assigned at the subscription level
+Subscriptions help separate environments and costs
+Step 8: Understanding Management Groups
+
+The module introduced Management Groups for large-scale governance.
+
+Management Groups allow organizations to organize and manage multiple subscriptions together.
+
+Benefits:
+
+Centralized governance
+Policy inheritance
+RBAC inheritance
+Enterprise-wide administration
+
+Example hierarchy:
+
+Management Group
+    └── Subscription
+            └── Resource Group
+                    └── Resources
+
+Key lessons learned:
+
+Policies applied at higher levels inherit downward
+Management Groups simplify enterprise governance
+Large organizations commonly use Management Groups
+Step 9: Azure Hierarchy
+
+The module emphasized Azure’s management hierarchy.
+
+Hierarchy structure:
+
+Level	Purpose
+Management Groups	Govern multiple subscriptions
+Subscriptions	Billing and access boundaries
+Resource Groups	Organize related resources
+Resources	Actual Azure services
+
+Key concepts learned:
+
+Access and policies inherit downward
+Proper hierarchy improves governance
+Azure environments are easier to manage through structured organization
+Step 10: Real-World Scenario
+
+The learning scenario focused on organizations deploying workloads globally while maintaining governance, high availability, and centralized management.
+
+Administrative goals included:
+
+Organizing cloud resources efficiently
+Supporting disaster recovery
+Improving application availability
+Managing costs and permissions
+Applying centralized governance policies
+
+This demonstrated how Azure’s architectural structure supports enterprise-scale cloud environments.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Azure global infrastructure
+Identifying Azure regions and region pairs
+Understanding Availability Zones
+Managing Resource Groups
+Understanding subscriptions and billing boundaries
+Working with Management Groups
+Understanding Azure governance hierarchy
+Organizing Azure resources effectively
+Tools & Services Used
+Microsoft Azure
+Azure Datacenters
+Azure Regions
+Availability Zones
+Azure Resource Groups
+Azure Subscriptions
+Azure Management Groups
+Azure Resource Manager (ARM)
+Key Takeaway
+
+Azure’s architectural components provide the foundation for scalable, resilient, and manageable cloud environments. Understanding datacenters, regions, availability zones, subscriptions, resource groups, and management groups is essential for designing and administering enterprise cloud infrastructure in Microsoft Azure.
