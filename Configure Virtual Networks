@@ -1,0 +1,233 @@
+Microsoft Learn: Configure Virtual Networks
+
+Platform: Microsoft Learn
+Module: Configure Virtual Networks
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how to design, create, and configure Azure Virtual Networks (VNets), subnets, and IP addressing to enable secure communication between Azure resources and external networks.
+
+This module focused on planning virtual networks, configuring subnets, managing public and private IP addresses, and implementing network connectivity for Azure workloads.
+
+Step 1: Understanding Azure Virtual Networks
+
+The module introduced Azure Virtual Networks (VNets) as the foundation of networking in Microsoft Azure.
+
+An Azure Virtual Network is a logically isolated network that allows Azure resources to communicate securely.
+
+Common resources connected through VNets:
+Virtual Machines
+Azure Kubernetes Services
+Databases
+Application Gateways
+Load Balancers
+Private Endpoints
+Key benefits:
+Secure communication
+Network isolation
+Internet connectivity
+Hybrid connectivity
+Resource segmentation
+
+The module emphasized that VNets function similarly to traditional on-premises networks but are fully managed in Azure.
+
+Step 2: Planning Virtual Networks
+
+The training covered network planning before deployment.
+
+Important planning considerations:
+Address space requirements
+Future growth
+Resource segmentation
+Security boundaries
+Hybrid connectivity needs
+Key concepts learned:
+Poor network design can create scalability issues
+Address ranges must not overlap
+Network planning should account for future expansion
+Example address space:
+10.0.0.0/16
+
+This provides thousands of available IP addresses for Azure resources.
+
+The module highlighted the importance of careful IP address planning before deployment.
+
+Step 3: Creating Subnets
+
+A major focus of the module was subnet design and configuration.
+
+Subnets divide a virtual network into smaller network segments.
+
+Example:
+Virtual Network: 10.0.0.0/16
+
+Subnet-Web:
+10.0.1.0/24
+
+Subnet-App:
+10.0.2.0/24
+
+Subnet-Database:
+10.0.3.0/24
+Benefits of subnets:
+Improved organization
+Better security control
+Resource separation
+Simplified management
+Key lessons learned:
+Resources are deployed into subnets
+Subnets create logical network boundaries
+Different workloads can be isolated within separate subnets
+
+The module demonstrated how subnetting supports secure network architecture.
+
+Step 4: Creating Virtual Networks
+
+The training demonstrated how to deploy Azure Virtual Networks.
+
+Configuration components:
+Component	Purpose
+Name	Identifies the VNet
+Region	Deployment location
+Address Space	Defines available IP range
+Subnets	Network segmentation
+Administrative tasks:
+Creating VNets
+Defining address spaces
+Adding subnets
+Configuring connectivity
+
+The module emphasized that every VNet requires a valid address space and subnet configuration.
+
+Step 5: Planning IP Addressing
+
+The module introduced IP addressing concepts used in Azure networking.
+
+Two primary address types:
+Address Type	Purpose
+Private IP Address	Internal communication
+Public IP Address	External communication
+Common private address ranges:
+10.0.0.0/8
+172.16.0.0/12
+192.168.0.0/16
+Key concepts learned:
+Private IP addresses are used within VNets
+Public IP addresses provide internet access
+IP planning is critical for scalability and connectivity
+
+The module highlighted the importance of avoiding overlapping address spaces.
+
+Step 6: Creating Public IP Addresses
+
+The training covered public IP address deployment.
+
+Public IP addresses allow Azure resources to communicate with external networks and the internet.
+
+Common use cases:
+Web servers
+Remote administration
+Public-facing applications
+External APIs
+Benefits:
+Internet accessibility
+External communication
+Public service hosting
+Public IP assignment options:
+Type	Description
+Static	IP address remains unchanged
+Dynamic	IP address may change
+
+The module emphasized selecting the appropriate allocation method based on workload requirements.
+
+Step 7: Associating Public IP Addresses
+
+The training demonstrated how public IP addresses are assigned to Azure resources.
+
+Common resources using public IPs:
+Virtual Machines
+Load Balancers
+Application Gateways
+VPN Gateways
+Key concepts learned:
+Public IPs can be associated after deployment
+Not every resource requires a public IP
+Public exposure should be minimized whenever possible
+Security best practice:
+
+Use private connectivity whenever feasible and limit internet-facing resources.
+
+Step 8: Allocating and Assigning Private IP Addresses
+
+The module covered private IP address assignment.
+
+Private IPs allow communication within a virtual network.
+
+Assignment methods:
+Method	Description
+Dynamic	Azure assigns addresses automatically
+Static	Administrator assigns a specific address
+Benefits:
+Internal communication
+Improved security
+Reduced public exposure
+Key lessons learned:
+Most Azure resources receive private IP addresses
+Static IPs are useful for infrastructure services
+Dynamic allocation simplifies administration
+
+The module demonstrated how private networking forms the foundation of secure Azure deployments.
+
+Step 9: Hands-On Configuration Exercise
+
+The practical exercise focused on creating and configuring virtual networking components.
+
+Tasks completed:
+Creating a Virtual Network
+Defining address spaces
+Creating subnets
+Configuring public IP addresses
+Assigning private IP addresses
+Verifying network configuration
+
+The exercise demonstrated real-world Azure networking administration tasks.
+
+Step 10: Real-World Scenario
+
+The learning scenario focused on organizations deploying cloud workloads that require secure communication and internet connectivity.
+
+Administrative goals included:
+Designing scalable network architecture
+Segmenting workloads using subnets
+Supporting secure communication
+Managing public-facing services
+Implementing IP address planning
+
+This demonstrated how Azure Virtual Networks support enterprise cloud networking.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Azure Virtual Networks
+Planning network architectures
+Designing subnet structures
+Creating Azure VNets
+Managing public IP addresses
+Managing private IP addresses
+Configuring network connectivity
+Applying Azure networking best practices
+Tools & Services Used
+Azure Virtual Networks (VNets)
+Azure Subnets
+Public IP Addresses
+Private IP Addresses
+Azure Portal
+Azure Resource Manager (ARM)
+Azure Networking Services
+Key Takeaway
+
+Azure Virtual Networks provide the foundation for secure communication between Azure resources. By properly planning address spaces, creating subnets, and managing public and private IP addressing, Azure Administrators can build scalable, secure, and highly available cloud networking environments that support both internal workloads and internet-facing applications.
