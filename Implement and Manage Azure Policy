@@ -1,0 +1,248 @@
+Microsoft Learn: Implement and Manage Azure Policy
+
+Platform: Microsoft Learn
+Module: Implement and Manage Azure Policy
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how to use Azure Policy to enforce organizational standards, maintain compliance, and govern Azure resources across subscriptions and resource groups.
+
+This module focused on creating, assigning, and managing Azure Policies and Policy Initiatives to ensure Azure resources remain compliant with business, security, and regulatory requirements.
+
+Step 1: Understanding Azure Policy
+
+The module introduced Azure Policy as Azure's governance and compliance service.
+
+Azure Policy allows administrators to:
+
+Create governance rules
+Enforce organizational standards
+Monitor compliance
+Prevent unauthorized configurations
+Standardize Azure deployments
+
+Policies are written using JSON and define rules that Azure evaluates against resources.
+
+Key benefits:
+Continuous compliance monitoring
+Automated governance
+Centralized policy management
+Reduced configuration drift
+Improved security posture
+
+The module emphasized that Azure Policy helps organizations maintain consistent configurations across large Azure environments.
+
+Step 2: Understanding Policy Definitions
+
+The training covered Policy Definitions, which are the individual rules used by Azure Policy.
+
+A policy definition contains:
+
+Conditions
+Rules
+Effects
+Compliance criteria
+Example policies:
+Require resource tags
+Restrict deployment regions
+Enforce encryption
+Allow only approved VM sizes
+Require HTTPS connections
+Key concepts learned:
+Policies are stored as JSON definitions
+Policies evaluate Azure resources continuously
+Policies determine whether resources comply with organizational requirements
+
+Policy definitions are the building blocks of Azure governance.
+
+Step 3: Understanding Policy Effects
+
+A major focus of the module was understanding policy effects.
+
+Policy effects determine what happens when a resource meets or violates a policy condition.
+
+Common policy effects:
+Effect	Purpose
+Deny	Blocks noncompliant resource creation
+Audit	Records noncompliance without blocking
+Append	Adds required settings during deployment
+Modify	Updates resource properties automatically
+DeployIfNotExists	Deploys required resources automatically
+Disabled	Turns off policy evaluation
+Key lessons learned:
+Deny prevents violations before they occur
+Audit identifies issues without impacting deployments
+DeployIfNotExists can automatically remediate missing configurations
+
+The module demonstrated how policy effects support both governance and automation.
+
+Step 4: Assigning Azure Policies
+
+The training covered policy assignments.
+
+A policy assignment determines where a policy is enforced.
+
+Assignment scopes:
+Scope	Example
+Management Group	Entire organization
+Subscription	Single subscription
+Resource Group	Specific workload
+Resource	Individual resource
+Benefits:
+Flexible governance
+Granular control
+Enterprise-wide enforcement
+Key concepts learned:
+Policies inherit down the Azure hierarchy
+Higher-level assignments affect lower-level resources
+Governance can be applied at multiple scopes
+
+The module emphasized selecting the appropriate scope for organizational requirements.
+
+Step 5: Understanding Compliance Evaluation
+
+Azure Policy continuously evaluates resources against assigned policies.
+
+Compliance states:
+State	Meaning
+Compliant	Resource meets policy requirements
+Noncompliant	Resource violates policy requirements
+Not Applicable	Policy doesn't apply to the resource
+Benefits:
+Continuous monitoring
+Compliance reporting
+Governance visibility
+Audit readiness
+
+Administrators can review compliance results through the Azure Portal.
+
+Step 6: Understanding Azure Policy Initiatives
+
+The module introduced Azure Policy Initiatives.
+
+An initiative is a collection of related policy definitions grouped together to achieve a common governance goal.
+
+Examples:
+Security Baseline Initiative
+Regulatory Compliance Initiative
+Cost Optimization Initiative
+Data Protection Initiative
+Benefits:
+Centralized management
+Simplified policy assignments
+Consistent governance enforcement
+Easier compliance reporting
+Key concepts learned:
+Initiatives contain multiple policies
+One assignment can enforce many policies
+Initiatives simplify large-scale governance
+
+The module emphasized that initiatives help organizations manage compliance more efficiently.
+
+Step 7: Regulatory Compliance and Governance
+
+The training explored how Azure Policy supports regulatory compliance.
+
+Industries commonly using Azure Policy include:
+
+Government
+Public Sector
+Finance
+Healthcare
+Education
+Common governance objectives:
+Data protection
+Encryption requirements
+Geographic restrictions
+Security baselines
+Audit controls
+Benefits:
+Faster compliance assessments
+Consistent policy enforcement
+Reduced audit preparation effort
+Improved risk management
+
+The module demonstrated how Azure Policy helps organizations align cloud environments with regulatory requirements.
+
+Step 8: Resolving Noncompliant Resources
+
+A major focus of the module was handling noncompliant resources.
+
+Administrative tasks included:
+
+Identifying policy violations
+Reviewing compliance reports
+Correcting resource configurations
+Applying remediation actions
+Remediation approaches:
+Manual correction
+Automated remediation
+Policy-driven deployments
+Resource reconfiguration
+Key lessons learned:
+Compliance monitoring is ongoing
+Violations should be addressed promptly
+Automation can reduce remediation effort
+
+The module highlighted the importance of maintaining compliance throughout the resource lifecycle.
+
+Step 9: Implementing Organization-Wide Governance
+
+The module demonstrated how organizations use Azure Policy at scale.
+
+Common use cases:
+Require resource tags
+Restrict approved Azure regions
+Enforce naming standards
+Require encryption
+Limit approved resource types
+Enforce security controls
+Benefits:
+Consistent deployments
+Reduced configuration errors
+Stronger security
+Improved governance
+
+Azure Policy acts as a cloud governance guardrail for enterprise environments.
+
+Step 10: Real-World Scenario
+
+The learning scenario focused on organizations needing to enforce standards and regulatory requirements across large Azure environments.
+
+Administrative goals included:
+
+Enforcing governance standards
+Tracking compliance
+Preventing unauthorized configurations
+Supporting regulatory requirements
+Automating policy enforcement
+
+This demonstrated how Azure Policy helps organizations maintain secure and compliant cloud environments.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Azure Policy
+Creating and managing policy definitions
+Assigning policies at different scopes
+Monitoring compliance status
+Understanding policy effects
+Creating and managing initiatives
+Implementing governance controls
+Supporting regulatory compliance requirements
+Tools & Services Used
+Azure Policy
+Azure Policy Definitions
+Azure Policy Initiatives
+Azure Resource Manager (ARM)
+Azure Compliance Manager
+Azure Management Groups
+Azure Subscriptions
+Azure Resource Groups
+Key Takeaway
+
+Azure Policy is a critical governance service that enables organizations to enforce standards, assess compliance, and automate resource governance across Azure environments. By using policy definitions and initiatives, Azure Administrators can maintain consistent configurations, strengthen security, and support regulatory compliance at scale.
