@@ -1,0 +1,256 @@
+Microsoft Learn: Configure Network Security Groups
+
+Platform: Microsoft Learn
+Module: Configure Network Security Groups
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how to implement and manage Azure Network Security Groups (NSGs) to control inbound and outbound network traffic, secure Azure resources, and enforce network access policies.
+
+This module focused on creating and managing Network Security Groups, understanding NSG rules and rule processing, implementing Application Security Groups, and verifying effective security configurations across Azure virtual networks.
+
+Step 1: Understanding Network Security Groups (NSGs)
+
+The module introduced Network Security Groups (NSGs) as Azure's primary network filtering and traffic control mechanism.
+
+An NSG acts as a virtual firewall that controls network traffic entering and leaving Azure resources.
+
+Resources commonly protected by NSGs:
+Virtual Machines
+Network Interfaces (NICs)
+Subnets
+Application workloads
+Key benefits:
+Network traffic filtering
+Resource protection
+Access control
+Segmentation of workloads
+Improved security posture
+
+The module emphasized that NSGs are one of the most important Azure networking security controls.
+
+Step 2: Implementing Network Security Groups
+
+The training covered how NSGs are deployed and associated with Azure resources.
+
+NSGs can be assigned to:
+Assignment Type	Purpose
+Subnet	Applies rules to all resources in the subnet
+Network Interface (NIC)	Applies rules to a specific VM or resource
+Benefits:
+Flexible security control
+Centralized management
+Granular traffic filtering
+Key concepts learned:
+NSGs can secure entire subnets
+NSGs can secure individual virtual machines
+Multiple layers of protection can be applied
+
+The module demonstrated how NSGs create security boundaries within Azure networks.
+
+Step 3: Understanding NSG Rules
+
+A major focus of the module was understanding Network Security Group rules.
+
+NSG rules determine whether network traffic is allowed or denied.
+
+Rule components:
+Component	Purpose
+Priority	Rule evaluation order
+Source	Traffic origin
+Destination	Traffic target
+Protocol	TCP, UDP, or Any
+Port	Network port
+Action	Allow or Deny
+Example Rule:
+Priority: 100
+Source: Internet
+Destination: VM
+Port: 443
+Action: Allow
+
+This allows HTTPS traffic from the internet to a virtual machine.
+
+Step 4: Inbound and Outbound Rules
+
+The training covered both inbound and outbound traffic filtering.
+
+Inbound Rules
+
+Control traffic entering a resource.
+
+Examples:
+
+Allow HTTPS (443)
+Allow RDP (3389)
+Allow SSH (22)
+Outbound Rules
+
+Control traffic leaving a resource.
+
+Examples:
+
+Allow internet access
+Restrict communication with external networks
+Limit application connectivity
+Key lessons learned:
+NSGs evaluate inbound and outbound traffic separately
+Both directions require appropriate rule configurations
+Step 5: Understanding Rule Priorities
+
+The module emphasized the importance of rule priorities.
+
+Rule Processing
+
+Azure evaluates NSG rules from the lowest priority number to the highest.
+
+Example:
+
+Priority	Action
+100	Allow HTTPS
+200	Allow RDP
+300	Deny All
+
+Azure stops processing after the first matching rule.
+
+Key concepts learned:
+Lower numbers have higher priority
+First matching rule wins
+Proper rule ordering is critical
+
+The module highlighted rule priority as a frequently tested AZ-104 topic.
+
+Step 6: Default Security Rules
+
+The training introduced built-in NSG rules automatically provided by Azure.
+
+Examples of default rules:
+Rule	Purpose
+AllowVNetInBound	Allows traffic within the VNet
+AllowAzureLoadBalancerInBound	Supports Azure Load Balancer traffic
+DenyAllInbound	Blocks all other inbound traffic
+AllowVNetOutBound	Allows outbound VNet traffic
+AllowInternetOutBound	Allows internet access
+DenyAllOutbound	Blocks remaining outbound traffic
+Key lessons learned:
+Default rules cannot be deleted
+Custom rules can override defaults through priority settings
+Understanding default rules is essential for troubleshooting
+Step 7: Understanding Effective Security Rules
+
+A major focus of the module was determining effective rules.
+
+Effective rules represent the final result of all security rules applied to a resource.
+
+Sources of effective rules:
+Subnet NSGs
+Network Interface NSGs
+Default rules
+Custom rules
+Benefits:
+Simplified troubleshooting
+Security validation
+Visibility into final traffic behavior
+Key concepts learned:
+Multiple NSGs can influence traffic
+Effective rules show actual enforcement results
+Administrators should verify effective rules during troubleshooting
+Step 8: Creating Custom NSG Rules
+
+The module demonstrated creating custom security rules.
+
+Common use cases:
+Allow HTTPS traffic
+Allow SQL Server communication
+Restrict administrative access
+Block unauthorized traffic
+Administrative tasks practiced:
+Defining source and destination
+Selecting protocols
+Configuring ports
+Assigning priorities
+Choosing allow or deny actions
+
+The module emphasized least-privilege networking principles.
+
+Step 9: Implementing Application Security Groups (ASGs)
+
+The training introduced Application Security Groups (ASGs).
+
+Application Security Groups allow administrators to group virtual machines by application function rather than IP address.
+
+Example:
+Web Servers
+App Servers
+Database Servers
+Benefits:
+Simplified rule management
+Easier scalability
+Reduced administrative complexity
+Application-focused security
+Example Rule:
+Allow:
+Web Servers → App Servers
+
+Allow:
+App Servers → Database Servers
+Key lessons learned:
+ASGs reduce dependence on IP-based rules
+Security policies become easier to manage
+ASGs support dynamic cloud environments
+
+The module demonstrated how ASGs improve network security management at scale.
+
+Step 10: Hands-On Networking Exercise
+
+The practical exercise focused on implementing secure Azure networking.
+
+Tasks completed:
+Creating Network Security Groups
+Configuring inbound rules
+Configuring outbound rules
+Associating NSGs with resources
+Implementing Application Security Groups
+Verifying network access
+
+The exercise demonstrated real-world Azure security administration tasks.
+
+Step 11: Real-World Scenario
+
+The learning scenario focused on securing Azure workloads and controlling network traffic between application components.
+
+Administrative goals included:
+Restricting unauthorized access
+Protecting virtual machines
+Implementing network segmentation
+Enforcing security policies
+Simplifying application security management
+
+This demonstrated how NSGs and ASGs support secure cloud networking architectures.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Network Security Groups
+Creating NSG rules
+Managing inbound and outbound traffic
+Configuring rule priorities
+Understanding effective security rules
+Implementing Application Security Groups
+Securing Azure virtual networks
+Applying Azure networking security best practices
+Tools & Services Used
+Azure Network Security Groups (NSGs)
+Azure Application Security Groups (ASGs)
+Azure Virtual Networks (VNets)
+Azure Subnets
+Azure Virtual Machines
+Azure Portal
+Azure Resource Manager (ARM)
+Key Takeaway
+
+Network Security Groups are a foundational Azure networking security service that controls traffic flowing into and out of Azure resources. By properly configuring NSGs, understanding rule processing, and leveraging Application Security Groups, Azure Administrators can build secure, scalable, and well-governed network architectures that protect organizational workloads and enforce least-privilege access principles.
