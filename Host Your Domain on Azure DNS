@@ -1,0 +1,266 @@
+Microsoft Learn: Host Your Domain on Azure DNS
+
+Platform: Microsoft Learn
+Module: Host Your Domain on Azure DNS
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how to use Azure DNS to host domain names, create and manage DNS zones, configure DNS records, and implement alias records for dynamic name resolution.
+
+This module focused on deploying Azure DNS zones, managing DNS records, mapping domain names to Azure resources, and simplifying DNS management through Azure-integrated alias records.
+
+Step 1: Understanding Azure DNS
+
+The module introduced Azure DNS as Microsoft's cloud-based Domain Name System (DNS) hosting service.
+
+DNS translates human-friendly domain names into IP addresses that computers use to communicate.
+
+Example:
+www.contoso.com
+       ↓
+20.45.100.10
+
+Without DNS, users would need to remember IP addresses instead of website names.
+
+Benefits of Azure DNS:
+Global availability
+High performance
+High reliability
+Azure integration
+Centralized management
+Role-based access control (RBAC)
+
+The module emphasized that Azure DNS hosts DNS records but does not host websites themselves.
+
+Step 2: Understanding DNS Zones
+
+The training introduced DNS zones as containers for DNS records.
+
+A DNS zone represents a domain and stores DNS records associated with that domain.
+
+Example:
+contoso.com
+DNS Zone Contains:
+contoso.com
+├── A Records
+├── CNAME Records
+├── MX Records
+├── TXT Records
+└── Alias Records
+Key concepts learned:
+One DNS zone represents one domain
+DNS records are stored inside DNS zones
+Azure DNS manages public DNS records for internet name resolution
+
+The module demonstrated how DNS zones organize domain information.
+
+Step 3: Configuring Azure DNS to Host a Domain
+
+A major focus of the module was configuring Azure DNS for domain hosting.
+
+Deployment process:
+Create DNS Zone
+Create DNS Records
+Update domain registrar nameservers
+Verify DNS resolution
+Example:
+Domain:
+contoso.com
+
+DNS Zone:
+contoso.com
+
+Nameservers:
+ns1-01.azure-dns.com
+ns2-01.azure-dns.net
+Key lessons learned:
+Azure DNS becomes authoritative for the domain
+Registrar nameservers must point to Azure DNS
+DNS changes may require propagation time
+
+The module emphasized understanding authoritative DNS hosting.
+
+Step 4: Understanding DNS Record Types
+
+The training covered common DNS record types.
+
+A Record
+
+Maps a hostname directly to an IPv4 address.
+
+Example:
+
+www.contoso.com
+      ↓
+20.45.100.10
+CNAME Record
+
+Creates an alias to another DNS name.
+
+Example:
+
+blog.contoso.com
+      ↓
+contoso.azurewebsites.net
+MX Record
+
+Defines mail server destinations.
+
+Example:
+
+contoso.com
+      ↓
+mail.contoso.com
+TXT Record
+
+Stores verification and configuration information.
+
+Common uses:
+
+Domain verification
+SPF records
+Security validation
+
+The module highlighted A records as one of the most commonly used record types.
+
+Step 5: Creating A Records
+
+The hands-on exercise focused on creating DNS A records.
+
+Purpose:
+
+Connect a domain name to a public IP address.
+
+Example:
+www.contoso.com
+      ↓
+52.170.10.15
+Benefits:
+User-friendly website access
+Simplified application access
+Internet accessibility
+Skills practiced:
+Creating DNS zones
+Creating A records
+Mapping domain names
+Testing DNS resolution
+
+The module demonstrated how DNS allows users to reach Azure-hosted applications.
+
+Step 6: Testing DNS Resolution
+
+The training covered validating DNS configurations.
+
+Common testing tools:
+nslookup
+dig
+Browser testing
+DNS lookup tools
+Example:
+nslookup www.contoso.com
+Benefits:
+Verify DNS records
+Troubleshoot connectivity
+Confirm name resolution
+Key concepts learned:
+DNS propagation may take time
+Resolution testing verifies successful configuration
+Troubleshooting DNS is an important administrative skill
+Step 7: Understanding Alias Records
+
+A major focus of the module was Azure DNS Alias Records.
+
+Alias records provide dynamic DNS resolution for Azure resources.
+
+Supported Azure resources:
+Public IP Addresses
+Azure Traffic Manager
+Azure Front Door
+Azure CDN endpoints
+Benefits:
+Automatic updates
+Reduced maintenance
+Simplified DNS management
+Example:
+
+Traditional A Record:
+
+www.contoso.com
+      ↓
+20.45.100.10
+
+If the IP changes:
+
+DNS must be updated manually
+
+Alias Record:
+
+www.contoso.com
+      ↓
+Azure Resource
+
+If the IP changes:
+
+Azure updates automatically
+
+The module emphasized alias records as a modern Azure DNS management feature.
+
+Step 8: Creating Alias Records
+
+The training demonstrated creating alias records for Azure resources.
+
+Administrative tasks practiced:
+Selecting Azure resource targets
+Creating alias records
+Verifying dynamic resolution
+Testing connectivity
+Benefits:
+Automatic IP updates
+Reduced operational overhead
+Improved reliability
+Key lessons learned:
+Alias records simplify cloud DNS management
+DNS automatically follows Azure resource changes
+Administrators avoid manual DNS updates
+Step 9: Real-World Scenario
+
+The learning scenario focused on hosting a public website in Azure.
+
+Administrative goals included:
+Hosting DNS records in Azure
+Mapping domain names to Azure resources
+Simplifying DNS administration
+Supporting application availability
+Automating DNS updates
+
+This demonstrated how Azure DNS supports enterprise-grade internet-facing applications.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Azure DNS
+Creating DNS Zones
+Managing DNS records
+Creating A records
+Testing DNS resolution
+Understanding alias records
+Creating Azure-integrated DNS configurations
+Managing domain name services
+Tools & Services Used
+Azure DNS
+DNS Zones
+A Records
+CNAME Records
+MX Records
+TXT Records
+Alias Records
+Azure Public IP Addresses
+Azure Portal
+DNS Lookup Tools
+Key Takeaway
+
+Azure DNS provides highly available and scalable DNS hosting for Azure and internet-facing applications. By creating DNS zones, managing records, and leveraging alias records, Azure Administrators can simplify DNS management, improve reliability, and ensure seamless connectivity between domain names and Azure resources.
