@@ -1,0 +1,240 @@
+Microsoft Learn: Manage and Control Traffic Flow in Your Azure Deployment with Routes
+
+Platform: Microsoft Learn
+Module: Manage and Control Traffic Flow in Your Azure Deployment with Routes
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how Azure routing works, how to implement custom routes, and how to control network traffic flow using route tables and Network Virtual Appliances (NVAs).
+
+This module focused on Azure routing capabilities, User-Defined Routes (UDRs), Network Virtual Appliances, and directing traffic through custom network paths to improve security and network control.
+
+Step 1: Understanding Azure Routing
+
+The module introduced routing as the process Azure uses to determine how network traffic travels between resources and networks.
+
+Every packet sent within Azure follows a route.
+
+Azure automatically creates system routes to allow communication between:
+
+Virtual Machines
+Virtual Networks
+Azure Services
+Internet destinations
+On-premises networks
+Benefits of Azure Routing:
+Automatic connectivity
+Simplified networking
+Dynamic route management
+Hybrid connectivity support
+
+The module emphasized that Azure automatically manages routing unless administrators choose to customize it.
+
+Step 2: Understanding Azure System Routes
+
+The training covered Azure's built-in system routes.
+
+System routes are automatically created and maintained by Azure.
+
+Examples of system routes:
+Destination	Next Hop
+Virtual Network	Local VNet
+Internet	Internet
+Virtual Appliance	Custom appliance
+VPN Gateway	Virtual Network Gateway
+Key concepts learned:
+System routes require no configuration
+Azure manages route updates automatically
+System routes provide default connectivity
+
+The module highlighted that system routes form the foundation of Azure networking.
+
+Step 3: Understanding User-Defined Routes (UDRs)
+
+A major focus of the module was User-Defined Routes.
+
+User-Defined Routes allow administrators to override Azure's default routing behavior.
+
+Benefits:
+Traffic inspection
+Network segmentation
+Security enforcement
+Centralized traffic control
+Example:
+
+Default route:
+
+VM → Internet
+
+Custom route:
+
+VM → Firewall → Internet
+Key lessons learned:
+UDRs override system routes
+Route tables store custom routes
+UDRs provide greater control over traffic flow
+
+The module demonstrated how custom routes support advanced networking architectures.
+
+Step 4: Understanding Route Tables
+
+The training introduced Azure Route Tables.
+
+Route tables contain one or more custom routes that define traffic paths.
+
+Route Table Components:
+Component	Purpose
+Address Prefix	Destination network
+Next Hop Type	Routing destination
+Next Hop Address	Target IP address
+Example Route:
+Address Prefix	Next Hop
+0.0.0.0/0	Firewall Appliance
+
+This route sends all traffic to a firewall before leaving the network.
+
+Benefits:
+Centralized route management
+Traffic inspection
+Custom network design
+
+The module emphasized that route tables are associated with subnets.
+
+Step 5: Creating Custom Routes
+
+The practical exercise focused on implementing User-Defined Routes.
+
+Administrative tasks practiced:
+Creating route tables
+Defining destination prefixes
+Configuring next hop types
+Associating route tables with subnets
+Common use cases:
+Routing traffic through firewalls
+Directing traffic to inspection devices
+Controlling internet access
+Implementing security policies
+
+The module demonstrated how custom routing enhances network security.
+
+Step 6: Understanding Network Virtual Appliances (NVAs)
+
+A major focus of the module was Network Virtual Appliances.
+
+An NVA is a virtual machine that performs network-related functions.
+
+Common NVA functions:
+Firewall
+Intrusion Detection System (IDS)
+Intrusion Prevention System (IPS)
+Traffic inspection
+Routing services
+Proxy services
+Examples:
+Cisco Firepower
+Palo Alto Networks Firewall
+Fortinet FortiGate
+Custom Linux routing appliances
+Benefits:
+Advanced traffic control
+Security inspection
+Centralized policy enforcement
+
+The module emphasized that NVAs are commonly used in enterprise cloud environments.
+
+Step 7: Creating an NVA
+
+The hands-on exercise demonstrated deploying a Network Virtual Appliance.
+
+Tasks completed:
+Creating a Virtual Machine
+Configuring networking
+Deploying routing functionality
+Verifying connectivity
+Key lessons learned:
+NVAs operate as traffic intermediaries
+Routing can be customized through NVAs
+Traffic inspection improves security visibility
+
+The module highlighted how NVAs extend Azure networking capabilities.
+
+Step 8: Routing Traffic Through an NVA
+
+The training demonstrated directing traffic through a Network Virtual Appliance.
+
+Traffic Flow Example:
+Client VM
+      ↓
+Network Virtual Appliance
+      ↓
+Internet
+Benefits:
+Traffic inspection
+Security policy enforcement
+Logging and monitoring
+Network segmentation
+Administrative tasks practiced:
+Creating custom routes
+Associating route tables
+Verifying traffic paths
+Testing connectivity
+
+The module demonstrated how route tables and NVAs work together to control network traffic.
+
+Step 9: Route Precedence
+
+The module introduced route selection behavior.
+
+Azure determines which route to use based on route precedence.
+
+Route priority order:
+User-Defined Routes (UDRs)
+BGP Routes
+System Routes
+Key concepts learned:
+Custom routes override system routes
+Route specificity matters
+Azure automatically selects the most specific route
+
+Understanding route precedence is important for troubleshooting connectivity issues.
+
+Step 10: Real-World Scenario
+
+The learning scenario focused on organizations requiring centralized network security and traffic inspection.
+
+Administrative goals included:
+Monitoring network traffic
+Routing traffic through security devices
+Enforcing security policies
+Improving visibility
+Controlling internet access
+
+This demonstrated how custom routing and NVAs support enterprise-grade Azure networking.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Azure routing
+Managing system routes
+Creating User-Defined Routes (UDRs)
+Configuring Azure Route Tables
+Understanding Network Virtual Appliances (NVAs)
+Routing traffic through virtual appliances
+Controlling traffic flow
+Applying Azure networking security best practices
+Tools & Services Used
+Azure Virtual Networks (VNets)
+Azure Route Tables
+User-Defined Routes (UDRs)
+Network Virtual Appliances (NVAs)
+Azure Virtual Machines
+Azure Networking Services
+Azure Portal
+Azure Resource Manager (ARM)
+Key Takeaway
+
+Azure routing determines how traffic moves between resources, networks, and external destinations. By implementing User-Defined Routes and Network Virtual Appliances, Azure Administrators can gain greater control over traffic flow, improve security through inspection and filtering, and build scalable enterprise networking architectures that meet organizational security and compliance requirements.
