@@ -1,0 +1,260 @@
+Microsoft Learn: Configure Azure Virtual Network Peering
+
+Platform: Microsoft Learn
+Module: Configure Azure Virtual Network Peering
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how to configure Azure Virtual Network (VNet) Peering to enable secure communication between virtual networks, implement gateway transit, manage connectivity between Azure environments, and extend network routing using service chaining and user-defined routes.
+
+This module focused on connecting Azure Virtual Networks without requiring VPNs, understanding peering configurations, enabling gateway transit, and building scalable network architectures across Azure environments.
+
+Step 1: Understanding Azure Virtual Network Peering
+
+The module introduced Azure Virtual Network Peering as a method for connecting Azure Virtual Networks directly through Microsoft's private backbone network.
+
+Virtual Network Peering allows resources in separate VNets to communicate as if they were on the same network.
+
+Benefits of VNet Peering:
+Low latency communication
+High bandwidth connectivity
+Private network communication
+Simplified network architecture
+No public internet exposure
+Example:
+VNet-A
+10.1.0.0/16
+
+       ↔
+
+VNet-B
+10.2.0.0/16
+
+Resources in both networks can communicate securely after peering is established.
+
+The module emphasized that peering uses Microsoft's private network infrastructure rather than the public internet.
+
+Step 2: Determining Azure Virtual Network Peering Uses
+
+The training covered common use cases for VNet Peering.
+
+Common scenarios:
+Connecting production and development environments
+Separating application tiers
+Connecting regional workloads
+Centralized shared services architecture
+Hub-and-spoke networking
+Benefits:
+Improved security
+Reduced complexity
+Lower latency
+Better scalability
+Key concepts learned:
+Peering eliminates the need for VPNs between Azure VNets
+Networks remain logically separate
+Resources communicate using private IP addresses
+
+The module demonstrated how peering supports enterprise cloud networking designs.
+
+Step 3: Understanding Peering Requirements
+
+A major focus of the module was understanding peering prerequisites.
+
+Requirements:
+VNets must use non-overlapping IP address spaces
+Peering must be configured between VNets
+Appropriate permissions are required
+Example:
+
+Valid:
+
+VNet-A
+10.1.0.0/16
+
+VNet-B
+10.2.0.0/16
+
+Invalid:
+
+VNet-A
+10.1.0.0/16
+
+VNet-B
+10.1.0.0/16
+Key lessons learned:
+Overlapping address spaces prevent peering
+Proper IP planning is critical
+Network architecture should be designed before deployment
+Step 4: Understanding Gateway Transit
+
+The training introduced Gateway Transit.
+
+Gateway Transit allows one VNet to share its VPN Gateway with other peered VNets.
+
+Example:
+On-Premises Network
+        │
+    VPN Gateway
+        │
+      Hub VNet
+      /      \
+     /        \
+Spoke-A     Spoke-B
+Benefits:
+Reduced cost
+Centralized connectivity
+Simplified management
+Key concepts learned:
+Only one gateway is required
+Spoke networks can use the shared gateway
+Commonly used in hub-and-spoke architectures
+
+The module emphasized Gateway Transit as an important enterprise networking feature.
+
+Step 5: Understanding Hub-and-Spoke Networking
+
+The module introduced the Hub-and-Spoke architecture model.
+
+Hub VNet
+
+Provides shared services such as:
+
+VPN Gateway
+Azure Firewall
+DNS services
+Security appliances
+Spoke VNets
+
+Contain application workloads.
+
+Examples:
+
+Production applications
+Development environments
+Testing environments
+Benefits:
+Centralized management
+Improved security
+Reduced infrastructure costs
+Better scalability
+
+The module highlighted hub-and-spoke networking as a common Azure architecture pattern.
+
+Step 6: Creating Virtual Network Peering
+
+The training demonstrated how to create VNet Peering connections.
+
+Administrative tasks practiced:
+Selecting source VNet
+Selecting target VNet
+Configuring peering settings
+Enabling virtual network access
+Configuring gateway options
+Peering options:
+Setting	Purpose
+Allow Virtual Network Access	Enable communication between VNets
+Allow Forwarded Traffic	Permit forwarded network traffic
+Allow Gateway Transit	Share VPN gateway
+Use Remote Gateways	Consume shared gateway
+Key lessons learned:
+Peering is configured at both VNets
+Connectivity settings determine traffic behavior
+Gateway settings affect hybrid connectivity
+Step 7: Extending Peering with User-Defined Routes
+
+The module introduced User-Defined Routes (UDRs).
+
+User-Defined Routes allow administrators to override Azure's default routing behavior.
+
+Common use cases:
+Directing traffic through Azure Firewall
+Sending traffic through network virtual appliances
+Implementing custom network paths
+Benefits:
+Greater routing control
+Enhanced security
+Traffic inspection
+Key concepts learned:
+Azure automatically creates system routes
+UDRs override default routes
+Route tables can be associated with subnets
+
+The module demonstrated advanced network traffic management techniques.
+
+Step 8: Understanding Service Chaining
+
+A major focus of the module was Service Chaining.
+
+Service Chaining allows network traffic to flow through virtual appliances before reaching its destination.
+
+Example:
+Client
+   ↓
+Azure Firewall
+   ↓
+Application Server
+Benefits:
+Security inspection
+Traffic filtering
+Centralized policy enforcement
+Common virtual appliances:
+Firewalls
+Intrusion Detection Systems
+Network Monitoring Solutions
+
+The module emphasized Service Chaining as a key enterprise security feature.
+
+Step 9: Hands-On Intersite Connectivity Exercise
+
+The practical exercise focused on implementing connectivity between Azure virtual networks.
+
+Tasks completed:
+Creating Virtual Network Peerings
+Verifying connectivity
+Configuring gateway options
+Testing communication between VNets
+Implementing routing configurations
+
+The exercise demonstrated real-world Azure networking administration skills.
+
+Step 10: Real-World Scenario
+
+The learning scenario focused on organizations connecting multiple Azure environments while maintaining security and centralized management.
+
+Administrative goals included:
+Connecting separate Azure networks
+Supporting hybrid connectivity
+Sharing network services
+Reducing infrastructure costs
+Improving application communication
+
+This demonstrated how VNet Peering supports enterprise-scale cloud networking architectures.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Azure Virtual Network Peering
+Planning peered network architectures
+Creating peering connections
+Configuring gateway transit
+Implementing hub-and-spoke networking
+Using User-Defined Routes (UDRs)
+Understanding service chaining
+Managing Azure inter-network connectivity
+Tools & Services Used
+Azure Virtual Networks (VNets)
+Azure Virtual Network Peering
+VPN Gateway
+Gateway Transit
+User-Defined Routes (UDRs)
+Azure Route Tables
+Azure Firewall
+Azure Virtual Appliances
+Azure Portal
+Key Takeaway
+
+Azure Virtual Network Peering enables secure, high-performance communication between Azure Virtual Networks using Microsoft's private backbone infrastructure. By combining peering, gateway transit, user-defined routes, and service chaining, Azure Administrators can build scalable, secure, and highly available enterprise networking architectures that support both cloud-native and hybrid environments.
