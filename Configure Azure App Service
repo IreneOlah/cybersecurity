@@ -1,0 +1,354 @@
+Microsoft Learn: Configure Azure App Service
+
+Platform: Microsoft Learn
+Module: Configure Azure App Service
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how to deploy, configure, secure, monitor, and manage Azure App Service applications, including deployment slots, custom domains, backups, and application monitoring.
+
+This module focused on managing Azure App Service as a Platform as a Service (PaaS) solution for hosting web applications, APIs, and backend services without managing the underlying infrastructure.
+
+Step 1: Understanding Azure App Service
+
+The module introduced Azure App Service as Microsoft's fully managed Platform as a Service (PaaS) offering for hosting web applications.
+
+Azure App Service allows developers to deploy applications without managing:
+
+Virtual Machines
+Operating systems
+Patching
+Infrastructure maintenance
+Supported workloads:
+Web Applications
+REST APIs
+Backend Services
+Mobile App Backends
+Supported languages:
+.NET
+Java
+Node.js
+Python
+PHP
+Ruby
+Benefits:
+Rapid deployment
+Built-in scaling
+High availability
+Integrated security
+Simplified management
+
+The module emphasized that App Service allows administrators to focus on applications rather than infrastructure.
+
+Step 2: Creating an Azure App Service Application
+
+The training covered creating a web application using Azure App Service.
+
+Required components:
+Component	Purpose
+Subscription	Billing container
+Resource Group	Resource organization
+App Service Plan	Compute resources
+Web App Name	Application identifier
+Runtime Stack	Programming language
+Example:
+Resource Group:
+RG-WebApp
+
+App Service Plan:
+ASP-Production
+
+Web App:
+contoso-webapp
+Key lessons learned:
+Every App Service requires an App Service Plan
+Multiple applications can share the same App Service Plan
+Runtime selection affects application compatibility
+Step 3: Understanding Continuous Integration and Continuous Deployment (CI/CD)
+
+A major focus of the module was application deployment automation.
+
+Azure App Service supports integration with:
+
+GitHub
+Azure DevOps
+Bitbucket
+Local Git repositories
+CI/CD Benefits:
+Automated deployments
+Faster releases
+Reduced manual effort
+Consistent deployments
+Example Workflow:
+Developer
+      ↓
+GitHub
+      ↓
+Azure App Service
+Key concepts learned:
+Code changes can trigger automatic deployments
+Continuous delivery reduces deployment risk
+Automation improves operational efficiency
+Step 4: Understanding Deployment Slots
+
+The training introduced Deployment Slots.
+
+Deployment Slots allow administrators to deploy and test new versions before releasing them to production.
+
+Example:
+Production Slot
+       ↓
+Users
+
+Staging Slot
+       ↓
+Testing
+Benefits:
+Safer deployments
+Reduced downtime
+Easy rollback
+Production validation
+
+Deployment Slots are a highly tested AZ-104 topic.
+
+Step 5: Creating and Managing Deployment Slots
+
+The module demonstrated creating deployment slots.
+
+Common slots:
+Slot	Purpose
+Production	Live application
+Staging	Testing
+Development	Validation
+Deployment Process:
+Deploy New Version
+        ↓
+Staging Slot
+        ↓
+Testing
+        ↓
+Swap
+        ↓
+Production
+Key lessons learned:
+Slots use the same App Service Plan resources
+Applications can be validated before production release
+Swapping minimizes downtime
+Step 6: Understanding Slot Swaps
+
+A major focus of the module was Slot Swapping.
+
+After testing is complete:
+
+Staging
+     ↓ Swap ↓
+Production
+
+The new version becomes live immediately.
+
+Benefits:
+Near-zero downtime deployments
+Quick rollback capability
+Reduced deployment risk
+Key concepts learned:
+Slot swaps exchange environments
+Production traffic remains uninterrupted
+Rollbacks can be performed quickly
+Step 7: Securing Azure App Service
+
+The training covered App Service security features.
+
+Security capabilities:
+HTTPS enforcement
+Authentication and authorization
+Managed Identities
+Access restrictions
+TLS certificates
+Benefits:
+Secure communication
+Identity-based access control
+Reduced attack surface
+Key lessons learned:
+HTTPS should always be enabled
+Authentication can integrate with Microsoft Entra ID
+Security should be configured before production deployment
+Step 8: Authentication and Authorization
+
+The module introduced built-in authentication.
+
+Supported identity providers include:
+
+Microsoft Entra ID
+Microsoft Accounts
+Google
+Facebook
+GitHub
+Example:
+User
+   ↓
+Microsoft Entra ID
+   ↓
+Web Application
+Benefits:
+Centralized identity management
+Simplified application security
+Reduced custom authentication code
+Step 9: Configuring Custom Domain Names
+
+The training covered custom domain configuration.
+
+By default:
+
+contoso.azurewebsites.net
+
+Organizations often use:
+
+www.contoso.com
+Configuration requirements:
+Custom domain
+DNS records
+Domain verification
+Benefits:
+Professional branding
+Improved user experience
+Simplified access
+
+The module demonstrated integrating Azure DNS with App Service.
+
+Step 10: Backing Up and Restoring App Service Applications
+
+A major focus of the module was backup and recovery.
+
+Azure App Service supports backups of:
+
+Application files
+Configuration settings
+Connected databases
+Backup Process:
+App Service
+      ↓
+Azure Storage
+      ↓
+Backup Files
+Benefits:
+Disaster recovery
+Data protection
+Application recovery
+Key lessons learned:
+Backups can be automated
+Recovery points can be restored when needed
+Backup planning supports business continuity
+Step 11: Restoring Applications
+
+The training covered restoration procedures.
+
+Recovery scenarios:
+Application corruption
+Failed deployments
+Data loss
+Configuration errors
+Benefits:
+Reduced downtime
+Faster recovery
+Business continuity support
+
+The module emphasized testing backup and recovery procedures regularly.
+
+Step 12: Understanding Azure Application Insights
+
+The module introduced Azure Application Insights.
+
+Application Insights is part of Azure Monitor and provides application performance monitoring.
+
+Metrics collected:
+Request rates
+Response times
+Exceptions
+Dependencies
+User activity
+Example:
+Web Application
+        ↓
+Application Insights
+        ↓
+Performance Data
+Benefits:
+Application monitoring
+Performance analysis
+Troubleshooting support
+
+Application Insights is heavily tested on AZ-104.
+
+Step 13: Monitoring Application Performance
+
+The training demonstrated application monitoring capabilities.
+
+Insights provided:
+Application health
+Failed requests
+User activity
+Performance bottlenecks
+Availability monitoring
+Key lessons learned:
+Monitoring should be enabled in production
+Performance metrics support troubleshooting
+Proactive monitoring reduces downtime
+Step 14: Hands-On Exercise
+
+The practical exercise focused on deploying and managing Azure Web Apps.
+
+Tasks completed:
+Creating an App Service application
+Configuring deployment settings
+Creating deployment slots
+Securing the application
+Configuring monitoring
+Testing deployments
+
+The exercise demonstrated real-world App Service administration tasks.
+
+Step 15: Real-World Scenario
+
+The learning scenario focused on organizations hosting production web applications in Azure.
+
+Administrative goals included:
+Simplifying application hosting
+Supporting continuous deployment
+Improving application security
+Protecting application data
+Monitoring application performance
+
+This demonstrated how Azure App Service supports modern cloud-native application hosting.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Azure App Service
+Creating App Service applications
+Implementing CI/CD integrations
+Managing Deployment Slots
+Performing Slot Swaps
+Securing Azure Web Apps
+Configuring Custom Domains
+Backing up and restoring applications
+Using Azure Application Insights
+Monitoring application performance
+Tools & Services Used
+Azure App Service
+Azure App Service Plans
+Deployment Slots
+Azure Application Insights
+Azure Monitor
+Microsoft Entra ID
+Azure DNS
+Azure Storage
+GitHub
+Azure DevOps
+Azure Portal
+Key Takeaway
+
+Azure App Service provides a fully managed platform for hosting web applications and APIs without managing infrastructure. By implementing deployment slots, securing applications, configuring custom domains, enabling backups, and monitoring performance with Application Insights, Azure Administrators can deliver highly available, secure, and scalable applications. Understanding Deployment Slots, Slot Swaps, Application Insights, and App Service security features is essential for success on the AZ-104 exam and in real-world Azure environments.
