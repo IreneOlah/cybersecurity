@@ -1,0 +1,348 @@
+Microsoft Learn: Protect Your Virtual Machines by Using Azure Backup
+
+Platform: Microsoft Learn
+Module: Protect Your Virtual Machines by Using Azure Backup
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Beginner
+Date: 2026
+
+Objective
+
+Learn how to use Azure Backup to protect Azure Virtual Machines, create backup policies, perform backup operations, and restore virtual machine data when recovery is required.
+
+This module focused on implementing Azure Backup for Azure Virtual Machines, understanding backup scenarios, creating recovery points, and performing restore operations to support business continuity and disaster recovery.
+
+Step 1: Understanding Azure Backup for Virtual Machines
+
+The module introduced Azure Backup as a cloud-native backup service designed to protect Azure Virtual Machines and other workloads.
+
+Azure Backup can protect:
+
+Azure Virtual Machines
+Azure Files
+SQL Server databases
+On-premises servers
+Virtualized workloads
+Primary goals:
+Prevent data loss
+Support disaster recovery
+Enable rapid recovery
+Meet compliance requirements
+Benefits:
+Automated backups
+Secure storage
+Centralized management
+Long-term retention
+
+The module emphasized that backup is a critical component of every production Azure environment.
+
+Step 2: Understanding Azure Backup Scenarios
+
+The training covered situations where Azure Backup should be used.
+
+Common scenarios:
+Accidental Deletion
+User deletes important data
+       ↓
+Restore backup
+Data Corruption
+Application corruption
+       ↓
+Restore recovery point
+Ransomware Attack
+Files encrypted
+       ↓
+Restore clean backup
+Infrastructure Failure
+VM failure
+       ↓
+Recover VM
+Key lesson learned:
+
+Azure Backup protects against risks that high availability solutions cannot prevent.
+
+Step 3: Understanding Recovery Services Vault
+
+A major focus of the module was the Recovery Services Vault.
+
+The Recovery Services Vault acts as the central backup management service.
+
+Functions:
+Stores backup metadata
+Stores recovery points
+Applies backup policies
+Manages restore operations
+Example:
+Recovery Services Vault
+
+├── VM Backups
+├── Recovery Points
+├── Backup Policies
+└── Restore Jobs
+Benefits:
+Centralized management
+Secure backup storage
+Simplified administration
+
+For AZ-104, remember:
+
+Azure Backup requires a Recovery Services Vault.
+
+Step 4: Understanding Backup Policies
+
+The training introduced Backup Policies.
+
+Backup Policies control:
+
+Backup schedule
+Backup frequency
+Retention period
+Example Policy:
+Daily Backup
+Time: 10:00 PM
+Retention: 30 Days
+Example Long-Term Retention:
+Weekly Backup
+Retention: 1 Year
+Benefits:
+Automation
+Consistency
+Compliance support
+
+The module emphasized that policies eliminate manual backup management.
+
+Step 5: Backing Up an Azure Virtual Machine
+
+The training demonstrated how to protect a virtual machine.
+
+Backup workflow:
+Virtual Machine
+        ↓
+Enable Backup
+        ↓
+Recovery Services Vault
+        ↓
+Backup Policy
+        ↓
+Recovery Points Created
+Administrative steps:
+Create Recovery Services Vault
+Configure backup policy
+Select virtual machine
+Enable protection
+Run initial backup
+Key concepts learned:
+Backup protection can be enabled directly from the VM
+Azure automatically manages backup jobs
+Recovery points are generated automatically
+Step 6: Understanding Recovery Points
+
+A major focus of the module was recovery points.
+
+A recovery point represents a recoverable backup snapshot.
+
+Example:
+Monday Backup
+Tuesday Backup
+Wednesday Backup
+Thursday Backup
+
+If data is lost Thursday:
+
+Restore Wednesday Recovery Point
+Benefits:
+Point-in-time recovery
+Multiple restore options
+Reduced data loss
+Key lesson learned:
+
+Recovery points are what make restoration possible.
+
+Step 7: Understanding Backup Storage
+
+The training introduced Azure Backup storage options.
+
+Storage redundancy options:
+Type	Description
+LRS	Locally Redundant Storage
+GRS	Geo-Redundant Storage
+LRS
+Single Azure Region
+Multiple Copies
+GRS
+Primary Region
+       ↓
+Secondary Region
+Benefits:
+Data durability
+Disaster recovery support
+Key concepts learned:
+GRS provides greater resiliency
+LRS is generally less expensive
+Step 8: Performing Backup Operations
+
+The hands-on exercise focused on backing up a virtual machine.
+
+Tasks completed:
+Creating a Recovery Services Vault
+Creating backup policies
+Enabling VM protection
+Running backup jobs
+Reviewing backup status
+Administrative skills practiced:
+Backup configuration
+Policy management
+Monitoring backup operations
+
+The exercise demonstrated a typical production backup deployment.
+
+Step 9: Restoring Virtual Machine Data
+
+The module covered recovery operations.
+
+Restore options:
+Restore Entire VM
+Backup
+     ↓
+New VM Created
+Restore Disks
+Backup
+     ↓
+Restore Disk Only
+Restore Files
+Backup
+     ↓
+Restore Individual Files
+Benefits:
+Flexible recovery options
+Reduced downtime
+Targeted restoration
+
+The module emphasized selecting the appropriate recovery method based on the situation.
+
+Step 10: File Recovery
+
+A major focus of the module was file-level recovery.
+
+Instead of restoring an entire VM:
+
+Virtual Machine
+        ↓
+Backup
+        ↓
+Single File Recovery
+Benefits:
+Faster recovery
+Less disruption
+Reduced operational effort
+Common use cases:
+Accidental file deletion
+Document recovery
+Configuration restoration
+Step 11: Restore Exercise
+
+The practical exercise focused on restoring Azure Virtual Machine data.
+
+Tasks completed:
+Selecting recovery points
+Initiating restore operations
+Recovering VM data
+Verifying successful recovery
+Key concepts learned:
+Recovery points determine restore options
+Multiple restore methods are available
+Recovery should be tested regularly
+
+The module emphasized validating backup strategies through testing.
+
+Step 12: Backup Security Features
+
+The training highlighted Azure Backup security protections.
+
+Security features:
+Encryption at rest
+Encryption in transit
+Role-Based Access Control (RBAC)
+Soft Delete
+Multi-factor authentication support
+Soft Delete Example:
+Backup Deleted
+       ↓
+Soft Delete Protection
+       ↓
+Backup Recoverable
+Benefits:
+Protection against accidental deletion
+Protection against malicious actions
+Improved resilience
+
+Soft Delete is frequently tested on the AZ-104 exam.
+
+Step 13: Azure Backup vs Azure Site Recovery
+
+A common AZ-104 topic is understanding the difference.
+
+Azure Backup
+
+Purpose:
+
+Data Protection
+
+Protects against:
+
+Data loss
+Corruption
+Deletion
+Ransomware
+Azure Site Recovery (ASR)
+
+Purpose:
+
+Disaster Recovery
+
+Protects against:
+
+Datacenter outages
+Regional failures
+Infrastructure failures
+Exam Tip:
+Azure Backup = Backup & Restore
+
+Azure Site Recovery = Disaster Recovery & Failover
+Step 14: Real-World Scenario
+
+The learning scenario focused on protecting business-critical Azure Virtual Machines.
+
+Administrative goals included:
+Protecting workloads from data loss
+Automating backups
+Supporting compliance requirements
+Enabling rapid recovery
+Supporting business continuity planning
+
+This demonstrated how Azure Backup protects production workloads in enterprise environments.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Azure Backup capabilities
+Identifying backup scenarios
+Creating Recovery Services Vaults
+Configuring backup policies
+Protecting Azure Virtual Machines
+Managing recovery points
+Performing restore operations
+Understanding backup security features
+Supporting business continuity planning
+Tools & Services Used
+Azure Backup
+Recovery Services Vault
+Azure Virtual Machines
+Azure Storage
+Azure RBAC
+Soft Delete
+Azure Portal
+Key Takeaway
+
+Azure Backup provides centralized, secure protection for Azure Virtual Machines and other workloads by creating recovery points that can be used to restore data after accidental deletion, corruption, ransomware attacks, or infrastructure failures. By implementing Recovery Services Vaults, backup policies, and restore procedures, Azure Administrators can build reliable backup strategies that support business continuity and disaster recovery. Understanding backup policies, recovery points, restore options, and Recovery Services Vaults is essential for the AZ-104 exam.
