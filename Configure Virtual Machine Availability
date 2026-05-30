@@ -1,0 +1,345 @@
+Microsoft Learn: Configure Virtual Machine Availability
+
+Platform: Microsoft Learn
+Module: Configure Virtual Machine Availability
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how to design and implement highly available Azure Virtual Machine solutions using Availability Sets, Availability Zones, Virtual Machine Scale Sets (VMSS), and Autoscaling.
+
+This module focused on minimizing downtime, improving resiliency, and automatically scaling Azure Virtual Machines to meet changing workload demands.
+
+Step 1: Understanding High Availability in Azure
+
+The module introduced high availability as the ability to keep applications and services operational during hardware failures, maintenance events, and unexpected outages.
+
+Common causes of downtime:
+Hardware failures
+Operating system failures
+Planned maintenance
+Datacenter outages
+Increased workload demand
+Goals of high availability:
+Minimize downtime
+Improve reliability
+Support business continuity
+Increase fault tolerance
+
+The module emphasized that Azure provides multiple technologies to improve VM availability.
+
+Step 2: Planning for Maintenance and Downtime
+
+The training covered how Azure performs platform maintenance.
+
+Microsoft periodically performs:
+
+Hardware updates
+Security updates
+Infrastructure maintenance
+
+Without planning, maintenance can cause application interruptions.
+
+Key concepts learned:
+Infrastructure failures are unavoidable
+Applications should be designed for resiliency
+Availability solutions reduce maintenance impact
+
+The module highlighted availability planning as a critical administrator responsibility.
+
+Step 3: Understanding Availability Sets
+
+A major focus of the module was Availability Sets.
+
+Availability Sets distribute virtual machines across different physical infrastructure components.
+
+Example:
+Availability Set
+
+VM1
+VM2
+VM3
+Benefits:
+Protect against hardware failures
+Protect against maintenance events
+Improve application uptime
+Key lessons learned:
+Availability Sets work within a single datacenter
+Multiple VMs should be deployed inside the same Availability Set
+Recommended for applications requiring redundancy
+Step 4: Understanding Fault Domains
+
+The training introduced Fault Domains.
+
+A Fault Domain represents a group of hardware that shares a common power source and network switch.
+
+Example:
+Fault Domain 1
+ └─ VM1
+
+Fault Domain 2
+ └─ VM2
+
+Fault Domain 3
+ └─ VM3
+Benefits:
+Hardware failure isolation
+Improved resiliency
+Reduced risk of application outages
+Key concepts learned:
+If one Fault Domain fails, other VMs remain available
+Availability Sets automatically distribute VMs across Fault Domains
+
+Fault Domains are a frequently tested AZ-104 concept.
+
+Step 5: Understanding Update Domains
+
+The module introduced Update Domains.
+
+Update Domains help minimize downtime during planned Azure maintenance.
+
+Example:
+Update Domain 1
+ └─ VM1
+
+Update Domain 2
+ └─ VM2
+
+Update Domain 3
+ └─ VM3
+
+During maintenance:
+
+VM1 Updated
+VM2 Remains Online
+VM3 Remains Online
+Benefits:
+Reduced maintenance impact
+Improved application availability
+Staged infrastructure updates
+Key lessons learned:
+Azure updates one Update Domain at a time
+Not all VMs reboot simultaneously
+Step 6: Understanding Availability Zones
+
+A major focus of the module was Availability Zones.
+
+Availability Zones are physically separate datacenters within the same Azure region.
+
+Each zone has:
+
+Independent power
+Independent cooling
+Independent networking
+Example:
+East US Region
+
+Zone 1 → VM1
+Zone 2 → VM2
+Zone 3 → VM3
+Benefits:
+Datacenter-level fault tolerance
+Improved disaster recovery
+Higher availability than Availability Sets
+Key lessons learned:
+Availability Zones protect against entire datacenter failures
+Applications remain available if one zone becomes unavailable
+Step 7: Availability Sets vs Availability Zones
+
+The training compared the two availability options.
+
+Feature	Availability Set	Availability Zone
+Protects Hardware Failures	Yes	Yes
+Protects Maintenance Events	Yes	Yes
+Protects Datacenter Failure	No	Yes
+Scope	Single Datacenter	Multiple Datacenters
+Availability Level	High	Highest
+Key lesson learned:
+
+Availability Zones provide greater resiliency and are preferred when supported.
+
+This comparison is commonly tested on the AZ-104 exam.
+
+Step 8: Understanding Vertical Scaling
+
+The module introduced Vertical Scaling (Scale Up/Scale Down).
+
+Vertical scaling changes the size of a virtual machine.
+
+Example:
+
+Before:
+
+Standard_B2s
+2 vCPU
+4 GB RAM
+
+After:
+
+Standard_D4s_v5
+4 vCPU
+16 GB RAM
+Benefits:
+More CPU
+More memory
+Better performance
+Limitations:
+Downtime may be required
+Maximum size limits exist
+Step 9: Understanding Horizontal Scaling
+
+The training introduced Horizontal Scaling (Scale Out/Scale In).
+
+Instead of increasing VM size, additional VMs are added.
+
+Example:
+
+Before:
+
+VM1
+
+After:
+
+VM1
+VM2
+VM3
+Benefits:
+Higher scalability
+Better availability
+Load distribution
+Key lessons learned:
+Preferred for modern cloud applications
+Supports automatic growth and reduction
+Step 10: Understanding Virtual Machine Scale Sets (VMSS)
+
+A major focus of the module was Azure Virtual Machine Scale Sets.
+
+VMSS allows administrators to deploy and manage large groups of identical virtual machines.
+
+Example:
+Scale Set
+
+VM1
+VM2
+VM3
+VM4
+VM5
+Benefits:
+Automatic scaling
+High availability
+Simplified management
+Consistent configuration
+Common use cases:
+Web applications
+APIs
+Large-scale services
+Enterprise workloads
+
+The module emphasized VMSS as a core Azure scaling technology.
+
+Step 11: Creating Virtual Machine Scale Sets
+
+The training demonstrated VMSS deployment.
+
+Configuration options:
+VM image
+VM size
+Instance count
+Availability Zones
+Load Balancer integration
+Administrative tasks practiced:
+Creating Scale Sets
+Configuring instance counts
+Integrating with networking services
+Benefits:
+Rapid deployment
+Consistent infrastructure
+Simplified administration
+Step 12: Understanding Autoscale
+
+The module introduced Autoscale.
+
+Autoscale automatically adjusts the number of running VMs based on demand.
+
+Example:
+
+Low traffic:
+
+2 Virtual Machines
+
+High traffic:
+
+10 Virtual Machines
+Benefits:
+Improved performance
+Cost optimization
+Automatic workload management
+
+Autoscale is one of the most important cloud-native capabilities in Azure.
+
+Step 13: Configuring Autoscale
+
+The training demonstrated Autoscale configuration.
+
+Common metrics:
+Metric	Example Trigger
+CPU Usage	Above 70%
+Memory Usage	High utilization
+Network Traffic	Increased demand
+Queue Length	Growing workload
+Example Rule:
+If CPU > 70%
+
+Add 2 VMs
+Scale-In Example:
+If CPU < 30%
+
+Remove 1 VM
+Benefits:
+Dynamic scaling
+Reduced operational effort
+Better cost control
+
+The module emphasized creating balanced scaling policies.
+
+Step 14: Real-World Scenario
+
+The learning scenario focused on organizations operating business-critical applications with fluctuating workloads.
+
+Administrative goals included:
+Reducing downtime
+Improving application availability
+Supporting traffic growth
+Automating scaling
+Optimizing infrastructure costs
+
+This demonstrated how Azure availability and scaling features support enterprise workloads.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Azure high availability concepts
+Implementing Availability Sets
+Understanding Fault Domains
+Understanding Update Domains
+Implementing Availability Zones
+Comparing vertical and horizontal scaling
+Deploying Virtual Machine Scale Sets
+Configuring Autoscale
+Designing resilient Azure VM architectures
+Tools & Services Used
+Azure Virtual Machines (VMs)
+Availability Sets
+Availability Zones
+Fault Domains
+Update Domains
+Azure Virtual Machine Scale Sets (VMSS)
+Azure Autoscale
+Azure Load Balancer
+Azure Portal
+Key Takeaway
+
+Azure provides multiple technologies to improve virtual machine availability and scalability. Availability Sets protect against hardware and maintenance failures, Availability Zones protect against datacenter outages, and Virtual Machine Scale Sets with Autoscale enable applications to grow and shrink automatically based on demand. Understanding these availability and scaling solutions is essential for building resilient cloud architectures and is a major focus area of the AZ-104 exam.
