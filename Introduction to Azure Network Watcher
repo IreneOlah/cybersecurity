@@ -1,0 +1,296 @@
+Microsoft Learn: Introduction to Azure Network Watcher
+
+Platform: Microsoft Learn
+Module: Introduction to Azure Network Watcher
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Beginner
+Date: 2026
+
+Objective
+
+Learn what Azure Network Watcher is, how it helps monitor and troubleshoot Azure network infrastructure, and when it should be used to diagnose connectivity, routing, security, and performance issues.
+
+This module focused on understanding Azure Network Watcher capabilities, how its monitoring and diagnostic tools work, and how Azure Administrators can use it to maintain healthy and secure network environments.
+
+Step 1: Understanding Azure Network Watcher
+
+The module introduced Azure Network Watcher as Azure's built-in network monitoring and diagnostics service.
+
+Azure Network Watcher helps administrators:
+
+Monitor network performance
+Diagnose connectivity issues
+Analyze traffic flow
+Troubleshoot routing problems
+Validate security configurations
+Monitor network resources
+Key benefits:
+Network visibility
+Faster troubleshooting
+Performance monitoring
+Security validation
+Reduced downtime
+
+The module emphasized that Network Watcher is designed specifically for Azure networking diagnostics.
+
+Step 2: Understanding the Purpose of Network Watcher
+
+The training focused on why organizations use Network Watcher.
+
+Common networking problems:
+Virtual machines cannot communicate
+Applications are unreachable
+Network Security Group rules block traffic
+Routing issues prevent connectivity
+High network latency
+Unexpected traffic behavior
+Administrative goals:
+Quickly identify root causes
+Reduce troubleshooting time
+Improve network reliability
+Validate network configurations
+
+Network Watcher provides centralized tools to investigate these issues.
+
+Step 3: Understanding How Azure Network Watcher Works
+
+The module introduced several built-in diagnostic tools available through Network Watcher.
+
+Key capabilities:
+Capability	Purpose
+Connectivity Monitoring	Verify communication between resources
+Traffic Analysis	Analyze network traffic patterns
+Route Diagnostics	Validate routing behavior
+Security Validation	Verify NSG configurations
+Packet Capture	Capture network traffic
+Topology Visualization	View network architecture
+
+The module emphasized that Network Watcher provides both real-time diagnostics and ongoing monitoring.
+
+Step 4: Understanding IP Flow Verify
+
+A major focus of the module was IP Flow Verify.
+
+IP Flow Verify helps determine whether traffic is allowed or denied by Network Security Groups.
+
+Example:
+Source VM
+      ↓
+Destination VM
+      ↓
+Port 443
+
+Network Watcher checks:
+
+Source IP
+Destination IP
+Port number
+Protocol
+NSG rules
+Result:
+Allowed
+
+or
+
+Denied
+Benefits:
+Faster NSG troubleshooting
+Security validation
+Immediate visibility into traffic decisions
+
+This is one of the most useful troubleshooting tools for Azure Administrators.
+
+Step 5: Understanding Next Hop
+
+The training introduced the Next Hop diagnostic tool.
+
+Next Hop identifies the route Azure uses to send traffic to a destination.
+
+Example:
+VM
+ ↓
+Azure Firewall
+ ↓
+Internet
+
+Network Watcher shows:
+
+Destination
+Route selected
+Next hop type
+Benefits:
+Route troubleshooting
+Verification of custom routes
+Validation of User-Defined Routes (UDRs)
+Key concepts learned:
+Azure may choose different routes based on route precedence
+Next Hop helps explain traffic behavior
+Step 6: Understanding Effective Security Rules
+
+The module covered Effective Security Rules.
+
+Effective Security Rules show the final security policy applied to a network interface.
+
+Sources of rules:
+Network Security Groups
+Subnet NSGs
+NIC-level NSGs
+Default security rules
+Benefits:
+Security troubleshooting
+Policy validation
+Visibility into final traffic permissions
+Key lessons learned:
+Multiple NSGs can affect a resource
+Effective rules show the final outcome
+
+This is a frequently tested networking concept for AZ-104.
+
+Step 7: Understanding Packet Capture
+
+The training introduced Packet Capture.
+
+Packet Capture collects network traffic directly from Azure virtual machines.
+
+Captured information:
+Source IP addresses
+Destination IP addresses
+Protocols
+Ports
+Packet contents
+Benefits:
+Deep troubleshooting
+Security investigations
+Connectivity diagnostics
+Common use cases:
+Application failures
+Network latency analysis
+Security investigations
+
+Packet Capture provides functionality similar to tools like Wireshark but within Azure.
+
+Step 8: Understanding Connection Troubleshoot
+
+A major focus of the module was Connection Troubleshoot.
+
+This feature tests connectivity between Azure resources.
+
+Example:
+VM-A
+   ↓
+VM-B
+
+Network Watcher verifies:
+
+Connectivity status
+Latency
+Route information
+Network path
+Benefits:
+Rapid troubleshooting
+Connectivity validation
+Infrastructure verification
+
+The module emphasized that Connection Troubleshoot helps identify network communication failures quickly.
+
+Step 9: Understanding Network Topology
+
+The training introduced Topology View.
+
+Topology creates a visual representation of Azure networking resources.
+
+Example:
+Virtual Network
+       ↓
+Subnet
+       ↓
+Virtual Machines
+       ↓
+Network Security Groups
+Benefits:
+Easier infrastructure visualization
+Faster troubleshooting
+Better documentation
+Key concepts learned:
+Topology helps understand resource relationships
+Useful for complex environments
+Step 10: Understanding Traffic Analytics
+
+The module introduced Traffic Analytics.
+
+Traffic Analytics analyzes network traffic patterns and flows.
+
+Information provided:
+Traffic volume
+Source locations
+Destination locations
+Communication patterns
+Security insights
+Benefits:
+Network optimization
+Security monitoring
+Capacity planning
+
+Traffic Analytics helps administrators understand how resources communicate.
+
+Step 11: When to Use Azure Network Watcher
+
+The training covered common use cases.
+
+Use Network Watcher when:
+Virtual machines cannot communicate
+Applications experience connectivity issues
+NSG rules require validation
+Routing problems occur
+Traffic flow needs analysis
+Performance issues must be investigated
+Common scenarios:
+Security troubleshooting
+Network diagnostics
+Route validation
+Infrastructure monitoring
+Performance optimization
+
+The module emphasized that Network Watcher is the primary Azure networking troubleshooting toolkit.
+
+Step 12: Real-World Scenario
+
+The learning scenario focused on organizations operating Azure Infrastructure-as-a-Service (IaaS) environments.
+
+Administrative goals included:
+Monitoring network health
+Troubleshooting connectivity issues
+Validating security controls
+Analyzing traffic patterns
+Maintaining reliable application communication
+
+This demonstrated how Azure Network Watcher supports operational excellence and network reliability.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Azure Network Watcher
+Troubleshooting network connectivity
+Using IP Flow Verify
+Analyzing routing with Next Hop
+Reviewing Effective Security Rules
+Capturing network packets
+Testing connectivity
+Visualizing network topology
+Monitoring network performance
+Tools & Services Used
+Azure Network Watcher
+IP Flow Verify
+Next Hop
+Effective Security Rules
+Packet Capture
+Connection Troubleshoot
+Network Topology
+Traffic Analytics
+Azure Virtual Machines
+Azure Virtual Networks (VNets)
+Network Security Groups (NSGs)
+Key Takeaway
+
+Azure Network Watcher is Azure's primary network monitoring and diagnostics service. It provides powerful tools for troubleshooting connectivity, validating security rules, analyzing routing behavior, monitoring traffic, and diagnosing performance issues. For the AZ-104 exam, understanding IP Flow Verify, Next Hop, Effective Security Rules, Packet Capture, and Connection Troubleshoot is essential, as these are common tools used by Azure Administrators to maintain secure and reliable network environments.
