@@ -1,0 +1,313 @@
+Microsoft Learn: Introduction to Azure Application Gateway
+
+Platform: Microsoft Learn
+Module: Introduction to Azure Application Gateway
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Beginner
+Date: 2026
+
+Objective
+
+Learn what Azure Application Gateway is, how it works, and when it should be used to deliver web applications securely, efficiently, and at scale.
+
+This module focused on understanding Azure Application Gateway as a Layer 7 load balancing solution, how it routes web traffic, and how it improves application delivery through advanced features such as URL-based routing, SSL termination, and Web Application Firewall (WAF).
+
+Step 1: Understanding Azure Application Gateway
+
+The module introduced Azure Application Gateway as a web traffic load balancer that operates at the Application Layer (Layer 7) of the OSI model.
+
+Unlike Azure Load Balancer, which operates at Layer 4, Application Gateway can make routing decisions based on application-specific information.
+
+Supported protocols:
+HTTP
+HTTPS
+Web applications
+Benefits:
+Intelligent traffic routing
+Application-aware load balancing
+SSL termination
+Web Application Firewall (WAF)
+Enhanced security
+Improved scalability
+
+The module emphasized that Application Gateway is specifically designed for web applications.
+
+Step 2: Understanding Layer 7 Load Balancing
+
+A major focus of the module was understanding Layer 7 networking.
+
+Application Gateway operates at:
+
+OSI Layer 7
+Application Layer
+
+Because it operates at Layer 7, Application Gateway can inspect:
+
+URLs
+Hostnames
+HTTP headers
+Cookies
+Application requests
+Example:
+www.contoso.com/images
+            ↓
+Image Server
+
+www.contoso.com/api
+            ↓
+API Server
+
+The module demonstrated how Application Gateway can route requests differently based on URL paths.
+
+Step 3: Understanding How Azure Application Gateway Works
+
+The training covered the core Application Gateway architecture.
+
+Traffic Flow
+Users
+   ↓
+Application Gateway
+   ↓
+Backend Pool
+   ↓
+Applications
+
+Application Gateway sits between users and backend applications.
+
+Core Components:
+Component	Purpose
+Frontend IP	Receives client requests
+Listener	Monitors incoming traffic
+Routing Rules	Determines traffic destination
+Backend Pool	Contains application servers
+Health Probes	Monitors application health
+
+These components work together to provide secure and intelligent application delivery.
+
+Step 4: Understanding Listeners
+
+The module introduced Listeners.
+
+Listeners monitor incoming requests on specific ports and protocols.
+
+Examples:
+HTTPS
+Port 443
+HTTP
+Port 80
+Functions:
+Accept incoming requests
+Identify protocols
+Forward traffic to routing rules
+Key concepts learned:
+Every request starts at a listener
+Listeners determine how traffic enters the Application Gateway
+Step 5: Understanding Backend Pools
+
+The training covered Backend Pools.
+
+Backend pools contain application resources that receive user requests.
+
+Common backend resources:
+Azure Virtual Machines
+Virtual Machine Scale Sets
+Azure App Services
+Internal IP addresses
+Example:
+Backend Pool
+
+WebServer01
+WebServer02
+WebServer03
+
+Application Gateway distributes traffic across healthy backend resources.
+
+Step 6: Understanding Health Probes
+
+A major focus of the module was health monitoring.
+
+Application Gateway continuously checks backend resources using health probes.
+
+Probe capabilities:
+Verify application availability
+Detect server failures
+Remove unhealthy servers automatically
+Example:
+Check:
+https://server01/health
+
+If the application fails:
+
+Server01 = Unhealthy
+
+Traffic is automatically redirected to healthy servers.
+
+Benefits:
+Improved availability
+Automatic failover
+Reduced downtime
+
+The module emphasized that health probes are critical for maintaining reliable application delivery.
+
+Step 7: Understanding Routing Rules
+
+The training covered routing rules, one of Application Gateway's most important features.
+
+Types of routing:
+Basic Routing
+All Traffic
+      ↓
+Backend Pool
+Path-Based Routing
+/app
+   ↓
+Application Servers
+
+/images
+   ↓
+Image Servers
+Host-Based Routing
+shop.contoso.com
+       ↓
+Shopping Servers
+
+api.contoso.com
+       ↓
+API Servers
+Benefits:
+Traffic segmentation
+Application optimization
+Improved scalability
+
+The module demonstrated how routing rules provide intelligent traffic distribution.
+
+Step 8: Understanding SSL Termination
+
+The module introduced SSL termination.
+
+Normally:
+
+Client
+   ↓ HTTPS
+Server
+
+Server performs encryption and decryption.
+
+With Application Gateway:
+
+Client
+    ↓ HTTPS
+Application Gateway
+    ↓ HTTP
+Backend Server
+Benefits:
+Reduced server workload
+Centralized certificate management
+Improved performance
+Key concepts learned:
+Application Gateway handles encryption
+Backend servers perform less processing
+SSL certificates are managed centrally
+Step 9: Understanding Web Application Firewall (WAF)
+
+A major focus of the module was Web Application Firewall integration.
+
+Application Gateway can include a Web Application Firewall.
+
+WAF protects against:
+SQL Injection
+Cross-Site Scripting (XSS)
+HTTP protocol attacks
+Web application vulnerabilities
+Benefits:
+Enhanced security
+Threat protection
+OWASP Top 10 protection
+Compliance support
+Example:
+Internet
+     ↓
+WAF
+     ↓
+Application Gateway
+     ↓
+Web Application
+
+The module emphasized WAF as a critical security feature for internet-facing applications.
+
+Step 10: When to Use Azure Application Gateway
+
+The training covered appropriate use cases.
+
+Use Application Gateway when you need:
+Layer 7 load balancing
+URL-based routing
+Host-based routing
+SSL termination
+Web Application Firewall
+Application-level traffic inspection
+Common scenarios:
+E-commerce websites
+APIs
+Multi-tier applications
+Public web applications
+Secure internet-facing services
+Benefits:
+Better application performance
+Improved security
+Intelligent traffic management
+Step 11: Application Gateway vs Load Balancer
+
+The module compared Application Gateway and Azure Load Balancer.
+
+Feature	Load Balancer	Application Gateway
+OSI Layer	Layer 4	Layer 7
+TCP/UDP Support	Yes	No
+URL Routing	No	Yes
+SSL Termination	No	Yes
+Web Application Firewall	No	Yes
+HTTP/HTTPS Awareness	No	Yes
+Key lesson learned:
+Use Load Balancer for network traffic
+Use Application Gateway for web applications
+
+This comparison is frequently tested on the AZ-104 exam.
+
+Step 12: Real-World Scenario
+
+The learning scenario focused on organizations hosting web applications that require intelligent traffic routing and enhanced security.
+
+Administrative goals included:
+Improving web application availability
+Routing users efficiently
+Protecting applications from attacks
+Simplifying SSL certificate management
+Scaling application workloads
+
+This demonstrated how Application Gateway supports secure and scalable web application delivery.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Azure Application Gateway
+Understanding Layer 7 load balancing
+Configuring listeners
+Managing backend pools
+Understanding health probes
+Configuring routing rules
+Understanding SSL termination
+Understanding Web Application Firewall (WAF)
+Comparing Application Gateway and Azure Load Balancer
+Tools & Services Used
+Azure Application Gateway
+Web Application Firewall (WAF)
+Azure Virtual Machines
+Azure App Service
+Azure Virtual Machine Scale Sets
+SSL Certificates
+Azure Virtual Networks (VNets)
+Azure Portal
+Key Takeaway
+
+Azure Application Gateway is a Layer 7 application delivery service designed specifically for web applications. By providing intelligent routing, SSL termination, health monitoring, and Web Application Firewall protection, Application Gateway enables Azure Administrators to build secure, scalable, and highly available web application architectures. Understanding the differences between Application Gateway and Azure Load Balancer is essential for both the AZ-104 exam and real-world Azure deployments.
