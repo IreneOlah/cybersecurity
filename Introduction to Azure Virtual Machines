@@ -1,0 +1,349 @@
+Microsoft Learn: Introduction to Azure Virtual Machines
+
+Platform: Microsoft Learn
+Module: Introduction to Azure Virtual Machines
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how Azure Virtual Machines (VMs) work, how to plan and deploy them, the management options available, and how to ensure their availability and protection through backup and resiliency features.
+
+This module focused on the fundamentals of Azure Virtual Machines, including deployment planning, VM creation methods, availability options, management tools, and backup strategies used in enterprise cloud environments.
+
+Step 1: Understanding Azure Virtual Machines
+
+The module introduced Azure Virtual Machines as Infrastructure as a Service (IaaS) resources that provide on-demand computing power in the cloud.
+
+Azure Virtual Machines allow organizations to run:
+
+Windows Server
+Linux
+Custom operating systems
+Enterprise applications
+Databases
+Development environments
+Benefits:
+Full operating system control
+Rapid deployment
+Scalability
+Pay-as-you-go pricing
+Hybrid cloud support
+Example:
+Azure Datacenter
+       ↓
+Virtual Machine
+       ↓
+Windows Server 2022
+
+The module emphasized that Azure VMs are one of the most commonly used Azure services.
+
+Step 2: Compiling a Checklist Before Creating a VM
+
+A major focus of the module was planning before deployment.
+
+Important decisions:
+Category	Examples
+Operating System	Windows or Linux
+VM Size	CPU, Memory, Storage
+Region	East US, West US, etc.
+Networking	VNet, Subnet, Public IP
+Storage	Standard or Premium disks
+Availability	Availability Set or Availability Zone
+Security	NSGs, Identity, RBAC
+Key lessons learned:
+Proper planning reduces future migration work
+VM sizing directly impacts performance and cost
+Networking and security should be designed before deployment
+
+The module highlighted planning as a critical administrator responsibility.
+
+Step 3: Creating a Virtual Machine
+
+The hands-on exercise focused on creating a VM using the Azure Portal.
+
+Configuration steps:
+Select Subscription
+Select Resource Group
+Choose VM Name
+Select Region
+Choose Image
+Select VM Size
+Configure Authentication
+Configure Networking
+Review and Deploy
+Example VM:
+Windows Server 2022
+Size: Standard_B2s
+Region: East US
+Skills practiced:
+Creating VMs
+Configuring networking
+Selecting operating systems
+Choosing VM sizes
+
+The exercise demonstrated a typical Azure VM deployment workflow.
+
+Step 4: Understanding VM Sizes
+
+The module introduced Azure VM sizing options.
+
+VM sizes determine:
+
+CPU cores
+RAM
+Storage throughput
+Network performance
+Common VM families:
+Family	Purpose
+B-Series	Burstable workloads
+D-Series	General purpose
+E-Series	Memory optimized
+F-Series	Compute optimized
+M-Series	Large enterprise workloads
+Example:
+Standard_B2s
+2 vCPUs
+4 GB RAM
+Key concepts learned:
+Larger VMs provide more resources
+Larger VMs cost more
+Workload requirements determine sizing decisions
+
+VM sizing is a frequently tested AZ-104 topic.
+
+Step 5: Options for Creating and Managing Virtual Machines
+
+The training covered multiple deployment and management methods.
+
+VM Creation Methods:
+Method	Purpose
+Azure Portal	Graphical deployment
+Azure CLI	Command-line deployment
+Azure PowerShell	Scripting and automation
+ARM Templates	Infrastructure as Code
+Bicep	Modern Infrastructure as Code
+Azure Resource Manager	Resource orchestration
+Benefits:
+Automation
+Consistency
+Repeatable deployments
+Faster provisioning
+
+The module emphasized that enterprise environments commonly use Infrastructure as Code.
+
+Step 6: Managing Azure Virtual Machines
+
+The training introduced common VM management tasks.
+
+Administrative responsibilities:
+Start and stop VMs
+Restart VMs
+Resize VMs
+Monitor performance
+Install software
+Configure networking
+Apply updates
+Management tools:
+Azure Portal
+Azure CLI
+Azure PowerShell
+Azure Monitor
+Key lessons learned:
+VMs require ongoing administration
+Monitoring helps identify performance issues
+Automation improves efficiency
+Step 7: Understanding VM Extensions
+
+A major focus of the module was Azure VM Extensions.
+
+Extensions allow administrators to deploy additional configuration and management capabilities.
+
+Common extensions:
+Extension	Purpose
+Custom Script Extension	Run scripts
+Microsoft Monitoring Agent	Monitoring
+Azure Backup Extension	Backup integration
+Desired State Configuration (DSC)	Configuration management
+Benefits:
+Automation
+Centralized management
+Consistent configuration
+
+The module emphasized extensions as an important VM management capability.
+
+Step 8: Managing VM Availability
+
+The training covered methods used to improve VM availability.
+
+Availability Challenges:
+Hardware failures
+Planned maintenance
+Datacenter outages
+Azure Availability Solutions:
+Availability Sets
+
+Protect against:
+
+Fault domain failures
+Update domain failures
+
+Example:
+
+Availability Set
+
+VM1
+VM2
+VM3
+Availability Zones
+
+Protect against:
+
+Entire datacenter failures
+
+Example:
+
+Zone 1 → VM1
+Zone 2 → VM2
+Zone 3 → VM3
+Benefits:
+Improved uptime
+Reduced downtime
+Higher resiliency
+
+Availability concepts are heavily tested on the AZ-104 exam.
+
+Step 9: Understanding Availability Sets
+
+The module explained Availability Sets in detail.
+
+Fault Domains
+
+Protect against hardware failures.
+
+Example:
+
+Rack Failure
+
+Only one VM is affected.
+
+Update Domains
+
+Protect against planned maintenance.
+
+Example:
+
+Azure updates servers in stages
+
+Not all VMs reboot simultaneously.
+
+Benefits:
+Increased availability
+Reduced maintenance impact
+Step 10: Understanding Availability Zones
+
+A major focus of the module was Availability Zones.
+
+Availability Zones are physically separate datacenters within a region.
+
+Benefits:
+Independent power
+Independent cooling
+Independent networking
+Example:
+East US
+
+Zone 1
+Zone 2
+Zone 3
+
+Applications remain available even if one zone fails.
+
+Key concepts learned:
+Availability Zones provide higher resiliency than Availability Sets
+Zones support disaster recovery strategies
+Step 11: Backing Up Virtual Machines
+
+The training covered VM protection using Azure Backup.
+
+Azure Backup protects VMs from:
+
+Accidental deletion
+Data corruption
+Ransomware
+Hardware failures
+Backup process:
+Virtual Machine
+        ↓
+Recovery Services Vault
+        ↓
+Backup Storage
+Benefits:
+Recovery points
+Automated backups
+Long-term retention
+Disaster recovery support
+
+The module emphasized backup as a critical operational requirement.
+
+Step 12: Understanding Recovery Services Vault
+
+The module introduced Recovery Services Vault.
+
+A Recovery Services Vault stores:
+
+VM backups
+Recovery points
+Backup policies
+Features:
+Centralized backup management
+Secure storage
+Backup retention policies
+Key lessons learned:
+Azure Backup requires a Recovery Services Vault
+Backups can be restored when needed
+Backup policies automate protection
+Step 13: Real-World Scenario
+
+The learning scenario focused on organizations deploying business-critical workloads in Azure.
+
+Administrative goals included:
+Deploying scalable virtual machines
+Managing infrastructure efficiently
+Improving availability
+Protecting workloads through backups
+Supporting business continuity
+
+This demonstrated how Azure Virtual Machines support enterprise cloud environments.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Azure Virtual Machines
+Planning VM deployments
+Creating Azure VMs
+Selecting VM sizes
+Managing VM resources
+Understanding VM Extensions
+Implementing Availability Sets
+Implementing Availability Zones
+Configuring Azure Backup
+Managing Recovery Services Vaults
+Tools & Services Used
+Azure Virtual Machines (VMs)
+Azure Portal
+Azure CLI
+Azure PowerShell
+Azure Resource Manager (ARM)
+Bicep
+Availability Sets
+Availability Zones
+Azure Backup
+Recovery Services Vault
+VM Extensions
+Azure Monitor
+Key Takeaway
+
+Azure Virtual Machines provide flexible, scalable Infrastructure as a Service (IaaS) computing resources for cloud workloads. By properly planning deployments, selecting appropriate VM sizes, implementing availability solutions, and configuring backup protection, Azure Administrators can build resilient, secure, and highly available environments that support both business-critical and development workloads. Understanding VM deployment, availability, and backup strategies is essential for success on the AZ-104 exam.
