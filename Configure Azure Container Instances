@@ -1,0 +1,216 @@
+Microsoft Learn: Configure Azure Container Instances
+
+Platform: Microsoft Learn
+Module: Configure Azure Container Instances
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how to configure Azure Container Instances (ACI), understand how containers compare to virtual machines, implement container groups, and identify when Azure Container Apps may be a better solution.
+
+This module focused on deploying lightweight containerized workloads in Azure without managing virtual machines, orchestration clusters, or underlying infrastructure.
+
+Step 1: Understanding Containers
+
+The module introduced containers as lightweight, portable application environments.
+
+A container packages an application with everything it needs to run, including:
+
+Application code
+Runtime
+Libraries
+Dependencies
+Configuration files
+Key benefits:
+Fast startup
+Portability
+Consistent deployments
+Lower overhead than virtual machines
+Easier application packaging
+
+Containers help solve the problem of applications working differently across development, testing, and production environments.
+
+Step 2: Containers vs Virtual Machines
+
+The training compared containers with virtual machines.
+
+Key differences:
+Containers	Virtual Machines
+Share the host operating system kernel	Include a full operating system
+Lightweight	Heavier resource usage
+Start quickly	Slower startup
+Best for application packaging	Best for full OS control
+More portable	More infrastructure control
+Important lessons learned:
+Virtual machines provide full operating system isolation
+Containers are more lightweight and faster to deploy
+Containers are ideal for microservices, APIs, batch jobs, and temporary workloads
+VMs are better when full OS control or long-running server configuration is required
+
+The module emphasized choosing the right compute option based on workload needs.
+
+Step 3: Understanding Azure Container Instances
+
+The module introduced Azure Container Instances as a serverless container hosting service.
+
+Azure Container Instances allows administrators to run containers without managing:
+
+Virtual machines
+Kubernetes clusters
+Operating system patches
+Host infrastructure
+Common use cases:
+Simple containerized applications
+Background jobs
+Task automation
+Build jobs
+Development and testing
+Short-lived workloads
+Key benefits:
+Fast container startup
+Per-second billing
+No infrastructure management
+Simple deployment
+Public or private networking options
+
+Azure Container Instances is useful when an organization needs to run containers quickly without deploying a full orchestration platform.
+
+Step 4: Implementing Azure Container Instances
+
+The training covered how to deploy containers using Azure Container Instances.
+
+Common configuration options:
+Configuration	Purpose
+Container image	Defines the application to run
+CPU and memory	Allocates compute resources
+Ports	Exposes application traffic
+Environment variables	Passes configuration values
+Restart policy	Controls container behavior after exit
+Networking	Enables public or private access
+Example workflow:
+Container Image
+      ↓
+Azure Container Instance
+      ↓
+Running Application
+Key lessons learned:
+ACI runs container images from registries
+CPU and memory are configured during deployment
+Containers can expose ports for application access
+Environment variables allow configuration without changing the image
+Step 5: Understanding Container Groups
+
+A major focus of the module was container groups.
+
+A container group is a collection of containers that run together on the same host and share resources.
+
+Container groups can share:
+Network namespace
+IP address
+Ports
+Volumes
+Lifecycle
+Example:
+Container Group
+├── Web App Container
+└── Logging Sidecar Container
+Benefits:
+Supports multi-container workloads
+Allows helper containers
+Enables shared storage and networking
+Simplifies related container deployment
+
+The module emphasized that container groups are useful when containers must work closely together.
+
+Step 6: Container Group Use Cases
+
+The training demonstrated scenarios where container groups are useful.
+
+Common patterns:
+Main application plus logging sidecar
+Web application plus monitoring container
+Application plus helper process
+Short-lived task plus supporting service
+Key concepts learned:
+Containers in the same group are scheduled together
+They share the same lifecycle
+They are suitable for tightly coupled services
+They are not the same as Kubernetes orchestration
+
+Container groups provide lightweight multi-container deployment without a full cluster.
+
+Step 7: Understanding Azure Container Apps
+
+The module introduced Azure Container Apps as another Azure container hosting option.
+
+Azure Container Apps is designed for more advanced containerized applications.
+
+Common capabilities:
+Microservices hosting
+Event-driven scaling
+HTTP-based applications
+Background processing
+Dapr integration
+Built-in scaling with KEDA
+Azure Container Instances vs Azure Container Apps:
+Azure Container Instances	Azure Container Apps
+Simple container execution	Full app platform for containers
+Best for short-lived or simple workloads	Best for microservices and scalable apps
+Minimal orchestration	Built-in scaling and revisions
+Direct container deployment	Application-focused container platform
+Key lesson learned:
+
+Use ACI for simple container execution and Azure Container Apps for more advanced application hosting needs.
+
+Step 8: Hands-On Exercise
+
+The practical exercise focused on implementing Azure Container Instances.
+
+Tasks completed:
+Creating a container instance
+Selecting a container image
+Configuring CPU and memory
+Exposing container ports
+Reviewing deployment status
+Testing container access
+
+The exercise demonstrated how Azure Administrators can deploy containerized workloads quickly through Azure.
+
+Step 9: Real-World Scenario
+
+The learning scenario focused on organizations needing fast, lightweight application deployment without managing servers.
+
+Administrative goals included:
+Running containerized applications quickly
+Reducing infrastructure management
+Supporting temporary or short-lived workloads
+Improving deployment consistency
+Avoiding unnecessary VM overhead
+
+This demonstrated how Azure Container Instances supports simple and efficient container deployment.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding container concepts
+Comparing containers and virtual machines
+Deploying Azure Container Instances
+Configuring container CPU and memory
+Managing container networking and ports
+Understanding container groups
+Comparing Azure Container Instances and Azure Container Apps
+Selecting appropriate container hosting options
+Tools & Services Used
+Azure Container Instances
+Azure Container Groups
+Azure Container Apps
+Azure Container Registry
+Container Images
+Azure Portal
+Azure Resource Manager
+Key Takeaway
+
+Azure Container Instances provides a fast and simple way to run containers in Azure without managing virtual machines or Kubernetes clusters. By understanding container groups, container configuration, and the difference between ACI and Azure Container Apps, Azure Administrators can choose the right compute service for lightweight, portable, and scalable application workloads.
