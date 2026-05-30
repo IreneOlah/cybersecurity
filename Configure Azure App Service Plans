@@ -1,0 +1,280 @@
+Microsoft Learn: Configure Azure App Service Plans
+
+Platform: Microsoft Learn
+Module: Configure Azure App Service Plans
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how to configure Azure App Service Plans, select the appropriate pricing tier, implement scaling strategies, and configure autoscaling for web applications hosted in Azure App Service.
+
+This module focused on understanding how App Service Plans provide the compute resources behind Azure Web Apps, how pricing tiers affect features and performance, and how to scale applications efficiently to meet changing workload demands.
+
+Step 1: Understanding Azure App Service Plans
+
+The module introduced Azure App Service Plans as the compute infrastructure that hosts Azure App Service applications.
+
+An App Service Plan defines:
+
+CPU resources
+Memory allocation
+Storage resources
+Scaling capabilities
+Geographic region
+Relationship:
+App Service Plan
+       ↓
+Web App
+Web App
+API App
+Web App
+
+Multiple applications can run inside the same App Service Plan and share its resources.
+
+Benefits:
+Simplified application hosting
+Centralized resource management
+Easy scaling
+Cost efficiency
+
+The module emphasized that App Service Plans provide the underlying infrastructure for Azure App Services.
+
+Step 2: Understanding App Service Plan Components
+
+The training covered the core characteristics of an App Service Plan.
+
+Plan characteristics:
+Component	Purpose
+Region	Deployment location
+Operating System	Windows or Linux
+Pricing Tier	Determines features and capacity
+Compute Resources	CPU and memory allocation
+Scaling Limits	Number of instances supported
+Key concepts learned:
+Applications inherit the capabilities of their App Service Plan
+Multiple apps can share one plan
+Resource usage is shared among applications
+
+The module highlighted proper planning when deploying App Service workloads.
+
+Step 3: Understanding Azure App Service Pricing Tiers
+
+A major focus of the module was selecting the appropriate pricing tier.
+
+Azure App Service offers multiple pricing options.
+
+Common tiers:
+Tier	Purpose
+Free (F1)	Development and testing
+Shared (D1)	Low-cost testing
+Basic (B1-B3)	Small production workloads
+Standard (S1-S3)	Production applications
+Premium (P1-P5)	High-performance workloads
+Isolated	Enterprise workloads
+Key lessons learned:
+Higher tiers provide greater performance
+Higher tiers support additional features
+Pricing affects scalability and availability
+Step 4: Comparing Pricing Tier Features
+
+The training compared capabilities across tiers.
+
+Feature Comparison
+Feature	Free	Basic	Standard	Premium
+Custom Domains	No	Yes	Yes	Yes
+SSL Support	Limited	Yes	Yes	Yes
+Autoscaling	No	No	Yes	Yes
+Deployment Slots	No	No	Yes	Yes
+Daily Backup	No	No	Yes	Yes
+Key concepts learned:
+Production environments typically require Standard or Premium plans
+Free and Shared tiers are primarily used for development and testing
+
+Understanding tier capabilities is frequently tested on AZ-104.
+
+Step 5: Understanding Scale Up (Vertical Scaling)
+
+The module introduced Scale Up.
+
+Scale Up increases the resources available to an App Service Plan by moving to a larger pricing tier.
+
+Example:
+
+Before:
+
+Basic B1
+1 CPU
+1.75 GB RAM
+
+After:
+
+Standard S1
+More CPU
+More RAM
+Benefits:
+Increased performance
+More memory
+Better processing power
+Key lessons learned:
+Scale Up changes the size of the infrastructure
+Existing applications remain in place
+Suitable for resource-intensive workloads
+Step 6: Understanding Scale Out (Horizontal Scaling)
+
+The training introduced Scale Out.
+
+Scale Out increases the number of application instances.
+
+Example:
+
+Before:
+
+1 Instance
+
+After:
+
+4 Instances
+Traffic Flow:
+Users
+   ↓
+Load Balancer
+ ↓   ↓   ↓   ↓
+App App App App
+Benefits:
+Increased capacity
+Improved availability
+Better fault tolerance
+
+The module emphasized that Scale Out is generally preferred for cloud-native applications.
+
+Step 7: Comparing Scale Up and Scale Out
+
+The module compared both scaling approaches.
+
+Scaling Method	Description
+Scale Up	Increase VM size
+Scale Out	Increase VM count
+Example:
+
+Scale Up:
+
+Small Server
+      ↓
+Large Server
+
+Scale Out:
+
+1 Server
+      ↓
+5 Servers
+Key lessons learned:
+Scale Up improves resource capacity
+Scale Out improves scalability and resiliency
+Many applications benefit from a combination of both
+Step 8: Understanding Autoscale
+
+A major focus of the module was Autoscale.
+
+Autoscale automatically adjusts application resources based on workload demand.
+
+Benefits:
+Improved performance
+Reduced administrative effort
+Cost optimization
+Automatic resource management
+Example:
+
+Low traffic:
+
+2 Instances
+
+High traffic:
+
+10 Instances
+
+The module demonstrated how Azure automatically reacts to workload changes.
+
+Step 9: Configuring Autoscale Rules
+
+The training covered autoscale configuration.
+
+Autoscale can be triggered by metrics.
+
+Common metrics:
+Metric	Example
+CPU Utilization	Above 70%
+Memory Usage	High demand
+HTTP Queue Length	Increased requests
+Schedule-Based Rules	Business hours scaling
+Example Rule:
+If CPU > 70%
+Add 2 Instances
+Scale-In Rule:
+If CPU < 30%
+Remove 1 Instance
+Benefits:
+Automatic scaling
+Cost control
+Improved user experience
+Step 10: Understanding Autoscale Profiles
+
+The module introduced Autoscale Profiles.
+
+Profiles allow different scaling behaviors based on:
+
+Time of day
+Day of week
+Business schedules
+Performance thresholds
+Example:
+
+Business Hours:
+
+Minimum: 4 Instances
+Maximum: 10 Instances
+
+After Hours:
+
+Minimum: 1 Instance
+Maximum: 3 Instances
+Benefits:
+Predictable scaling
+Lower operating costs
+Better resource utilization
+Step 11: Real-World Scenario
+
+The learning scenario focused on organizations hosting web applications with fluctuating workloads.
+
+Administrative goals included:
+Supporting traffic growth
+Improving application performance
+Managing infrastructure costs
+Automating scaling operations
+Maintaining application availability
+
+This demonstrated how App Service Plans support scalable web application hosting.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Azure App Service Plans
+Selecting App Service pricing tiers
+Comparing App Service features
+Implementing Scale Up strategies
+Implementing Scale Out strategies
+Configuring Autoscale
+Creating Autoscale Rules
+Managing application performance and costs
+Tools & Services Used
+Azure App Service
+Azure App Service Plans
+Azure Autoscale
+Azure Monitor
+Azure Web Apps
+Azure Portal
+Key Takeaway
+
+Azure App Service Plans provide the compute resources that power Azure Web Apps and APIs. By selecting the correct pricing tier, implementing vertical and horizontal scaling, and configuring autoscale policies, Azure Administrators can build highly available, cost-effective, and scalable web application environments. Understanding pricing tiers, Scale Up versus Scale Out, and Autoscale configuration is essential for both the AZ-104 exam and real-world Azure administration.
