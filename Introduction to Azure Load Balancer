@@ -1,0 +1,309 @@
+Microsoft Learn: Introduction to Azure Load Balancer
+
+Platform: Microsoft Learn
+Module: Introduction to Azure Load Balancer
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Beginner
+Date: 2026
+
+Objective
+
+Learn what Azure Load Balancer is, how it distributes traffic across Azure resources, and when it should be used to improve application availability, scalability, and reliability.
+
+This module focused on understanding Azure Load Balancer functionality, its core components, how traffic distribution works, and identifying scenarios where Azure Load Balancer is the most appropriate networking solution.
+
+Step 1: Understanding Azure Load Balancer
+
+The module introduced Azure Load Balancer as a fully managed Azure networking service that distributes incoming and outgoing network traffic across multiple backend resources.
+
+The primary goal of Azure Load Balancer is to ensure applications remain:
+
+Highly available
+Scalable
+Fault tolerant
+Responsive under heavy workloads
+Example:
+Users
+   ↓
+Azure Load Balancer
+ ↓      ↓      ↓
+VM1    VM2    VM3
+
+Traffic is automatically distributed across healthy virtual machines.
+
+Benefits:
+High availability
+Automatic traffic distribution
+Improved application performance
+Better fault tolerance
+Scalability for growing workloads
+
+The module emphasized that Azure Load Balancer helps prevent individual servers from becoming overloaded.
+
+Step 2: Understanding Layer 4 Load Balancing
+
+A major focus of the module was understanding where Azure Load Balancer operates within the OSI model.
+
+Azure Load Balancer functions at:
+
+OSI Layer 4
+Transport Layer
+
+Supported protocols:
+
+TCP
+UDP
+What Layer 4 Means
+
+Azure Load Balancer makes routing decisions based on:
+
+Source IP address
+Destination IP address
+Source port
+Destination port
+Protocol
+Important limitation:
+
+Azure Load Balancer does not inspect:
+
+URLs
+HTTP headers
+Cookies
+Application content
+
+The module highlighted that Layer 7 services such as Application Gateway are used when application-aware routing is required.
+
+Step 3: Understanding How Azure Load Balancer Works
+
+The training covered the primary components that make Azure Load Balancer function.
+
+Frontend IP Configuration
+
+The frontend receives incoming client requests.
+
+Example:
+
+Public IP Address
+20.50.100.10
+
+Clients connect to this address.
+
+Backend Pool
+
+The backend pool contains resources that receive traffic.
+
+Examples:
+
+Virtual Machines
+Virtual Machine Scale Sets
+Availability Sets
+
+Example:
+
+Backend Pool
+
+VM1
+VM2
+VM3
+
+The Load Balancer distributes requests among these resources.
+
+Health Probes
+
+Health probes continuously monitor backend resources.
+
+Probe types:
+Probe Type	Purpose
+TCP	Verifies port availability
+HTTP	Verifies web service health
+HTTPS	Verifies secure application health
+
+Example:
+
+Check Port 80
+
+If a server fails:
+
+VM1 = Unhealthy
+
+Traffic only sent to:
+VM2
+VM3
+Benefits:
+Automatic failover
+Increased availability
+Reduced downtime
+
+The module emphasized that health probes determine whether resources are eligible to receive traffic.
+
+Load Balancing Rules
+
+Load balancing rules define how traffic is distributed.
+
+Example:
+
+Frontend Port: 80
+Backend Port: 80
+Protocol: TCP
+
+These rules connect incoming traffic to backend resources.
+
+Step 4: Public and Internal Load Balancers
+
+The training introduced the two deployment models available in Azure.
+
+Public Load Balancer
+
+Distributes traffic coming from the internet.
+
+Example:
+
+Internet
+    ↓
+Public Load Balancer
+    ↓
+Web Servers
+
+Common use cases:
+
+Public websites
+Internet-facing APIs
+Customer applications
+Internal Load Balancer
+
+Distributes traffic within private Azure networks.
+
+Example:
+
+Application Servers
+       ↓
+Internal Load Balancer
+       ↓
+Database Servers
+
+Common use cases:
+
+Internal applications
+Backend services
+Multi-tier applications
+Key concepts learned:
+Public Load Balancers expose services externally
+Internal Load Balancers support private communications only
+Step 5: Azure Load Balancer SKUs
+
+The module introduced the available Azure Load Balancer options.
+
+Basic Load Balancer
+
+Features:
+
+Legacy workloads
+Limited scalability
+Basic functionality
+Standard Load Balancer
+
+Features:
+
+Production-ready deployments
+Improved security
+Better scalability
+Availability Zone support
+Higher availability
+Comparison
+Feature	Basic	Standard
+Production Workloads	Limited	Yes
+Availability Zones	No	Yes
+Scalability	Lower	Higher
+Security	Basic	Enhanced
+Key lesson learned:
+
+Microsoft recommends using Standard Load Balancer for new deployments.
+
+Step 6: When to Use Azure Load Balancer
+
+A major focus of the module was identifying appropriate use cases.
+
+Use Azure Load Balancer when you need:
+Layer 4 load balancing
+High availability
+Automatic failover
+TCP or UDP traffic distribution
+Internal service balancing
+External application balancing
+Common scenarios:
+Web server farms
+Multi-tier applications
+Virtual Machine Scale Sets
+Enterprise applications
+Benefits:
+Improved uptime
+Increased scalability
+Better resource utilization
+Reduced single points of failure
+
+The module demonstrated how Azure Load Balancer supports resilient cloud architectures.
+
+Step 7: When NOT to Use Azure Load Balancer
+
+The module also clarified situations where other Azure services are more appropriate.
+
+Azure Load Balancer does not provide:
+
+SSL termination
+URL-based routing
+Web Application Firewall (WAF)
+Cookie-based session affinity
+Application-level inspection
+Alternative services:
+Requirement	Azure Service
+URL Routing	Application Gateway
+Global Traffic Distribution	Traffic Manager
+Global Application Acceleration	Front Door
+Web Application Firewall	Application Gateway WAF
+
+Understanding service selection is an important AZ-104 skill.
+
+Step 8: Real-World Scenario
+
+The learning scenario focused on an organization hosting applications across multiple Azure virtual machines.
+
+Administrative goals included:
+Distributing user traffic
+Preventing server overload
+Supporting application growth
+Maintaining availability during failures
+Improving overall application reliability
+
+Example:
+
+Thousands of Users
+         ↓
+Azure Load Balancer
+    ↓      ↓      ↓
+  VM1    VM2    VM3
+
+This demonstrated how Azure Load Balancer improves availability and scalability in production environments.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Azure Load Balancer
+Identifying load balancing scenarios
+Understanding frontend and backend configurations
+Configuring health probes
+Understanding load balancing rules
+Distinguishing Public and Internal Load Balancers
+Comparing Basic and Standard SKUs
+Understanding Layer 4 networking concepts
+Tools & Services Used
+Azure Load Balancer
+Azure Virtual Machines
+Azure Virtual Machine Scale Sets
+Azure Health Probes
+Azure Public IP Addresses
+Azure Virtual Networks (VNets)
+Azure Portal
+Key Takeaway
+
+Azure Load Balancer is a Layer 4 networking service that distributes TCP and UDP traffic across multiple Azure resources to improve availability, scalability, and fault tolerance. By using frontend IP configurations, backend pools, health probes, and load balancing rules, Azure Administrators can ensure applications remain responsive and available even during infrastructure failures. Understanding when to use Azure Load Balancer versus Application Gateway, Traffic Manager, or Front Door is an important skill for the AZ-104 exam and real-world Azure administration.
