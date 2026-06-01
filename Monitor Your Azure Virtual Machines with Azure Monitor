@@ -1,0 +1,356 @@
+Microsoft Learn: Monitor Your Azure Virtual Machines with Azure Monitor
+
+Platform: Microsoft Learn
+Module: Monitor Your Azure Virtual Machines with Azure Monitor
+Track: AZ-104 Microsoft Azure Administrator
+Difficulty: Intermediate
+Date: 2026
+
+Objective
+
+Learn how to monitor Azure Virtual Machines using Azure Monitor, collect host and guest operating system data, analyze performance metrics, and troubleshoot VM health issues using Metrics Explorer and VM Insights.
+
+This module focused on Azure Monitor capabilities for Virtual Machines, including collecting host metrics, guest operating system performance data, event logs, and using monitoring tools to proactively manage Azure infrastructure.
+
+Step 1: Understanding Azure Monitor
+
+The module introduced Azure Monitor as Microsoft's centralized monitoring platform for Azure resources.
+
+Azure Monitor collects and analyzes:
+
+Metrics
+Logs
+Performance counters
+Event logs
+Alerts
+Telemetry data
+Primary goals:
+Monitor health
+Identify performance issues
+Troubleshoot problems
+Improve reliability
+Optimize resource usage
+Example:
+Azure VM
+      ↓
+Azure Monitor
+      ↓
+Metrics + Logs
+      ↓
+Dashboards & Alerts
+
+The module emphasized that Azure Monitor is the primary monitoring solution for Azure resources.
+
+Step 2: Understanding Monitoring for Azure Virtual Machines
+
+The training covered why VM monitoring is important.
+
+Common issues administrators need to detect:
+High CPU usage
+Memory pressure
+Disk bottlenecks
+Network latency
+Application failures
+Operating system issues
+Benefits of monitoring:
+Proactive issue detection
+Performance optimization
+Capacity planning
+Faster troubleshooting
+Key lesson learned:
+
+Monitoring should be enabled before problems occur, not after.
+
+Step 3: Understanding VM Host Data
+
+A major focus of the module was host monitoring.
+
+Host data comes from the Azure platform itself rather than the operating system running inside the VM.
+
+Host metrics include:
+CPU utilization
+Network traffic
+Disk throughput
+Disk operations
+Availability status
+Example:
+Azure Hypervisor
+        ↓
+Host Metrics
+        ↓
+Azure Monitor
+Benefits:
+No agent required
+Automatically available
+Platform-level visibility
+
+Host metrics are one of the most important AZ-104 monitoring concepts.
+
+Step 4: Understanding Azure Metrics
+
+The training introduced Azure Metrics.
+
+Metrics are numerical measurements collected over time.
+
+Common VM metrics:
+Metric	Purpose
+Percentage CPU	Processor utilization
+Disk Read Operations	Storage performance
+Disk Write Operations	Storage activity
+Network In	Incoming traffic
+Network Out	Outgoing traffic
+Available Memory	Resource utilization
+Example:
+CPU Usage
+9 AM → 20%
+12 PM → 85%
+3 PM → 40%
+Benefits:
+Performance monitoring
+Trend analysis
+Capacity planning
+
+Metrics form the foundation of Azure monitoring.
+
+Step 5: Using Metrics Explorer
+
+The module introduced Metrics Explorer.
+
+Metrics Explorer is the primary Azure tool for visualizing metric data.
+
+Capabilities:
+View performance trends
+Create charts
+Filter metrics
+Compare resources
+Analyze historical performance
+Example:
+Virtual Machine
+       ↓
+Metrics Explorer
+       ↓
+CPU Graph
+Benefits:
+Visual monitoring
+Performance analysis
+Troubleshooting support
+
+The module emphasized Metrics Explorer as a frequently used administrative tool.
+
+Step 6: Understanding VM Insights
+
+A major focus of the module was VM Insights.
+
+VM Insights extends Azure Monitor by collecting guest operating system data.
+
+Information collected:
+Memory utilization
+Process information
+Performance counters
+Dependency maps
+Operating system metrics
+Example:
+Guest OS
+      ↓
+Azure Monitor Agent
+      ↓
+VM Insights
+Benefits:
+Deeper visibility
+Operating system monitoring
+Application performance analysis
+
+VM Insights is commonly tested on AZ-104.
+
+Step 7: Host Metrics vs Guest Metrics
+
+The training compared platform monitoring and guest monitoring.
+
+Host Metrics
+
+Collected by Azure automatically.
+
+Examples:
+
+CPU percentage
+Network throughput
+Disk operations
+Guest Metrics
+
+Collected from inside the operating system.
+
+Examples:
+
+Memory usage
+Running processes
+Service status
+Event logs
+Comparison:
+Type	Source
+Host Metrics	Azure Platform
+Guest Metrics	Operating System
+Key lesson learned:
+
+Guest monitoring requires an agent.
+
+Step 8: Collecting Performance Counters
+
+The module introduced performance counters.
+
+Performance counters measure operating system performance.
+
+Common counters:
+Counter	Purpose
+Processor Time	CPU usage
+Available Memory	Memory health
+Disk Queue Length	Storage performance
+Network Throughput	Network activity
+Example:
+Memory Available
+8 GB → Healthy
+500 MB → Problem
+Benefits:
+Resource monitoring
+Bottleneck detection
+Capacity planning
+
+Performance counters are collected through Azure Monitor Agent and VM Insights.
+
+Step 9: Understanding Azure Monitor Agent (AMA)
+
+The training introduced Azure Monitor Agent.
+
+The Azure Monitor Agent collects guest operating system data and sends it to Azure Monitor.
+
+Data collected:
+Performance counters
+Event logs
+Monitoring telemetry
+Benefits:
+Centralized monitoring
+Simplified data collection
+Improved visibility
+Key concept learned:
+
+For guest operating system monitoring, the Azure Monitor Agent must be installed.
+
+Step 10: Collecting Event Logs
+
+A major focus of the module was operating system event monitoring.
+
+Windows Event Logs:
+Application Log
+System Log
+Security Log
+Linux Logs:
+Syslog
+Benefits:
+Security monitoring
+Troubleshooting
+Operational visibility
+Common use cases:
+Failed logins
+Service failures
+Application crashes
+Security events
+
+The module emphasized event logs as a critical troubleshooting resource.
+
+Step 11: Understanding Log Analytics Workspace
+
+The training introduced Log Analytics Workspace.
+
+Log Analytics stores and analyzes monitoring data.
+
+Data sources:
+Azure VMs
+Azure Services
+Azure Monitor Agents
+Event logs
+Performance counters
+Example:
+VM
+ ↓
+Azure Monitor Agent
+ ↓
+Log Analytics Workspace
+ ↓
+Queries & Analysis
+Benefits:
+Centralized logging
+Long-term analysis
+Advanced searching
+
+For AZ-104, remember:
+
+VM Insights requires a Log Analytics Workspace.
+
+Step 12: Monitoring and Troubleshooting Scenarios
+
+The module demonstrated common administrative scenarios.
+
+High CPU Usage
+Azure Monitor
+      ↓
+CPU = 95%
+
+Administrator investigates workload.
+
+Memory Exhaustion
+Available Memory
+        ↓
+Low
+
+Administrator identifies resource bottlenecks.
+
+Service Failure
+Event Log
+      ↓
+Service Stopped
+
+Administrator reviews logs and restores service.
+
+Benefits:
+Faster troubleshooting
+Improved reliability
+Reduced downtime
+Step 13: Real-World Scenario
+
+The learning scenario focused on monitoring business-critical virtual machines in Azure.
+
+Administrative goals included:
+Tracking VM performance
+Detecting problems proactively
+Monitoring operating system health
+Analyzing event logs
+Improving infrastructure reliability
+
+This demonstrated how Azure Monitor supports operational excellence for Azure workloads.
+
+Skills Developed
+
+Through this module, I gained experience with:
+
+Understanding Azure Monitor
+Monitoring Azure Virtual Machines
+Collecting host metrics
+Using Metrics Explorer
+Implementing VM Insights
+Collecting performance counters
+Monitoring guest operating system data
+Collecting Windows Event Logs and Syslog data
+Using Log Analytics Workspace
+Troubleshooting VM performance issues
+Tools & Services Used
+Azure Monitor
+Metrics Explorer
+VM Insights
+Azure Monitor Agent (AMA)
+Log Analytics Workspace
+Azure Virtual Machines
+Windows Event Logs
+Syslog
+Azure Portal
+Key Takeaway
+
+Azure Monitor provides comprehensive monitoring capabilities for Azure Virtual Machines by collecting both platform-level host metrics and guest operating system data. Using Azure Monitor, Metrics Explorer, VM Insights, Azure Monitor Agent, and Log Analytics Workspaces, Azure Administrators can proactively detect performance issues, analyze system health, troubleshoot problems, and maintain highly available and reliable Azure environments. Understanding the difference between host metrics and guest metrics, along with VM Insights and Log Analytics, is essential for the AZ-104 exam.
